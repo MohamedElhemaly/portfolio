@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mohamed Elhemaly - Portfolio. A Computer Science student specializing in backend development, network engineering, and programming.">
+    <meta name="keywords"
+        content="Mohamed Elhemaly, Portfolio, Computer Science, Backend Developer, Networking, PHP, C++, Python">
+    <meta name="author" content="Mohamed Elhemaly">
     <title>Mohamed Elhemaly - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
@@ -64,7 +69,7 @@
                 <div class="about-image">
                     <a href="https://ibb.co/yFCycpnd"><img
                             src="https://i.ibb.co/GQD249vn/Whats-App-Image-2025-03-18-at-13-33-12-31cbff47.jpg"
-                            alt="Whats-App-Image-2025-03-18-at-13-33-12-31cbff47" border="0"></a>
+                            alt="Mohamed Elhemaly - Profile Picture" /></a>
                 </div>
             </div>
         </div>
@@ -168,10 +173,7 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p>Email: mohamed.elhemaly88@gmail.com
-                    </p>
-                    <!-- <p>Phone: +20 1095677200</p>
-                    <p>Phone: +20 1558290821</p> -->
+                    <p>Email: mohamed.elhemaly88@gmail.com</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank"><i
                                 class="fab fa-linkedin-in"></i></a>
@@ -228,46 +230,11 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
-                // Close mobile menu if open
                 navMenu.classList.remove('show');
                 hamburger.classList.remove('active');
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-            });
-        });
-
-        // Form submission feedback
-        const contactForm = document.querySelector('.contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function (e) {
-                // You can add form validation here if needed
-                // FormSubmit will handle the actual submission
-                setTimeout(() => {
-                    this.reset();
-                }, 1000);
-            });
-        }
-
-        // Add active class to current section in navigation
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
-
-            document.querySelectorAll('section').forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.offsetHeight;
-                const sectionId = section.getAttribute('id');
-
-                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                    document.querySelectorAll('#nav-menu a').forEach(link => {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href') === `#${sectionId}`) {
-                            link.classList.add('active');
-                        }
-                    });
-                }
             });
         });
     </script>
