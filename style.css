@@ -150,7 +150,7 @@ nav ul li a:hover::after {
 /* Hero Section */
 #hero {
     height: 100vh;
-    width: 100vh;
+    width: 51vh;
     display: flex;
     align-items: center;
     background-color: var(--primary);
