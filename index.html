@@ -5,23 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
-        content="Mohamed Elhemaly - Portfolio. A Computer Science student specializing in backend development, network engineering, and programming.">
+        content="Mohamed Elhemaly - Portfolio. A Computer Science student specializing in backend development, network engineering, cybersecurity, and programming.">
     <meta name="keywords"
-        content="Mohamed Elhemaly, Portfolio, Computer Science, Backend Developer, Networking, PHP, C++, Python">
+        content="Mohamed Elhemaly, Portfolio, Computer Science, Backend Developer, Cybersecurity, Networking, PHP, C++, Python">
     <meta name="author" content="Mohamed Elhemaly">
     <title>Mohamed Elhemaly - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="backend-mode">
     <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="#" class="logo">Mohamed_Elhemaly<span></span></a>
+            
+            <!-- Theme Switch داخل الهيدر -->
+            <div class="theme-switch-wrapper">
+                <span class="theme-label">Backend</span>
+                <label class="theme-switch" for="theme-toggle">
+                    <input type="checkbox" id="theme-toggle">
+                    <div class="slider round"></div>
+                </label>
+                <span class="theme-label">Security</span>
+            </div>
+            
             <nav>
                 <ul id="nav-menu">
                     <li><a href="#hero">Home</a></li>
@@ -43,7 +55,8 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Hi, I'm <span>Mohamed Elhemaly</span></h1>
-                <p>Computer Science Student | Backend Developer | Network Enthusiast</p>
+                <p class="backend-text">Computer Science Student | Backend Developer | Network Enthusiast</p>
+                <p class="security-text">Cybersecurity Specialist | Ethical Hacker | Security Researcher</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn">View My Work</a>
                     <a href="#contact" class="btn">Contact Me</a>
@@ -58,13 +71,30 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>A motivated Computer Science student at Damanhour University with strong skills in C++, Python,
+                    <p class="backend-text">A motivated Computer Science student at Damanhour University with strong skills in C++, Python,
                         and PHP programming. Solid foundation in CCNA networking with practical experience in network
                         infrastructure. Fluent in English with basic knowledge of electronic marketing principles.</p>
+                    <p class="security-text">A dedicated cybersecurity enthusiast with expertise in ethical hacking, vulnerability assessment,
+                        and network defense. Certified in TryHackMe learning paths and Microsoft DPI security fundamentals.
+                        Passionate about identifying security weaknesses and implementing robust protection measures.</p>
                     <p>Expected graduation: 2026 | GPA: 3.16</p>
-                    <p>I'm passionate about backend development using PHP and MySQL, with additional expertise in C++
+                    <p class="backend-text">I'm passionate about backend development using PHP and MySQL, with additional expertise in C++
                         and Python programming. My CCNA knowledge complements my technical skills, making me a
                         well-rounded IT professional.</p>
+                    <p class="security-text">I'm focused on cybersecurity research and ethical hacking, with hands-on experience in penetration testing,
+                        security auditing, and incident response. My background in networking provides a solid foundation for 
+                        understanding complex security challenges and implementing effective solutions.</p>
+                    <!-- محتوى إضافي خاص بوضع Security -->
+                    <div class="security-about-content">
+                        <h3>Security Certifications & Achievements</h3>
+                        <ul>
+                            <li>Completed TryHackMe's "Complete Beginner" learning path</li>
+                            <li>Finished "Web Fundamentals" and "Jr. Penetration Tester" modules</li>
+                            <li>Microsoft DPI Security Fundamentals certified</li>
+                            <li>Participated in multiple CTF (Capture The Flag) competitions</li>
+                            <li>Developed custom security tools for vulnerability assessment</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="about-image">
                     <a href="https://ibb.co/yFCycpnd"><img
@@ -79,7 +109,9 @@
     <section id="skills">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
+            
+            <!-- Backend Skills -->
+            <div class="skills-container backend-skills">
                 <div class="skill-category">
                     <h3>Programming</h3>
                     <ul>
@@ -112,6 +144,40 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- Security Skills -->
+            <div class="skills-container security-skills">
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <ul>
+                        <li>TryHackMe Learning Paths</li>
+                        <li>Microsoft DPI Fundamentals</li>
+                        <li>Network Security Principles</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Security Best Practices</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-terminal"></i> Ethical Hacking</h3>
+                    <ul>
+                        <li>Penetration Testing Basics</li>
+                        <li>OWASP Top 10 Awareness</li>
+                        <li>Web Application Security</li>
+                        <li>Cryptography Fundamentals</li>
+                        <li>Security Tools Familiarity</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-lock"></i> Defense Strategies</h3>
+                    <ul>
+                        <li>Network Defense Techniques</li>
+                        <li>Incident Response Basics</li>
+                        <li>Security Monitoring</li>
+                        <li>Access Control Systems</li>
+                        <li>Security Auditing</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -119,9 +185,11 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
-            <div class="project-grid">
+            
+            <!-- Backend Projects -->
+            <div class="project-grid backend-projects">
                 <div class="project-card">
-                    <div class="project-img" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-img" style="background-image: url('https://via.placeholder.com/600x400/0a192f/64ffda?text=Web+Socket+PHP');">
                     </div>
                     <div class="project-info">
                         <h3>Web Socket using PHP</h3>
@@ -132,7 +200,7 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img" style="background-image: url('https://via.placeholder.com/600x400');">
+                    <div class="project-img" style="background-image: url('https://via.placeholder.com/600x400/0a192f/64ffda?text=Admin+Panel');">
                     </div>
                     <div class="project-info">
                         <h3>Admin Control Panel</h3>
@@ -143,6 +211,28 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Security Projects -->
+            <div class="project-grid security-projects">
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://via.placeholder.com/600x400/0c1a2d/ff5580?text=Network+Scanner');">
+                    </div>
+                    <div class="project-info">
+                        <h3>Network Security Scanner</h3>
+                        <p>A Python-based network scanning tool that identifies vulnerabilities, open ports, and potential security threats in network infrastructure.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('https://via.placeholder.com/600x400/0c1a2d/ff5580?text=Password+Audit');">
+                    </div>
+                    <div class="project-info">
+                        <h3>Password Strength Auditor</h3>
+                        <p>A security tool that analyzes password policies, tests password strength, and identifies weak credentials in systems.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -150,7 +240,9 @@
     <section id="experience">
         <div class="container">
             <h2 class="section-title">Experience</h2>
-            <div class="timeline">
+            
+            <!-- Backend Experience -->
+            <div class="timeline backend-experience">
                 <div class="timeline-item">
                     <h3>Intern - Electric Company Elbehairq</h3>
                     <p class="date">July 2024 - August 2024</p>
@@ -159,6 +251,30 @@
                         <li>Helped diagnose and resolve network issues</li>
                         <li>Prepared technical reports and documentation</li>
                         <li>Collaborated with IT team on network optimization</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Security Experience -->
+            <div class="timeline security-experience">
+                <div class="timeline-item">
+                    <h3>Cybersecurity Trainee - TryHackMe</h3>
+                    <p class="date">January 2024 - Present</p>
+                    <ul>
+                        <li>Completed multiple learning paths on ethical hacking and defensive security</li>
+                        <li>Developed practical skills in penetration testing and vulnerability assessment</li>
+                        <li>Solved complex security challenges and capture the flag (CTF) exercises</li>
+                        <li>Gained hands-on experience with security tools and methodologies</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Security Fundamentals - Microsoft DPI</h3>
+                    <p class="date">March 2024 - May 2024</p>
+                    <ul>
+                        <li>Studied cybersecurity fundamentals through Microsoft's DPI program</li>
+                        <li>Learned about modern security challenges and protection strategies</li>
+                        <li>Completed practical exercises in security monitoring and incident response</li>
+                        <li>Explored cloud security principles and best practices</li>
                     </ul>
                 </div>
             </div>
@@ -235,6 +351,20 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.remove('backend-mode');
+                body.classList.add('security-mode');
+            } else {
+                body.classList.remove('security-mode');
+                body.classList.add('backend-mode');
+            }
         });
     </script>
 </body>
