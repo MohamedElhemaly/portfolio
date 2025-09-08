@@ -75,7 +75,7 @@ section {
 }
 
 body.security-mode .section-title {
-    color: #070707;
+    color: rgb(146, 139, 139);
 }
 
 .section-title::after {
