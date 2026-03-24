@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohamed Elhemaly – Backend Developer & Cybersecurity Analyst. Computer Science student specializing in PHP Laravel, Incident Response, and SOC operations.">
-    <meta name="keywords" content="Mohamed Elhemaly, Backend Developer, Cybersecurity, Incident Response, SOC Analyst, PHP, Laravel, Egypt">
+    <meta name="description"
+        content="Mohamed Elhemaly – Backend Developer & Cybersecurity Analyst. Computer Science student specializing in PHP Laravel, Incident Response, and SOC operations.">
+    <meta name="keywords"
+        content="Mohamed Elhemaly, Backend Developer, Cybersecurity, Incident Response, SOC Analyst, PHP, Laravel, Egypt">
     <meta name="author" content="Mohamed Elhemaly">
     <title>Mohamed Elhemaly — Portfolio</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
@@ -23,8 +28,8 @@
             --bg2: #0d1117;
             --surface: #111820;
             --surface2: #161d26;
-            --border: rgba(255,255,255,0.07);
-            --border2: rgba(255,255,255,0.12);
+            --border: rgba(255, 255, 255, 0.07);
+            --border2: rgba(255, 255, 255, 0.12);
 
             --text: #e8edf3;
             --text-muted: #6b7a8d;
@@ -55,8 +60,18 @@
             --accent-glow2: rgba(124, 58, 237, 0.15);
         }
 
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: var(--font-body);
             background: var(--bg);
@@ -64,10 +79,25 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        a { text-decoration: none; color: inherit; }
-        img { max-width: 100%; }
-        ul { list-style: none; }
-        .container { width: min(90%, 1200px); margin: 0 auto; }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: min(90%, 1200px);
+            margin: 0 auto;
+        }
 
         /* ===========================
            NOISE TEXTURE
@@ -85,7 +115,14 @@
         /* ===========================
            BG ORBS
         =========================== */
-        .bg-orbs { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+        .bg-orbs {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
         .orb {
             position: absolute;
             border-radius: 50%;
@@ -93,13 +130,47 @@
             opacity: 0.1;
             animation: orbFloat 20s ease-in-out infinite;
         }
-        .orb-1 { width: 600px; height: 600px; background: var(--accent); top: -200px; left: -200px; }
-        .orb-2 { width: 400px; height: 400px; background: var(--accent2); top: 40%; right: -100px; animation-delay: -7s; }
-        .orb-3 { width: 500px; height: 500px; background: var(--accent); bottom: -100px; left: 30%; animation-delay: -14s; }
+
+        .orb-1 {
+            width: 600px;
+            height: 600px;
+            background: var(--accent);
+            top: -200px;
+            left: -200px;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: var(--accent2);
+            top: 40%;
+            right: -100px;
+            animation-delay: -7s;
+        }
+
+        .orb-3 {
+            width: 500px;
+            height: 500px;
+            background: var(--accent);
+            bottom: -100px;
+            left: 30%;
+            animation-delay: -14s;
+        }
+
         @keyframes orbFloat {
-            0%,100% { transform: translate(0,0) scale(1); }
-            33% { transform: translate(30px,-40px) scale(1.05); }
-            66% { transform: translate(-20px,20px) scale(0.95); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -40px) scale(1.05);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.95);
+            }
         }
 
         /* ===========================
@@ -107,17 +178,27 @@
         =========================== */
         header {
             position: fixed;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
             padding: 16px 0;
             transition: var(--transition);
         }
+
         header.scrolled {
-            background: rgba(8,12,16,0.88);
+            background: rgba(8, 12, 16, 0.88);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
         }
-        .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
         .logo {
             font-family: var(--font-display);
             font-size: 1.3rem;
@@ -126,10 +207,21 @@
             align-items: center;
             gap: 2px;
         }
-        .logo-bracket { color: var(--accent); font-family: var(--font-mono); }
-        .logo-dot { color: var(--accent); }
 
-        nav ul { display: flex; gap: 2px; }
+        .logo-bracket {
+            color: var(--accent);
+            font-family: var(--font-mono);
+        }
+
+        .logo-dot {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2px;
+        }
+
         nav ul li a {
             font-size: 0.83rem;
             font-weight: 500;
@@ -138,7 +230,12 @@
             border-radius: 100px;
             transition: var(--transition);
         }
-        nav ul li a:hover, nav ul li a.active { color: var(--text); background: var(--surface); }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: var(--text);
+            background: var(--surface);
+        }
 
         .mode-toggle {
             display: flex;
@@ -149,6 +246,7 @@
             padding: 3px 5px;
             flex-shrink: 0;
         }
+
         .mode-btn {
             font-size: 0.75rem;
             font-weight: 600;
@@ -162,10 +260,28 @@
             font-family: var(--font-body);
             white-space: nowrap;
         }
-        .mode-btn.active { background: var(--accent); color: #000; }
 
-        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
-        .hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+        .mode-btn.active {
+            background: var(--accent);
+            color: #000;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
 
         /* ===========================
            HERO
@@ -177,12 +293,14 @@
             position: relative;
             padding: 120px 0 80px;
         }
+
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr auto;
             gap: 80px;
             align-items: center;
         }
+
         .hero-tag {
             display: inline-flex;
             align-items: center;
@@ -191,22 +309,35 @@
             font-size: 0.77rem;
             color: var(--accent);
             background: var(--accent-glow);
-            border: 1px solid rgba(0,212,170,0.25);
+            border: 1px solid rgba(0, 212, 170, 0.25);
             padding: 5px 14px;
             border-radius: 100px;
             margin-bottom: 24px;
         }
+
         .hero-tag::before {
             content: '';
-            width: 6px; height: 6px;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
             background: var(--accent);
             animation: pulse 2s ease infinite;
         }
+
         @keyframes pulse {
-            0%,100% { opacity:1; transform:scale(1); }
-            50% { opacity:0.4; transform:scale(0.7); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(0.7);
+            }
         }
+
         .hero-name {
             font-family: var(--font-display);
             font-size: clamp(2.8rem, 6vw, 5.5rem);
@@ -215,13 +346,18 @@
             letter-spacing: -2px;
             margin-bottom: 10px;
         }
-        .hero-name .line { display: block; }
+
+        .hero-name .line {
+            display: block;
+        }
+
         .hero-name .highlight {
             background: linear-gradient(135deg, var(--accent), var(--accent2));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .hero-role {
             font-family: var(--font-mono);
             font-size: 0.95rem;
@@ -232,9 +368,21 @@
             gap: 12px;
             flex-wrap: wrap;
         }
-        .hero-role .sep { width: 1px; height: 16px; background: var(--border2); }
-        .hero-role .r-dev { color: var(--accent); }
-        .hero-role .r-sec { color: var(--sec-accent); }
+
+        .hero-role .sep {
+            width: 1px;
+            height: 16px;
+            background: var(--border2);
+        }
+
+        .hero-role .r-dev {
+            color: var(--accent);
+        }
+
+        .hero-role .r-sec {
+            color: var(--sec-accent);
+        }
+
         .hero-desc {
             font-size: 1.02rem;
             color: var(--text-muted);
@@ -242,8 +390,17 @@
             margin-bottom: 40px;
             line-height: 1.78;
         }
-        .hero-desc strong { color: var(--text); font-weight: 500; }
-        .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+
+        .hero-desc strong {
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
 
         .btn-primary {
             display: inline-flex;
@@ -258,7 +415,12 @@
             transition: var(--transition);
             font-family: var(--font-body);
         }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px var(--accent-glow); }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px var(--accent-glow);
+        }
+
         .btn-outline {
             display: inline-flex;
             align-items: center;
@@ -273,11 +435,26 @@
             transition: var(--transition);
             font-family: var(--font-body);
         }
-        .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-        /* Avatar */
-        .hero-visual { position: relative; }
-        .avatar-ring { width: 260px; height: 260px; border-radius: 50%; position: relative; }
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Avatar with PROPER dimensions - FIXED */
+        .hero-visual {
+            position: relative;
+        }
+
+        .avatar-ring {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+        }
+
         .avatar-ring::before {
             content: '';
             position: absolute;
@@ -286,39 +463,86 @@
             background: linear-gradient(135deg, var(--accent), var(--accent2), transparent, var(--accent));
             animation: spin 5s linear infinite;
         }
-        @keyframes spin { to { transform: rotate(360deg); } }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
         .avatar-ring::after {
             content: '';
             position: absolute;
             inset: -1px;
             border-radius: 50%;
             background: var(--bg);
+            z-index: 1;
         }
+
         .avatar-img {
             position: absolute;
             inset: 4px;
             border-radius: 50%;
-            background: var(--surface);
+            background: var(--surface2);
             z-index: 2;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .avatar-img img { width: 100%; height: 100%; object-fit: cover; }
-        .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+
+        .avatar-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            /* Slight adjustment to frame face better */
+            display: block;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 28px;
+            width: 100%;
+        }
+
         .stat-pill {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: var(--radius-sm);
-            padding: 12px 10px;
+            padding: 12px 8px;
             text-align: center;
         }
-        .stat-pill .num { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: var(--accent); display: block; }
-        .stat-pill .lbl { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; }
+
+        .stat-pill .num {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+
+        .stat-pill .lbl {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
 
         /* ===========================
            SECTION BASE
         =========================== */
-        section { padding: 100px 0; position: relative; }
-        .section-header { margin-bottom: 60px; }
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-header {
+            margin-bottom: 60px;
+        }
+
         .section-tag {
             font-family: var(--font-mono);
             font-size: 0.73rem;
@@ -330,13 +554,18 @@
             align-items: center;
             gap: 8px;
         }
-        .section-tag::before { content: '//'; }
+
+        .section-tag::before {
+            content: '//';
+        }
+
         .section-title {
             font-family: var(--font-display);
             font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 800;
             letter-spacing: -1px;
         }
+
         .section-title .grad {
             background: linear-gradient(135deg, var(--accent), var(--accent2));
             -webkit-background-clip: text;
@@ -347,12 +576,42 @@
         /* ===========================
            ABOUT
         =========================== */
-        #about { background: var(--bg2); }
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
-        .about-text p { color: var(--text-muted); margin-bottom: 20px; font-size: 1rem; line-height: 1.8; }
-        .about-text p strong { color: var(--text); font-weight: 500; }
-        .focus-list { margin-top: 32px; }
-        .focus-list h4 { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+        #about {
+            background: var(--bg2);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .about-text p strong {
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .focus-list {
+            margin-top: 32px;
+        }
+
+        .focus-list h4 {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+
         .focus-item {
             display: flex;
             align-items: center;
@@ -363,9 +622,23 @@
             font-size: 0.93rem;
             transition: var(--transition);
         }
-        .focus-item:hover { color: var(--text); padding-left: 4px; }
-        .focus-item i { color: var(--accent); width: 16px; }
-        .about-cards { display: flex; flex-direction: column; gap: 14px; }
+
+        .focus-item:hover {
+            color: var(--text);
+            padding-left: 4px;
+        }
+
+        .focus-item i {
+            color: var(--accent);
+            width: 16px;
+        }
+
+        .about-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
         .info-card {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -373,10 +646,22 @@
             padding: 22px;
             transition: var(--transition);
         }
-        .info-card:hover { border-color: var(--border2); transform: translateY(-2px); }
-        .info-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+
+        .info-card:hover {
+            border-color: var(--border2);
+            transform: translateY(-2px);
+        }
+
+        .info-card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
         .info-card-icon {
-            width: 34px; height: 34px;
+            width: 34px;
+            height: 34px;
             border-radius: 8px;
             background: var(--accent-glow);
             display: flex;
@@ -386,14 +671,26 @@
             font-size: 0.82rem;
             flex-shrink: 0;
         }
-        .info-card h4 { font-family: var(--font-display); font-size: 0.92rem; font-weight: 700; }
-        .info-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
 
-        /* ===========================
-           SKILLS
-        =========================== */
-        #skills { background: var(--bg); }
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px; }
+        .info-card h4 {
+            font-family: var(--font-display);
+            font-size: 0.92rem;
+            font-weight: 700;
+        }
+
+        .info-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ===== SKILLS, PROJECTS, ETC ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 20px;
+        }
+
         .skill-group {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -403,22 +700,48 @@
             position: relative;
             overflow: hidden;
         }
+
         .skill-group::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 2px;
             background: linear-gradient(90deg, var(--accent), var(--accent2));
             transform: scaleX(0);
             transition: var(--transition);
             transform-origin: left;
         }
-        .skill-group:hover::before { transform: scaleX(1); }
-        .skill-group:hover { border-color: var(--border2); transform: translateY(-3px); }
-        .skill-group-title { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-        .skill-group-title i { color: var(--accent); font-size: 0.88rem; }
-        .skill-group-title h3 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; }
-        .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+        .skill-group:hover::before {
+            transform: scaleX(1);
+        }
+
+        .skill-group-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .skill-group-title i {
+            color: var(--accent);
+            font-size: 0.88rem;
+        }
+
+        .skill-group-title h3 {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
         .skill-tag {
             font-family: var(--font-mono);
             font-size: 0.72rem;
@@ -429,24 +752,27 @@
             border-radius: 6px;
             transition: var(--transition);
         }
-        .skill-tag:hover { color: var(--accent); border-color: var(--accent); }
 
-        /* ===========================
-           PROJECTS
-        =========================== */
-        #projects { background: var(--bg2); }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 22px; }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 22px;
+        }
+
         .project-card {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: var(--radius);
             overflow: hidden;
             transition: var(--transition);
-            display: flex;
-            flex-direction: column;
         }
-        .project-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
-        .project-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
+
+        .project-card.featured {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
         .project-visual {
             background: var(--bg);
             display: flex;
@@ -455,34 +781,27 @@
             padding: 40px;
             position: relative;
             overflow: hidden;
-            min-height: 220px;
+            min-height: 240px;
         }
-        .project-visual::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, var(--accent-glow), var(--accent-glow2));
+
+        .project-icon-big {
+            font-size: 5rem;
+            color: var(--accent);
+            opacity: 0.3;
         }
-        .project-icon-big { font-size: 5rem; color: var(--accent); opacity: 0.25; position: relative; z-index: 1; }
-        .project-code-preview {
-            position: absolute;
-            bottom: 16px; left: 16px; right: 16px;
-            background: rgba(8,12,16,0.92);
-            border-radius: 8px;
-            padding: 14px;
-            font-family: var(--font-mono);
-            font-size: 0.68rem;
-            color: var(--text-muted);
-            border: 1px solid var(--border);
+
+        .project-header {
+            padding: 24px 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
         }
-        .code-line { margin: 2px 0; }
-        .c-kw { color: #7c3aed; }
-        .c-fn { color: var(--accent); }
-        .c-str { color: #f59e0b; }
-        .c-cm { color: var(--text-dim); }
-        .project-header { padding: 24px 24px 0; display: flex; justify-content: space-between; align-items: flex-start; }
-        .project-card.featured .project-header { padding: 32px 32px 0; }
-        .project-card.featured .project-body { padding: 20px 32px 32px; }
+
+        .project-body {
+            padding: 18px 24px 24px;
+            flex: 1;
+        }
+
         .project-type {
             font-family: var(--font-mono);
             font-size: 0.68rem;
@@ -493,49 +812,96 @@
             padding: 3px 10px;
             border-radius: 100px;
         }
-        .project-type.sec { color: var(--sec-accent); background: var(--sec-glow); }
-        .project-links a { color: var(--text-muted); font-size: 0.9rem; padding: 5px; transition: var(--transition); display: inline-block; }
-        .project-links a:hover { color: var(--accent); transform: translateY(-2px); }
-        .project-body { padding: 18px 24px 24px; flex: 1; display: flex; flex-direction: column; }
-        .project-body h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
-        .project-body p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 18px; flex: 1; }
-        .project-tech { display: flex; flex-wrap: wrap; gap: 6px; }
-        .tech-badge { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); background: var(--bg); border: 1px solid var(--border); padding: 3px 9px; border-radius: 4px; }
 
-        /* ===========================
-           EXPERIENCE
-        =========================== */
-        #experience { background: var(--bg); }
-        .timeline { position: relative; padding-left: 30px; }
+        .project-type.sec {
+            color: var(--sec-accent);
+            background: var(--sec-glow);
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+
+        .tech-badge {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            background: var(--bg);
+            border: 1px solid var(--border);
+            padding: 3px 9px;
+            border-radius: 4px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
         .timeline::before {
             content: '';
             position: absolute;
-            left: 0; top: 8px; bottom: 0;
+            left: 0;
+            top: 8px;
+            bottom: 0;
             width: 1px;
             background: linear-gradient(180deg, var(--accent), transparent);
         }
-        .timeline-item { position: relative; margin-bottom: 46px; }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 46px;
+        }
+
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -35px; top: 6px;
-            width: 10px; height: 10px;
+            left: -35px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             background: var(--accent);
             box-shadow: 0 0 0 3px var(--accent-glow);
         }
-        .tl-date { font-family: var(--font-mono); font-size: 0.73rem; color: var(--accent); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
-        .tl-org { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px; }
-        .tl-role { font-family: var(--font-display); font-size: 1.12rem; font-weight: 700; margin-bottom: 14px; }
-        .tl-list { display: flex; flex-direction: column; gap: 8px; }
-        .tl-list li { font-size: 0.9rem; color: var(--text-muted); display: flex; gap: 10px; align-items: flex-start; }
-        .tl-list li::before { content: '→'; color: var(--accent); flex-shrink: 0; margin-top: 1px; }
 
-        /* ===========================
-           CERTIFICATIONS
-        =========================== */
-        #certifications { background: var(--bg2); }
-        .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+        .tl-date {
+            font-family: var(--font-mono);
+            font-size: 0.73rem;
+            color: var(--accent);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tl-role {
+            font-family: var(--font-display);
+            font-size: 1.12rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .tl-list li {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+
+        .tl-list li::before {
+            content: '→';
+            color: var(--accent);
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 14px;
+        }
+
         .cert-card {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -544,34 +910,53 @@
             display: flex;
             gap: 14px;
             align-items: flex-start;
-            transition: var(--transition);
         }
-        .cert-card:hover { border-color: var(--border2); transform: translateY(-2px); }
-        .cert-icon { width: 38px; height: 38px; border-radius: 10px; background: var(--accent-glow); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; }
-        .cert-info h4 { font-size: 0.87rem; font-weight: 600; margin-bottom: 4px; line-height: 1.4; }
-        .cert-info p { font-size: 0.76rem; color: var(--text-muted); margin-bottom: 10px; line-height: 1.5; }
-        .cert-badge { font-size: 0.68rem; font-weight: 700; font-family: var(--font-mono); padding: 3px 10px; border-radius: 100px; text-transform: uppercase; letter-spacing: 0.5px; }
-        .cert-badge.done { background: rgba(16,185,129,0.15); color: #10b981; }
-        .cert-badge.progress { background: rgba(245,158,11,0.15); color: #f59e0b; }
+
+        .cert-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: var(--accent-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .cert-badge {
+            font-size: 0.68rem;
+            font-weight: 700;
+            font-family: var(--font-mono);
+            padding: 3px 10px;
+            border-radius: 100px;
+            display: inline-block;
+        }
+
+        .cert-badge.done {
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+        }
+
+        .cert-badge.progress {
+            background: rgba(245, 158, 11, 0.15);
+            color: #f59e0b;
+        }
+
         .goals-box {
             margin-top: 44px;
             background: var(--surface);
-            border: 1px solid var(--border);
             border-left: 3px solid var(--accent);
-            border-radius: 0 var(--radius) var(--radius) 0;
             padding: 26px 30px;
+            border-radius: 0 var(--radius) var(--radius) 0;
         }
-        .goals-box h3 { font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 10px; color: var(--accent); }
-        .goals-box p { color: var(--text-muted); font-size: 0.93rem; line-height: 1.7; font-style: italic; }
 
-        /* ===========================
-           CONTACT
-        =========================== */
-        #contact { background: var(--bg); }
-        .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
-        .contact-info h3 { font-family: var(--font-display); font-size: 1.7rem; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.5px; }
-        .contact-info > p { color: var(--text-muted); line-height: 1.75; margin-bottom: 34px; }
-        .contact-links { display: flex; flex-direction: column; gap: 10px; }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+        }
+
         .contact-link-item {
             display: flex;
             align-items: center;
@@ -582,13 +967,19 @@
             border-radius: var(--radius-sm);
             transition: var(--transition);
         }
-        .contact-link-item:hover { border-color: var(--accent); transform: translateX(4px); }
-        .contact-link-item i { color: var(--accent); width: 18px; font-size: 0.92rem; }
-        .contact-link-item span { font-size: 0.88rem; color: var(--text-muted); }
-        .contact-link-item:hover span { color: var(--text); }
-        .contact-form { display: flex; flex-direction: column; gap: 14px; }
-        .form-group { display: flex; flex-direction: column; gap: 6px; }
-        .form-group label { font-size: 0.73rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-family: var(--font-mono); }
+
+        .contact-link-item i {
+            color: var(--accent);
+            width: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
         .form-group input,
         .form-group textarea {
             background: var(--surface);
@@ -597,729 +988,503 @@
             padding: 12px 15px;
             color: var(--text);
             font-family: var(--font-body);
-            font-size: 0.93rem;
-            transition: var(--transition);
             outline: none;
-            width: 100%;
         }
+
         .form-group input:focus,
-        .form-group textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
-        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-group textarea:focus {
+            border-color: var(--accent);
+        }
+
         .btn-send {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
             background: var(--accent);
             color: #000;
             font-weight: 700;
-            font-size: 0.9rem;
-            padding: 13px 30px;
+            padding: 12px 28px;
             border-radius: 100px;
             border: none;
             cursor: pointer;
-            transition: var(--transition);
             font-family: var(--font-body);
-            align-self: flex-start;
+            transition: var(--transition);
         }
-        .btn-send:hover { transform: translateY(-2px); box-shadow: 0 8px 32px var(--accent-glow); }
 
-        /* ===========================
-           FOOTER
-        =========================== */
         footer {
             background: var(--bg2);
             border-top: 1px solid var(--border);
             padding: 28px 0;
         }
-        .footer-inner { display: flex; justify-content: space-between; align-items: center; }
-        .footer-copy { font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-muted); }
-        .footer-copy span { color: var(--accent); }
-        .footer-socials { display: flex; gap: 16px; }
-        .footer-socials a { color: var(--text-muted); font-size: 0.95rem; transition: var(--transition); }
-        .footer-socials a:hover { color: var(--accent); transform: translateY(-2px); }
 
-        /* ===========================
-           SCROLL REVEAL
-        =========================== */
-        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
-
-        /* ===========================
-           MODE VISIBILITY
-        =========================== */
-        .dev-only { display: block; }
-        .sec-only { display: none; }
-        body.sec-mode .dev-only { display: none; }
-        body.sec-mode .sec-only { display: block; }
-
-        /* ===========================
-           RESPONSIVE
-        =========================== */
-        @media (max-width: 900px) {
-            .hero-grid { grid-template-columns: 1fr; text-align: center; }
-            .hero-visual { display: flex; flex-direction: column; align-items: center; order: -1; }
-            .hero-role { justify-content: center; }
-            .hero-ctas { justify-content: center; }
-            .about-grid { grid-template-columns: 1fr; }
-            .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
-            .project-card.featured { grid-template-columns: 1fr; }
-            nav ul { display: none; }
-            nav ul.open {
-                display: flex; flex-direction: column;
-                position: absolute; top: 100%; left: 0; right: 0;
-                background: rgba(8,12,16,0.97); backdrop-filter: blur(20px);
-                border-bottom: 1px solid var(--border);
-                padding: 20px; gap: 4px;
-            }
-            .hamburger { display: flex; }
-            .footer-inner { flex-direction: column; gap: 14px; text-align: center; }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
         }
-        @media (max-width: 600px) {
-            .skills-grid, .projects-grid, .cert-grid { grid-template-columns: 1fr; }
-            .avatar-ring { width: 200px; height: 200px; }
-            .mode-btn { padding: 5px 10px; font-size: 0.7rem; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .dev-only {
+            display: block;
+        }
+
+        .sec-only {
+            display: none;
+        }
+
+        body.sec-mode .dev-only {
+            display: none;
+        }
+
+        body.sec-mode .sec-only {
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero-visual {
+                order: -1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card.featured {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            nav ul.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(8, 12, 16, 0.97);
+                backdrop-filter: blur(20px);
+                padding: 20px;
+                gap: 4px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .avatar-ring {
+                width: 200px;
+                height: 200px;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .avatar-ring {
+                width: 170px;
+                height: 170px;
+            }
+
+            .stat-pill .num {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<!-- Background Orbs -->
-<div class="bg-orbs">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-</div>
-
-<!-- ===== HEADER ===== -->
-<header id="header">
-    <div class="container">
-        <div class="nav-inner">
-            <a href="#hero" class="logo">
-                <span class="logo-bracket">{</span>
-                <span>ME</span>
-                <span class="logo-dot">.</span>
-                <span class="logo-bracket">}</span>
-            </a>
-
-            <nav id="main-nav">
-                <ul id="nav-links">
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#certifications">Certs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="mode-toggle">
-                <button class="mode-btn active" id="btn-dev">⚡ Backend</button>
-                <button class="mode-btn" id="btn-sec">🛡 Security</button>
-            </div>
-
-            <div class="hamburger" id="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
-</header>
 
-<!-- ===== HERO ===== -->
-<section id="hero">
-    <div class="container">
-        <div class="hero-grid">
-            <div class="hero-left">
-                <div class="hero-tag dev-only">Backend Developer — Damanhour, Egypt</div>
-                <div class="hero-tag sec-only">Cybersecurity Analyst — Incident Response</div>
-
-                <h1 class="hero-name">
-                    <span class="line">Mohamed</span>
-                    <span class="line highlight">Elhemaly</span>
-                </h1>
-
-                <div class="hero-role">
-                    <span class="r-dev dev-only" id="typing-role">PHP &amp; Laravel Developer</span>
-                    <span class="r-sec sec-only">SOC &amp; Incident Response Analyst</span>
-                    <span class="sep"></span>
-                    <span>CS Student @ Damanhour Uni</span>
-                </div>
-
-                <p class="hero-desc dev-only">
-                    I build robust, scalable backend systems using <strong>PHP Laravel</strong> and <strong>MySQL</strong>. Passionate about clean architecture, real-time communication, and bridging software with network infrastructure.
-                </p>
-                <p class="hero-desc sec-only">
-                    Aspiring <strong>SOC Tier-1 Analyst</strong> & <strong>Incident Response Engineer</strong>. Training through DEPI, TryHackMe SOC Path, and LetsDefend with hands-on labs in threat detection and SIEM tools.
-                </p>
-
-                <div class="hero-ctas">
-                    <a href="#projects" class="btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
-                    <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/MohamedElhemaly" target="_blank" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-                <div class="avatar-ring">
-                    <div class="avatar-img">
-                        <img src="https://i.ibb.co/gLWjVYqt/DSC-0524.jpg" alt="Mohamed Elhemaly">
-                    </div>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-pill"><span class="num">2+</span><span class="lbl">Projects</span></div>
-                    <div class="stat-pill"><span class="num">3rd</span><span class="lbl">Year CS</span></div>
-                    <div class="stat-pill dev-only"><span class="num">PHP</span><span class="lbl">Laravel</span></div>
-                    <div class="stat-pill sec-only"><span class="num">SOC</span><span class="lbl">Blue Team</span></div>
-                    <div class="stat-pill"><span class="num">CCNA</span><span class="lbl">Networking</span></div>
-                </div>
+    <header id="header">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#hero" class="logo"><span class="logo-bracket">{</span><span>ME</span><span
+                        class="logo-dot">.</span><span class="logo-bracket">}</span></a>
+                <nav id="main-nav">
+                    <ul id="nav-links">
+                        <li><a href="#hero" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#certifications">Certs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mode-toggle"><button class="mode-btn active" id="btn-dev">⚡ Backend</button><button
+                        class="mode-btn" id="btn-sec">🛡 Security</button></div>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<!-- ===== ABOUT ===== -->
-<section id="about">
-    <div class="container">
-        <div class="section-header reveal">
-            <p class="section-tag">Who I Am</p>
-            <h2 class="section-title">About <span class="grad">Me</span></h2>
-        </div>
-        <div class="about-grid">
-            <div class="about-text reveal">
-                <p class="dev-only">I'm a <strong>Computer Science student</strong> at Damanhour University (Class of 2026) with a solid foundation in backend development and network engineering. My main stack is <strong>PHP Laravel</strong> with MySQL, and I complement that with C++, Python basics, and CCNA-level networking knowledge.</p>
-                <p class="sec-only">I'm an <strong>aspiring Incident Response & SOC Analyst</strong> currently enrolled in the Digital Egypt Pioneers Initiative (DEPI) — Incident Response track. I combine my backend programming background with cybersecurity to approach threats from both a developer's and defender's perspective.</p>
-                <p class="dev-only">I'm focused on building real-world projects that demonstrate clean code, good architecture, and practical problem-solving. I'm also exploring UI/UX design and electronic marketing to round out my technical profile.</p>
-                <p class="sec-only">Currently training on <strong>TryHackMe SOC Level 1</strong> and <strong>LetsDefend</strong>, with hands-on experience in SIEM tools, network traffic analysis with Wireshark, and structured incident handling workflows.</p>
-                <div class="focus-list">
-                    <h4>Focus Areas</h4>
-                    <div class="focus-item dev-only"><i class="fas fa-server"></i> PHP Laravel — Backend Systems</div>
-                    <div class="focus-item dev-only"><i class="fas fa-database"></i> MySQL — Database Design</div>
-                    <div class="focus-item dev-only"><i class="fas fa-network-wired"></i> CCNA — Network Engineering</div>
-                    <div class="focus-item dev-only"><i class="fas fa-code"></i> C++ & Python — Core Programming</div>
-                    <div class="focus-item sec-only"><i class="fas fa-shield-alt"></i> SOC Operations & Tier-1 Analysis</div>
-                    <div class="focus-item sec-only"><i class="fas fa-bug"></i> Threat Detection & Log Analysis</div>
-                    <div class="focus-item sec-only"><i class="fas fa-search"></i> Digital Forensics Fundamentals</div>
-                    <div class="focus-item sec-only"><i class="fas fa-terminal"></i> SIEM Tools (Splunk, ELK Stack)</div>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-tag dev-only">Backend Developer — Damanhour, Egypt</div>
+                    <div class="hero-tag sec-only">Cybersecurity Analyst — Incident Response</div>
+                    <h1 class="hero-name"><span class="line">Mohamed</span><span class="line highlight">Elhemaly</span>
+                    </h1>
+                    <div class="hero-role"><span class="r-dev dev-only" id="typing-role">PHP &amp; Laravel
+                            Developer</span><span class="r-sec sec-only">SOC &amp; Incident Response Analyst</span><span
+                            class="sep"></span><span>CS Student @ Damanhour Uni</span></div>
+                    <p class="hero-desc dev-only">I build robust, scalable backend systems using <strong>PHP
+                            Laravel</strong> and <strong>MySQL</strong>. Passionate about clean architecture, real-time
+                        communication, and bridging software with network infrastructure.</p>
+                    <p class="hero-desc sec-only">Aspiring <strong>SOC Tier-1 Analyst</strong> & <strong>Incident
+                            Response Engineer</strong>. Training through DEPI, TryHackMe SOC Path, and LetsDefend with
+                        hands-on labs in threat detection and SIEM tools.</p>
+                    <div class="hero-ctas"><a href="#projects" class="btn-primary"><i class="fas fa-folder-open"></i>
+                            View Projects</a><a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
+                            target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a><a
+                            href="https://github.com/MohamedElhemaly" target="_blank" class="btn-outline"><i
+                                class="fab fa-github"></i> GitHub</a></div>
                 </div>
-            </div>
-            <div class="about-cards reveal reveal-delay-1">
-                <div class="info-card">
-                    <div class="info-card-header">
-                        <div class="info-card-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <h4>Education</h4>
+                <div class="hero-visual">
+                    <div class="avatar-ring">
+                        <div class="avatar-img"><img src="https://i.ibb.co/gLWjVYqt/DSC-0524.jpg"
+                                alt="Mohamed Elhemaly"></div>
                     </div>
-                    <p>B.Sc. Computer Science (Math-CS track) — Damanhour University, Egypt. Expected graduation: 2026. GPA: 3.16.</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-card-header">
-                        <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <h4>Location</h4>
-                    </div>
-                    <p>Based in Damanhour, Beheira, Egypt. Open to remote work and relocation for the right opportunity.</p>
-                </div>
-                <div class="info-card dev-only">
-                    <div class="info-card-header">
-                        <div class="info-card-icon"><i class="fas fa-bullseye"></i></div>
-                        <h4>Career Goal</h4>
-                    </div>
-                    <p>Targeting a backend developer role or a teaching assistant (معيد) position, then growing into senior engineering and software research.</p>
-                </div>
-                <div class="info-card sec-only">
-                    <div class="info-card-header">
-                        <div class="info-card-icon"><i class="fas fa-bullseye"></i></div>
-                        <h4>Career Goal</h4>
-                    </div>
-                    <p>Targeting an <strong>Entry-Level Incident Response Analyst</strong> or SOC Tier-1 role, then advancing toward Incident Response Team Lead.</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-card-header">
-                        <div class="info-card-icon"><i class="fas fa-globe"></i></div>
-                        <h4>Languages</h4>
-                    </div>
-                    <p>Arabic (Native) · English (Fluent — reading, writing & professional communication)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== SKILLS ===== -->
-<section id="skills">
-    <div class="container">
-        <div class="section-header reveal">
-            <p class="section-tag">What I Know</p>
-            <h2 class="section-title">Technical <span class="grad">Skills</span></h2>
-        </div>
-
-        <!-- Backend Skills -->
-        <div class="dev-only">
-            <div class="skills-grid">
-                <div class="skill-group reveal">
-                    <div class="skill-group-title"><i class="fas fa-code"></i><h3>Backend Development</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PHP</span><span class="skill-tag">Laravel</span><span class="skill-tag">MySQL</span><span class="skill-tag">REST API</span><span class="skill-tag">WebSockets</span><span class="skill-tag">OOP</span><span class="skill-tag">MVC</span>
-                    </div>
-                </div>
-                <div class="skill-group reveal reveal-delay-1">
-                    <div class="skill-group-title"><i class="fas fa-terminal"></i><h3>Programming Languages</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C++ (Advanced)</span><span class="skill-tag">Python</span><span class="skill-tag">PHP</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">Bash</span>
-                    </div>
-                </div>
-                <div class="skill-group reveal reveal-delay-2">
-                    <div class="skill-group-title"><i class="fas fa-network-wired"></i><h3>Networking (CCNA)</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">TCP/IP</span><span class="skill-tag">Routing & Switching</span><span class="skill-tag">VLANs</span><span class="skill-tag">Subnetting</span><span class="skill-tag">Troubleshooting</span>
-                    </div>
-                </div>
-                <div class="skill-group reveal">
-                    <div class="skill-group-title"><i class="fas fa-palette"></i><h3>Other Skills</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">UI/UX Basics</span><span class="skill-tag">Digital Marketing</span><span class="skill-tag">Technical Docs</span><span class="skill-tag">Git & GitHub</span><span class="skill-tag">Linux</span>
+                    <div class="hero-stats">
+                        <div class="stat-pill"><span class="num">2+</span><span class="lbl">Projects</span></div>
+                        <div class="stat-pill"><span class="num">3rd</span><span class="lbl">Year CS</span></div>
+                        <div class="stat-pill"><span class="num">CCNA</span><span class="lbl">Networking</span></div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Security Skills -->
-        <div class="sec-only">
-            <div class="skills-grid">
-                <div class="skill-group reveal">
-                    <div class="skill-group-title"><i class="fas fa-shield-alt"></i><h3>SOC & Incident Response</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Incident Detection</span><span class="skill-tag">Alert Triage</span><span class="skill-tag">Log Analysis</span><span class="skill-tag">SIEM (Splunk/ELK)</span><span class="skill-tag">Containment</span><span class="skill-tag">IR Reports</span>
-                    </div>
-                </div>
-                <div class="skill-group reveal reveal-delay-1">
-                    <div class="skill-group-title"><i class="fas fa-search"></i><h3>Security Tools</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Wireshark</span><span class="skill-tag">Nmap</span><span class="skill-tag">Nessus</span><span class="skill-tag">OpenVAS</span><span class="skill-tag">Splunk</span><span class="skill-tag">TryHackMe</span><span class="skill-tag">LetsDefend</span>
-                    </div>
-                </div>
-                <div class="skill-group reveal reveal-delay-2">
-                    <div class="skill-group-title"><i class="fas fa-lock"></i><h3>Defense & Frameworks</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">NIST Framework</span><span class="skill-tag">ISO 27001</span><span class="skill-tag">Threat Intelligence</span><span class="skill-tag">IDS/IPS</span><span class="skill-tag">Digital Forensics</span>
-                    </div>
-                </div>
-                <div class="skill-group reveal">
-                    <div class="skill-group-title"><i class="fas fa-network-wired"></i><h3>Network Security</h3></div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">TCP/IP Analysis</span><span class="skill-tag">Packet Capture</span><span class="skill-tag">Network Monitoring</span><span class="skill-tag">Firewall Concepts</span><span class="skill-tag">CCNA</span>
-                    </div>
-                </div>
+    <section id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Who I Am</p>
+                <h2 class="section-title">About <span class="grad">Me</span></h2>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects">
-    <div class="container">
-        <div class="section-header reveal">
-            <p class="section-tag">What I've Built</p>
-            <h2 class="section-title">My <span class="grad">Projects</span></h2>
-        </div>
-
-        <!-- Backend Projects -->
-        <div class="dev-only">
-            <div class="projects-grid">
-                <div class="project-card featured reveal">
-                    <div class="project-visual">
-                        <i class="fas fa-plug project-icon-big"></i>
-                        <div class="project-code-preview">
-                            <div class="code-line"><span class="c-cm">// Real-time WebSocket Server</span></div>
-                            <div class="code-line"><span class="c-kw">class</span> <span class="c-fn">WebSocketServer</span> {</div>
-                            <div class="code-line">&nbsp;&nbsp;<span class="c-fn">onMessage</span>(<span class="c-str">$conn</span>, <span class="c-str">$msg</span>) {</div>
-                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">foreach</span>(<span class="c-str">$this</span>->clients <span class="c-kw">as</span> <span class="c-str">$c</span>)</div>
-                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">$c</span>-><span class="c-fn">send</span>(<span class="c-str">$msg</span>);</div>
-                            <div class="code-line">&nbsp;&nbsp;}</div>
-                            <div class="code-line">}</div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="dev-only">I'm a <strong>Computer Science student</strong> at Damanhour University (Class
+                        of 2026) with a solid foundation in backend development and network engineering. My main stack
+                        is <strong>PHP Laravel</strong> with MySQL, and I complement that with C++, Python basics, and
+                        CCNA-level networking knowledge.</p>
+                    <p class="sec-only">I'm an <strong>aspiring Incident Response & SOC Analyst</strong> currently
+                        enrolled in the Digital Egypt Pioneers Initiative (DEPI) — Incident Response track. I combine my
+                        backend programming background with cybersecurity to approach threats from both a developer's
+                        and defender's perspective.</p>
+                    <div class="focus-list">
+                        <h4>Focus Areas</h4>
+                        <div class="focus-item dev-only"><i class="fas fa-server"></i> PHP Laravel — Backend Systems
+                        </div>
+                        <div class="focus-item dev-only"><i class="fas fa-database"></i> MySQL — Database Design</div>
+                        <div class="focus-item sec-only"><i class="fas fa-shield-alt"></i> SOC Operations & Tier-1
+                            Analysis</div>
+                        <div class="focus-item sec-only"><i class="fas fa-bug"></i> Threat Detection & Log Analysis
                         </div>
                     </div>
-                    <div>
-                        <div class="project-header">
-                            <span class="project-type">⭐ Featured</span>
-                            <div class="project-links">
-                                <a href="https://github.com/MohamedElhemaly/Web-Socket" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="info-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h4>Education</h4>
+                        </div>
+                        <p>B.Sc. Computer Science — Damanhour University, 2026. GPA: 3.16.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <h4>Location</h4>
+                        </div>
+                        <p>Based in Damanhour, Beheira, Egypt. Open to remote work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">What I Know</p>
+                <h2 class="section-title">Technical <span class="grad">Skills</span></h2>
+            </div>
+            <div class="dev-only">
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <div class="skill-group-title"><i class="fas fa-code"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skill-tags"><span class="skill-tag">PHP</span><span
+                                class="skill-tag">Laravel</span><span class="skill-tag">MySQL</span><span
+                                class="skill-tag">REST API</span><span class="skill-tag">WebSockets</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title"><i class="fas fa-terminal"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-tags"><span class="skill-tag">C++</span><span
+                                class="skill-tag">Python</span><span class="skill-tag">PHP</span><span
+                                class="skill-tag">Bash</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-only">
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <div class="skill-group-title"><i class="fas fa-shield-alt"></i>
+                            <h3>SOC & IR</h3>
+                        </div>
+                        <div class="skill-tags"><span class="skill-tag">Incident Detection</span><span
+                                class="skill-tag">Alert Triage</span><span class="skill-tag">SIEM (Splunk)</span><span
+                                class="skill-tag">Log Analysis</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-title"><i class="fas fa-search"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-tags"><span class="skill-tag">Wireshark</span><span
+                                class="skill-tag">Nmap</span><span class="skill-tag">Nessus</span><span
+                                class="skill-tag">TryHackMe</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">What I've Built</p>
+                <h2 class="section-title">My <span class="grad">Projects</span></h2>
+            </div>
+            <div class="dev-only">
+                <div class="projects-grid">
+                    <div class="project-card featured">
+                        <div class="project-visual"><i class="fas fa-plug project-icon-big"></i></div>
+                        <div>
+                            <div class="project-header"><span class="project-type">⭐ Featured</span>
+                                <div class="project-links"><a href="https://github.com/MohamedElhemaly/Web-Socket"
+                                        target="_blank"><i class="fab fa-github"></i></a></div>
+                            </div>
+                            <div class="project-body">
+                                <h3>Real-Time WebSocket Server (PHP)</h3>
+                                <p>Bi-directional real-time communication system built in pure PHP using Ratchet.
+                                    Broadcast server for instant messaging & live dashboards.</p>
+                                <div class="project-tech"><span class="tech-badge">PHP</span><span
+                                        class="tech-badge">Ratchet</span><span class="tech-badge">WebSocket</span></div>
                             </div>
                         </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header"><span class="project-type">Web App</span></div>
                         <div class="project-body">
-                            <h3>Real-Time WebSocket Server (PHP)</h3>
-                            <p>Full bi-directional real-time communication system built in pure PHP using the Ratchet WebSocket library. Implements a broadcast server where multiple clients connect and exchange messages instantly — foundation for chat apps, live notifications, and real-time dashboards.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span><span class="tech-badge">Ratchet</span><span class="tech-badge">WebSocket</span><span class="tech-badge">Composer</span><span class="tech-badge">Event Loop</span>
-                            </div>
+                            <h3>Admin Control Panel</h3>
+                            <p>Full-featured admin dashboard with user management, role-based access & analytics.</p>
+                            <div class="project-tech"><span class="tech-badge">PHP</span><span
+                                    class="tech-badge">MySQL</span><span class="tech-badge">Auth</span></div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card reveal reveal-delay-1">
-                    <div class="project-header">
-                        <span class="project-type">Web App</span>
-                        <div class="project-links">
-                            <a href="https://github.com/MohamedElhemaly/admin-control-panel" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="sec-only">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header"><span class="project-type sec">SOC Lab</span></div>
+                        <div class="project-body">
+                            <h3>SOC Investigation Lab</h3>
+                            <p>Detected suspicious activity from simulated SIEM logs. Full incident timeline and NIST IR
+                                response.</p>
+                            <div class="project-tech"><span class="tech-badge">SIEM</span><span class="tech-badge">Log
+                                    Analysis</span></div>
                         </div>
                     </div>
-                    <div class="project-body">
-                        <h3>Admin Control Panel</h3>
-                        <p>Full-featured admin dashboard built with PHP and MySQL. Includes user management, data visualization, system controls, and role-based access — a complete backend management system.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span class="tech-badge">HTML/CSS</span><span class="tech-badge">CRUD</span><span class="tech-badge">Auth</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal reveal-delay-2">
-                    <div class="project-header">
-                        <span class="project-type">Portfolio</span>
-                        <div class="project-links">
-                            <a href="https://mohamedelhemaly.github.io/portfolio/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>Dual-mode interactive portfolio showcasing both backend development and cybersecurity skills. Features smooth mode toggle, responsive design, and GitHub Pages deployment via CI/CD pipeline.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">GitHub Pages</span><span class="tech-badge">CI/CD</span>
+                    <div class="project-card">
+                        <div class="project-header"><span class="project-type sec">Vulnerability Assessment</span></div>
+                        <div class="project-body">
+                            <h3>Web Vulnerability Scan</h3>
+                            <p>Performed scans using Nmap/Nessus, analyzed CVSS scores, documented remediation steps.
+                            </p>
+                            <div class="project-tech"><span class="tech-badge">Nmap</span><span
+                                    class="tech-badge">Nessus</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Security Projects -->
-        <div class="sec-only">
-            <div class="projects-grid">
-                <div class="project-card reveal">
-                    <div class="project-header">
-                        <span class="project-type sec">SOC Lab</span>
-                    </div>
-                    <div class="project-body">
-                        <h3>SOC Investigation Lab</h3>
-                        <p>Detected and analyzed suspicious activity from simulated SIEM logs. Documented findings with a full incident timeline, affected assets, and structured response plan following NIST IR guidelines.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">SIEM</span><span class="tech-badge">Log Analysis</span><span class="tech-badge">NIST IR</span><span class="tech-badge">Alert Triage</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card reveal reveal-delay-1">
-                    <div class="project-header">
-                        <span class="project-type sec">Pentesting</span>
-                    </div>
-                    <div class="project-body">
-                        <h3>Web Vulnerability Assessment</h3>
-                        <p>Performed comprehensive vulnerability scans using Nmap and Nessus on a controlled lab environment. Analyzed results by CVSS score and documented remediation steps for all identified issues.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Nmap</span><span class="tech-badge">Nessus</span><span class="tech-badge">CVSS</span><span class="tech-badge">Reporting</span>
-                        </div>
+    <section id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Work & Training</p>
+                <h2 class="section-title">My <span class="grad">Experience</span></h2>
+            </div>
+            <div class="dev-only">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <p class="tl-date">July 2024 — Aug 2024</p>
+                        <h3 class="tl-role">Network Infrastructure Intern — Electricity Company</h3>
+                        <ul class="tl-list">
+                            <li>Configured LAN infrastructure & resolved connectivity issues</li>
+                            <li>Technical documentation & network optimization</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="project-card reveal reveal-delay-2">
-                    <div class="project-header">
-                        <span class="project-type sec">Forensics</span>
+            </div>
+            <div class="sec-only">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <p class="tl-date">July 2025 — Dec 2025</p>
+                        <h3 class="tl-role">Incident Response Track — DEPI / AMIT</h3>
+                        <ul class="tl-list">
+                            <li>SOC operations, digital forensics, SIEM threat detection</li>
+                            <li>Real-world incident handling simulations</li>
+                        </ul>
                     </div>
-                    <div class="project-body">
-                        <h3>Incident Response Report (DEPI Lab)</h3>
-                        <p>Created a detailed IR report based on a DEPI lab scenario. Covered detection methodology, containment and eradication steps, and post-incident review — formatted as a real-world SOC deliverable.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Incident Response</span><span class="tech-badge">Forensics</span><span class="tech-badge">DEPI</span><span class="tech-badge">Documentation</span>
-                        </div>
+                    <div class="timeline-item">
+                        <p class="tl-date">2024 — Present</p>
+                        <h3 class="tl-role">TryHackMe SOC Level 1 & LetsDefend</h3>
+                        <ul class="tl-list">
+                            <li>Network traffic analysis, phishing investigation, blue team labs</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience">
-    <div class="container">
-        <div class="section-header reveal">
-            <p class="section-tag">Work & Training</p>
-            <h2 class="section-title">My <span class="grad">Experience</span></h2>
-        </div>
-
-        <!-- Backend Experience -->
-        <div class="dev-only">
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <p class="tl-date">July 2024 — August 2024</p>
-                    <p class="tl-org">Electricity Company — Beheira Governorate</p>
-                    <h3 class="tl-role">Network Infrastructure Intern</h3>
-                    <ul class="tl-list">
-                        <li>Assisted in setup, configuration, and maintenance of the company's LAN network infrastructure</li>
-                        <li>Diagnosed and resolved network connectivity issues across multiple departments</li>
-                        <li>Prepared technical reports and network topology documentation</li>
-                        <li>Collaborated with the IT team on network optimization and hardware upgrades</li>
-                    </ul>
+    <section id="certifications">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Credentials</p>
+                <h2 class="section-title">Certs & <span class="grad">Training</span></h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-info">
+                        <h4>Cisco — Intro to Cybersecurity</h4><span class="cert-badge done">✓ Completed</span>
+                    </div>
                 </div>
-                <div class="timeline-item reveal reveal-delay-1">
-                    <p class="tl-date">2023 — Present</p>
-                    <p class="tl-org">Self-Directed Learning</p>
-                    <h3 class="tl-role">Backend Developer — Learning & Building Projects</h3>
-                    <ul class="tl-list">
-                        <li>Building real-world projects using PHP Laravel and MySQL to solidify backend skills</li>
-                        <li>Implemented a WebSocket-based real-time communication system from scratch</li>
-                        <li>Developed a full admin control panel with authentication and CRUD operations</li>
-                        <li>Currently exploring Laravel APIs and advanced Eloquent ORM techniques</li>
-                    </ul>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cert-info">
+                        <h4>Fortinet NSE 1–3</h4><span class="cert-badge done">✓ Completed</span>
+                    </div>
                 </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-crosshairs"></i></div>
+                    <div class="cert-info">
+                        <h4>TryHackMe SOC Level 1</h4><span class="cert-badge progress">⏳ In Progress</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-flag"></i></div>
+                    <div class="cert-info">
+                        <h4>DEPI — Incident Response</h4><span class="cert-badge progress">⏳ In Progress</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goals-box reveal">
+                <h3>🎯 Next Goals</h3>
+                <p>Complete SOC Level 1 and DEPI certification, then target CompTIA Security+ and join a SOC as Tier-1
+                    Analyst.</p>
             </div>
         </div>
+    </section>
 
-        <!-- Security Experience -->
-        <div class="sec-only">
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <p class="tl-date">July 2025 — December 2025</p>
-                    <p class="tl-org">Digital Egypt Pioneers Initiative (DEPI) — AMIT</p>
-                    <h3 class="tl-role">Incident Response Track — Participant</h3>
-                    <ul class="tl-list">
-                        <li>Specialized training in SOC operations, digital forensics, and structured incident handling</li>
-                        <li>Hands-on labs using SIEM tools for threat detection and log correlation</li>
-                        <li>Exposure to real-world SOC Tier-1 analyst workflows and escalation procedures</li>
-                        <li>Collaborative cybersecurity projects simulating real incident response environments</li>
-                    </ul>
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Let's Talk</p>
+                <h2 class="section-title">Get In <span class="grad">Touch</span></h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <h3>Open to Opportunities</h3>
+                    <p>Feel free to reach out for backend or security roles.</p>
+                    <div class="contact-links"><a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
+                            target="_blank" class="contact-link-item"><i
+                                class="fab fa-linkedin"></i><span>linkedin.com/in/mohamed-elhemaly</span></a><a
+                            href="https://github.com/MohamedElhemaly" target="_blank" class="contact-link-item"><i
+                                class="fab fa-github"></i><span>github.com/MohamedElhemaly</span></a></div>
                 </div>
-                <div class="timeline-item reveal reveal-delay-1">
-                    <p class="tl-date">January 2024 — Present</p>
-                    <p class="tl-org">TryHackMe & LetsDefend</p>
-                    <h3 class="tl-role">Cybersecurity Trainee — SOC Path</h3>
-                    <ul class="tl-list">
-                        <li>Actively progressing through the TryHackMe SOC Level 1 learning path</li>
-                        <li>Completed labs on network traffic analysis, SIEM fundamentals, and phishing investigation</li>
-                        <li>Practiced blue team operations on LetsDefend's simulated SOC environment</li>
-                        <li>Solved security challenges reinforcing hands-on incident detection skills</li>
-                    </ul>
-                </div>
-                <div class="timeline-item reveal reveal-delay-2">
-                    <p class="tl-date">July 2024 — August 2024</p>
-                    <p class="tl-org">Electricity Company — Beheira Governorate</p>
-                    <h3 class="tl-role">Network Infrastructure Intern</h3>
-                    <ul class="tl-list">
-                        <li>Hands-on experience with real enterprise network infrastructure</li>
-                        <li>Developed practical understanding of network architecture — vital for identifying attack surfaces</li>
-                    </ul>
-                </div>
+                <form class="contact-form reveal reveal-delay-1" onsubmit="handleSubmit(event)">
+                    <div class="form-group"><label>Name</label><input type="text" required></div>
+                    <div class="form-group"><label>Email</label><input type="email" required></div>
+                    <div class="form-group"><label>Message</label><textarea rows="4" required></textarea></div><button
+                        type="submit" class="btn-send">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== CERTIFICATIONS ===== -->
-<section id="certifications">
-    <div class="container">
-        <div class="section-header reveal">
-            <p class="section-tag">Credentials</p>
-            <h2 class="section-title">Certs & <span class="grad">Training</span></h2>
-        </div>
-
-        <div class="cert-grid">
-            <div class="cert-card reveal">
-                <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                <div class="cert-info">
-                    <h4>Cisco — Introduction to Cybersecurity</h4>
-                    <p>Fundamentals of cybersecurity concepts, threats, and best practices</p>
-                    <span class="cert-badge done">✓ Completed</span>
-                </div>
-            </div>
-            <div class="cert-card reveal reveal-delay-1">
-                <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                <div class="cert-info">
-                    <h4>Fortinet NSE 1 – 3</h4>
-                    <p>Network Security Associate program covering threat landscape and FortiGate fundamentals</p>
-                    <span class="cert-badge done">✓ Completed</span>
-                </div>
-            </div>
-            <div class="cert-card reveal reveal-delay-2">
-                <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
-                <div class="cert-info">
-                    <h4>Sprints × Microsoft — Cybersecurity Fundamentals</h4>
-                    <p>Comprehensive cybersecurity fundamentals program in partnership with Microsoft</p>
-                    <span class="cert-badge progress">⏳ In Progress</span>
-                </div>
-            </div>
-            <div class="cert-card reveal">
-                <div class="cert-icon"><i class="fas fa-crosshairs"></i></div>
-                <div class="cert-info">
-                    <h4>TryHackMe — SOC Level 1</h4>
-                    <p>Hands-on SOC operations training covering SIEM, threat hunting, and incident response</p>
-                    <span class="cert-badge progress">⏳ In Progress</span>
-                </div>
-            </div>
-            <div class="cert-card reveal reveal-delay-1">
-                <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
-                <div class="cert-info">
-                    <h4>CCNA — Networking Concepts</h4>
-                    <p>Routing, switching, subnetting, and network infrastructure from university curriculum</p>
-                    <span class="cert-badge done">✓ Academic</span>
-                </div>
-            </div>
-            <div class="cert-card reveal reveal-delay-2">
-                <div class="cert-icon"><i class="fas fa-flag"></i></div>
-                <div class="cert-info">
-                    <h4>DEPI — Incident Response Track</h4>
-                    <p>Digital Egypt Pioneers Initiative — SOC operations and IR procedures (AMIT)</p>
-                    <span class="cert-badge progress">⏳ In Progress</span>
-                </div>
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <p class="footer-copy">&copy; 2026 <span>Mohamed Elhemaly</span>. Built with ❤️ in Egypt.</p>
+                <div class="footer-socials"><a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
+                        target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/MohamedElhemaly"
+                        target="_blank"><i class="fab fa-github"></i></a></div>
             </div>
         </div>
+    </footer>
 
-        <div class="goals-box reveal">
-            <h3>🎯 Next Goals</h3>
-            <p>"My immediate focus is completing the SOC Level 1 path and DEPI certification, then targeting CompTIA Security+ as my first industry-recognized credential. My goal is to join a Security Operations Center as a Tier-1 Analyst within the next year, and progressively advance into Incident Response and Threat Hunting roles."</p>
-        </div>
-    </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact">
-    <div class="container">
-        <div class="section-header reveal">
-            <p class="section-tag">Let's Talk</p>
-            <h2 class="section-title">Get In <span class="grad">Touch</span></h2>
-        </div>
-
-        <div class="contact-wrapper">
-            <div class="contact-info reveal">
-                <h3>Open to Opportunities</h3>
-                <p>Whether you're looking for a backend developer, a junior security analyst, or a motivated CS graduate — I'd love to connect. Feel free to reach out through any channel below.</p>
-
-                <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank" class="contact-link-item">
-                        <i class="fab fa-linkedin"></i>
-                        <span>linkedin.com/in/mohamed-elhemaly</span>
-                    </a>
-                    <a href="https://github.com/MohamedElhemaly" target="_blank" class="contact-link-item">
-                        <i class="fab fa-github"></i>
-                        <span>github.com/MohamedElhemaly</span>
-                    </a>
-                    <a href="https://www.instagram.com/mohamed_el7emaly" target="_blank" class="contact-link-item">
-                        <i class="fab fa-instagram"></i>
-                        <span>instagram.com/mohamed_el7emaly</span>
-                    </a>
-                    <a href="https://mohamedelhemaly.github.io/portfolio/" target="_blank" class="contact-link-item">
-                        <i class="fas fa-globe"></i>
-                        <span>mohamedelhemaly.github.io/portfolio</span>
-                    </a>
-                </div>
-            </div>
-
-            <form class="contact-form reveal reveal-delay-1" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" placeholder="Your full name" required>
-                </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="your@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea placeholder="Tell me about the opportunity or project..." required></textarea>
-                </div>
-                <button type="submit" class="btn-send">Send Message <i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer>
-    <div class="container">
-        <div class="footer-inner">
-            <p class="footer-copy">&copy; 2026 <span>Mohamed Elhemaly</span>. Designed & built with ❤️ in Egypt.</p>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/MohamedElhemaly" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/mohamed_el7emaly" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script>
-    // Sticky Header
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
-
-    // Hamburger
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', e => {
-            e.preventDefault();
-            const t = document.querySelector(a.getAttribute('href'));
-            if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-    });
-
-    // Active nav on scroll
-    const sections = document.querySelectorAll('section[id]');
-    const navItems = document.querySelectorAll('#nav-links a');
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) current = s.id; });
-        navItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
-    });
-
-    // Mode Toggle
-    const body = document.body;
-    const btnDev = document.getElementById('btn-dev');
-    const btnSec = document.getElementById('btn-sec');
-    function setMode(m) {
-        body.classList.toggle('sec-mode', m === 'sec');
-        btnDev.classList.toggle('active', m === 'dev');
-        btnSec.classList.toggle('active', m === 'sec');
-    }
-    btnDev.addEventListener('click', () => setMode('dev'));
-    btnSec.addEventListener('click', () => setMode('sec'));
-
-    // Scroll Reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => obs.observe(el));
-
-    // Typing animation
-    const typingEl = document.getElementById('typing-role');
-    const words = ['PHP Laravel Developer', 'Backend Engineer', 'Network Enthusiast', 'Problem Solver'];
-    let wi = 0, ci = 0, deleting = false;
-    function type() {
-        if (!deleting) {
-            typingEl.textContent = words[wi].slice(0, ++ci);
-            if (ci === words[wi].length) { deleting = true; setTimeout(type, 1400); return; }
-        } else {
-            typingEl.textContent = words[wi].slice(0, --ci);
-            if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
-        }
-        setTimeout(type, deleting ? 50 : 80);
-    }
-    setTimeout(type, 1000);
-
-    // Contact Form
-    function handleSubmit(e) {
-        e.preventDefault();
-        const btn = e.target.querySelector('.btn-send');
-        btn.innerHTML = '✓ Sent!';
-        btn.style.background = '#10b981';
-        setTimeout(() => {
-            btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-            btn.style.background = '';
-            e.target.reset();
-        }, 3000);
-    }
-</script>
-
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+        document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); const t = document.querySelector(a.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth' }); }));
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('#nav-links a');
+        window.addEventListener('scroll', () => { let cur = ''; sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) cur = s.id; }); navItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur)); });
+        const body = document.body;
+        const btnDev = document.getElementById('btn-dev'), btnSec = document.getElementById('btn-sec');
+        function setMode(m) { body.classList.toggle('sec-mode', m === 'sec'); btnDev.classList.toggle('active', m === 'dev'); btnSec.classList.toggle('active', m === 'sec'); }
+        btnDev.addEventListener('click', () => setMode('dev')); btnSec.addEventListener('click', () => setMode('sec'));
+        const reveals = document.querySelectorAll('.reveal');
+        const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
+        reveals.forEach(el => obs.observe(el));
+        const typingEl = document.getElementById('typing-role');
+        if (typingEl) { const words = ['PHP Laravel Developer', 'Backend Engineer', 'API Architect']; let wi = 0, ci = 0, del = false; function type() { if (!del) { typingEl.textContent = words[wi].slice(0, ++ci); if (ci === words[wi].length) { del = true; setTimeout(type, 1400); return; } } else { typingEl.textContent = words[wi].slice(0, --ci); if (ci === 0) { del = false; wi = (wi + 1) % words.length; } } setTimeout(type, del ? 50 : 80); } setTimeout(type, 800); }
+        function handleSubmit(e) { e.preventDefault(); const btn = e.target.querySelector('.btn-send'); btn.innerHTML = '✓ Sent!'; btn.style.background = '#10b981'; setTimeout(() => { btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>'; btn.style.background = ''; e.target.reset(); }, 3000); }
+    </script>
 </body>
+
 </html>
