@@ -1472,12 +1472,12 @@
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-left">
-                    <div class="hero-tag dev-only">Backend Developer — Damanhour, Egypt</div>
-                    <div class="hero-tag sec-only">Cybersecurity Analyst — Incident Response</div>
+                    <div class="hero-tag dev-only" data-cms="dev_tag">Backend Developer — Damanhour, Egypt</div>
+                    <div class="hero-tag sec-only" data-cms="sec_tag">Cybersecurity Analyst — Incident Response</div>
 
                     <h1 class="hero-name">
-                        <span class="line">Mohamed</span>
-                        <span class="line highlight">Elhemaly</span>
+                        <span class="line" data-cms="first_name">Mohamed</span>
+                        <span class="line highlight" data-cms="last_name">Elhemaly</span>
                     </h1>
 
                     <div class="hero-role">
@@ -1487,22 +1487,14 @@
                         <span>CS Student @ Damanhour Uni</span>
                     </div>
 
-                    <p class="hero-desc dev-only">
-                        I build robust, scalable backend systems using <strong>PHP Laravel</strong> and
-                        <strong>MySQL</strong>. Passionate about clean architecture, real-time communication, and
-                        bridging software with network infrastructure.
-                    </p>
-                    <p class="hero-desc sec-only">
-                        Aspiring <strong>SOC Tier-1 Analyst</strong> & <strong>Incident Response Engineer</strong>.
-                        Training through DEPI, TryHackMe SOC Path, and LetsDefend with hands-on labs in threat detection
-                        and SIEM tools.
-                    </p>
+                    <p class="hero-desc dev-only" data-cms="dev_desc"></p>
+                    <p class="hero-desc sec-only" data-cms="sec_desc"></p>
 
                     <div class="hero-ctas">
                         <a href="#projects" class="btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
-                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank"
+                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url" target="_blank"
                             class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/MohamedElhemaly" target="_blank" class="btn-outline"><i
+                        <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank" class="btn-outline"><i
                                 class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
@@ -1536,14 +1528,8 @@
             </div>
             <div class="about-grid">
                 <div class="about-text reveal">
-                    <p class="dev-only">I'm a <strong>Computer Science student</strong> at Damanhour University (Class
-                        of 2026) with a solid foundation in backend development and network engineering. My main stack
-                        is <strong>PHP Laravel</strong> with MySQL, and I complement that with C++, Python basics, and
-                        CCNA-level networking knowledge.</p>
-                    <p class="sec-only">I'm an <strong>aspiring Incident Response & SOC Analyst</strong> currently
-                        enrolled in the Digital Egypt Pioneers Initiative (DEPI) — Incident Response track. I combine my
-                        backend programming background with cybersecurity to approach threats from both a developer's
-                        and defender's perspective.</p>
+                    <p class="dev-only" data-cms="about_dev"></p>
+                    <p class="sec-only" data-cms="about_sec"></p>
                     <p class="dev-only">I'm focused on building real-world projects that demonstrate clean code, good
                         architecture, and practical problem-solving. I'm also exploring UI/UX design and electronic
                         marketing to round out my technical profile.</p>
@@ -1730,147 +1716,12 @@
 
             <!-- Backend Projects -->
             <div class="dev-only">
-                <div class="projects-grid">
-                    <div class="project-card featured reveal"
-                        onclick="window.open('https://github.com/MohamedElhemaly/Web-Socket', '_blank')">
-                        <div class="project-visual">
-                            <i class="fas fa-plug project-icon-big"></i>
-                            <div class="project-code-preview">
-                                <div class="code-line"><span class="c-cm">// Real-time WebSocket Server</span></div>
-                                <div class="code-line"><span class="c-kw">class</span> <span
-                                        class="c-fn">WebSocketServer</span> {</div>
-                                <div class="code-line">&nbsp;&nbsp;<span class="c-fn">onMessage</span>(<span
-                                        class="c-str">$conn</span>, <span class="c-str">$msg</span>) {</div>
-                                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">foreach</span>(<span
-                                        class="c-str">$this</span>->clients <span class="c-kw">as</span> <span
-                                        class="c-str">$c</span>)</div>
-                                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                        class="c-str">$c</span>-><span class="c-fn">send</span>(<span
-                                        class="c-str">$msg</span>);</div>
-                                <div class="code-line">&nbsp;&nbsp;}</div>
-                                <div class="code-line">}</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="project-header">
-                                <span class="project-type">⭐ Featured</span>
-                                <div class="project-links">
-                                    <a href="https://github.com/MohamedElhemaly/Web-Socket" target="_blank"><i
-                                            class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-body"
-                                onclick="window.open('https://github.com/MohamedElhemaly/Web-Socket', '_blank')">
-                                <h3>Real-Time WebSocket Server (PHP)</h3>
-                                <p>Full bi-directional real-time communication system built in pure PHP using the
-                                    Ratchet WebSocket library. Implements a broadcast server where multiple clients
-                                    connect and exchange messages instantly — foundation for chat apps, live
-                                    notifications, and real-time dashboards.</p>
-                                <div class="project-tech">
-                                    <span class="tech-badge">PHP</span><span class="tech-badge">Ratchet</span><span
-                                        class="tech-badge">WebSocket</span><span class="tech-badge">Composer</span><span
-                                        class="tech-badge">Event Loop</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card reveal reveal-delay-1"
-                        onclick="window.open('https://github.com/MohamedElhemaly/admin-control-panel', '_blank')">
-                        <div class="project-header">
-                            <span class="project-type">Web App</span>
-                            <div class="project-links">
-                                <a href="https://github.com/MohamedElhemaly/admin-control-panel" target="_blank"><i
-                                        class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-body">
-                            <h3>Admin Control Panel</h3>
-                            <p>Full-featured admin dashboard built with PHP and MySQL. Includes user management, data
-                                visualization, system controls, and role-based access — a complete backend management
-                                system.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span><span class="tech-badge">MySQL</span><span
-                                    class="tech-badge">HTML/CSS</span><span class="tech-badge">CRUD</span><span
-                                    class="tech-badge">Auth</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card reveal reveal-delay-2"
-                        onclick="window.open('https://mohamedelhemaly.github.io/portfolio/', '_blank')">
-                        <div class="project-header">
-                            <span class="project-type">Portfolio</span>
-                            <div class="project-links">
-                                <a href="https://mohamedelhemaly.github.io/portfolio/" target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-body">
-                            <h3>Personal Portfolio Website</h3>
-                            <p>Dual-mode interactive portfolio showcasing both backend development and cybersecurity
-                                skills. Features smooth mode toggle, responsive design, and GitHub Pages deployment via
-                                CI/CD pipeline.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span
-                                    class="tech-badge">JavaScript</span><span class="tech-badge">GitHub
-                                    Pages</span><span class="tech-badge">CI/CD</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="projects-grid" id="dev-projects-grid"></div>
             </div>
 
             <!-- Security Projects -->
             <div class="sec-only">
-                <div class="projects-grid">
-                    <div class="project-card reveal">
-                        <div class="project-header">
-                            <span class="project-type sec">SOC Lab</span>
-                        </div>
-                        <div class="project-body">
-                            <h3>SOC Investigation Lab</h3>
-                            <p>Detected and analyzed suspicious activity from simulated SIEM logs. Documented findings
-                                with a full incident timeline, affected assets, and structured response plan following
-                                NIST IR guidelines.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">SIEM</span><span class="tech-badge">Log Analysis</span><span
-                                    class="tech-badge">NIST IR</span><span class="tech-badge">Alert Triage</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card reveal reveal-delay-1">
-                        <div class="project-header">
-                            <span class="project-type sec">Pentesting</span>
-                        </div>
-                        <div class="project-body">
-                            <h3>Web Vulnerability Assessment</h3>
-                            <p>Performed comprehensive vulnerability scans using Nmap and Nessus on a controlled lab
-                                environment. Analyzed results by CVSS score and documented remediation steps for all
-                                identified issues.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">Nmap</span><span class="tech-badge">Nessus</span><span
-                                    class="tech-badge">CVSS</span><span class="tech-badge">Reporting</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card reveal reveal-delay-2">
-                        <div class="project-header">
-                            <span class="project-type sec">Forensics</span>
-                        </div>
-                        <div class="project-body">
-                            <h3>Incident Response Report (DEPI Lab)</h3>
-                            <p>Created a detailed IR report based on a DEPI lab scenario. Covered detection methodology,
-                                containment and eradication steps, and post-incident review — formatted as a real-world
-                                SOC deliverable.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">Incident Response</span><span
-                                    class="tech-badge">Forensics</span><span class="tech-badge">DEPI</span><span
-                                    class="tech-badge">Documentation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="projects-grid" id="sec-projects-grid"></div>
             </div>
         </div>
     </section>
@@ -1885,71 +1736,12 @@
 
             <!-- Backend Experience -->
             <div class="dev-only">
-                <div class="timeline">
-                    <div class="timeline-item reveal">
-                        <p class="tl-date">July 2024 — August 2024</p>
-                        <p class="tl-org">Electricity Company — Beheira Governorate</p>
-                        <h3 class="tl-role">Network Infrastructure Intern</h3>
-                        <ul class="tl-list">
-                            <li>Assisted in setup, configuration, and maintenance of the company's LAN network
-                                infrastructure</li>
-                            <li>Diagnosed and resolved network connectivity issues across multiple departments</li>
-                            <li>Prepared technical reports and network topology documentation</li>
-                            <li>Collaborated with the IT team on network optimization and hardware upgrades</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item reveal reveal-delay-1">
-                        <p class="tl-date">2023 — Present</p>
-                        <p class="tl-org">Self-Directed Learning</p>
-                        <h3 class="tl-role">Backend Developer — Learning & Building Projects</h3>
-                        <ul class="tl-list">
-                            <li>Building real-world projects using PHP Laravel and MySQL to solidify backend skills</li>
-                            <li>Implemented a WebSocket-based real-time communication system from scratch</li>
-                            <li>Developed a full admin control panel with authentication and CRUD operations</li>
-                            <li>Currently exploring Laravel APIs and advanced Eloquent ORM techniques</li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="timeline" id="dev-exp-timeline"></div>
             </div>
 
             <!-- Security Experience -->
             <div class="sec-only">
-                <div class="timeline">
-                    <div class="timeline-item reveal">
-                        <p class="tl-date">July 2025 — December 2025</p>
-                        <p class="tl-org">Digital Egypt Pioneers Initiative (DEPI) — AMIT</p>
-                        <h3 class="tl-role">Incident Response Track — Participant</h3>
-                        <ul class="tl-list">
-                            <li>Specialized training in SOC operations, digital forensics, and structured incident
-                                handling</li>
-                            <li>Hands-on labs using SIEM tools for threat detection and log correlation</li>
-                            <li>Exposure to real-world SOC Tier-1 analyst workflows and escalation procedures</li>
-                            <li>Collaborative cybersecurity projects simulating real incident response environments</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item reveal reveal-delay-1">
-                        <p class="tl-date">January 2024 — Present</p>
-                        <p class="tl-org">TryHackMe & LetsDefend</p>
-                        <h3 class="tl-role">Cybersecurity Trainee — SOC Path</h3>
-                        <ul class="tl-list">
-                            <li>Actively progressing through the TryHackMe SOC Level 1 learning path</li>
-                            <li>Completed labs on network traffic analysis, SIEM fundamentals, and phishing
-                                investigation</li>
-                            <li>Practiced blue team operations on LetsDefend's simulated SOC environment</li>
-                            <li>Solved security challenges reinforcing hands-on incident detection skills</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item reveal reveal-delay-2">
-                        <p class="tl-date">July 2024 — August 2024</p>
-                        <p class="tl-org">Electricity Company — Beheira Governorate</p>
-                        <h3 class="tl-role">Network Infrastructure Intern</h3>
-                        <ul class="tl-list">
-                            <li>Hands-on experience with real enterprise network infrastructure</li>
-                            <li>Developed practical understanding of network architecture — vital for identifying attack
-                                surfaces</li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="timeline" id="sec-exp-timeline"></div>
             </div>
         </div>
     </section>
@@ -1962,56 +1754,7 @@
                 <h2 class="section-title">Certs & <span class="grad">Training</span></h2>
             </div>
 
-            <div class="cert-grid">
-                <div class="cert-card reveal">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <div class="cert-info">
-                        <h4>Cisco — Introduction to Cybersecurity</h4>
-                        <p>Fundamentals of cybersecurity concepts, threats, and best practices</p>
-                        <span class="cert-badge done">✓ Completed</span>
-                    </div>
-                </div>
-                <div class="cert-card reveal reveal-delay-1">
-                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                    <div class="cert-info">
-                        <h4>Fortinet NSE 1 – 3</h4>
-                        <p>Network Security Associate program covering threat landscape and FortiGate fundamentals</p>
-                        <span class="cert-badge done">✓ Completed</span>
-                    </div>
-                </div>
-                <div class="cert-card reveal reveal-delay-2">
-                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
-                    <div class="cert-info">
-                        <h4>Sprints × Microsoft — Cybersecurity Fundamentals</h4>
-                        <p>Comprehensive cybersecurity fundamentals program in partnership with Microsoft</p>
-                        <span class="cert-badge progress">⏳ In Progress</span>
-                    </div>
-                </div>
-                <div class="cert-card reveal">
-                    <div class="cert-icon"><i class="fas fa-crosshairs"></i></div>
-                    <div class="cert-info">
-                        <h4>TryHackMe — SOC Level 1</h4>
-                        <p>Hands-on SOC operations training covering SIEM, threat hunting, and incident response</p>
-                        <span class="cert-badge progress">⏳ In Progress</span>
-                    </div>
-                </div>
-                <div class="cert-card reveal reveal-delay-1">
-                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
-                    <div class="cert-info">
-                        <h4>CCNA — Networking Concepts</h4>
-                        <p>Routing, switching, subnetting, and network infrastructure from university curriculum</p>
-                        <span class="cert-badge done">✓ Academic</span>
-                    </div>
-                </div>
-                <div class="cert-card reveal reveal-delay-2">
-                    <div class="cert-icon"><i class="fas fa-flag"></i></div>
-                    <div class="cert-info">
-                        <h4>DEPI — Incident Response Track</h4>
-                        <p>Digital Egypt Pioneers Initiative — SOC operations and IR procedures (AMIT)</p>
-                        <span class="cert-badge progress">⏳ In Progress</span>
-                    </div>
-                </div>
-            </div>
+            <div class="cert-grid" id="cert-grid-container"></div>
 
             <div class="goals-box reveal">
                 <h3>🎯 Next Goals</h3>
@@ -2038,16 +1781,16 @@
                         graduate — I'd love to connect. Feel free to reach out through any channel below.</p>
 
                     <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank"
+                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url" target="_blank"
                             class="contact-link-item">
                             <i class="fab fa-linkedin"></i>
                             <span>linkedin.com/in/mohamed-elhemaly</span>
                         </a>
-                        <a href="https://github.com/MohamedElhemaly" target="_blank" class="contact-link-item">
+                        <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank" class="contact-link-item">
                             <i class="fab fa-github"></i>
                             <span>github.com/MohamedElhemaly</span>
                         </a>
-                        <a href="https://www.instagram.com/mohamed_el7emaly" target="_blank" class="contact-link-item">
+                        <a href="https://www.instagram.com/mohamed_el7emaly" data-cms-href="instagram_url" target="_blank" class="contact-link-item">
                             <i class="fab fa-instagram"></i>
                             <span>instagram.com/mohamed_el7emaly</span>
                         </a>
@@ -2086,10 +1829,10 @@
             <div class="footer-inner">
                 <p class="footer-copy">&copy; 2026 <span>Mohamed Elhemaly</span>. Designed & built with ❤️ in Egypt.</p>
                 <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank"><i
+                    <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url" target="_blank"><i
                             class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/MohamedElhemaly" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/mohamed_el7emaly" target="_blank"><i
+                    <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/mohamed_el7emaly" data-cms-href="instagram_url" target="_blank"><i
                             class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -2173,7 +1916,7 @@
             const formData = new FormData(form);
             
             // 🔴 IMPORTANT: Replace with your actual email address
-            fetch("https://formsubmit.co/ajax/mohamed.elhemaly88@gmail.com", {
+            fetch("https://formsubmit.co/ajax/" + (window.adminEmail || "mohamed.elhemaly88@gmail.com"), {
                 method: "POST",
                 body: formData
             })
@@ -2202,6 +1945,132 @@
         }
     </script>
 
+
+    <!-- CMS Dynamic Loader -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const res = await fetch('data.json');
+                if(!res.ok) throw new Error('Data not found');
+                const data = await res.json();
+                
+                
+                // --- Apply General Settings ---
+                if(data.general) {
+                    // Update Text Nodes
+                    document.querySelectorAll('[data-cms]').forEach(el => {
+                        const key = el.getAttribute('data-cms');
+                        if (data.general[key]) {
+                            el.innerHTML = data.general[key];
+                        }
+                    });
+
+                    // Update Links
+                    document.querySelectorAll('[data-cms-href]').forEach(el => {
+                        const key = el.getAttribute('data-cms-href');
+                        if (data.general[key]) {
+                            el.href = data.general[key];
+                            // Also update text if it contains the URL string
+                            const span = el.querySelector('span');
+                            if(span && span.innerText.includes('.com')) {
+                                span.innerText = data.general[key].replace('https://', '').replace('www.', '');
+                            }
+                        }
+                    });
+
+                    // Update formsubmit email globally
+                    window.adminEmail = data.general.email_address || 'mohamed.elhemaly88@gmail.com';
+                }
+
+                // Render Projects (Dev)
+                const devProjectsHTML = data.projects.filter(p => p.category === 'dev').map((p, i) => `
+                    <div class="project-card ${i===0 ? 'featured' : ''} reveal" ${p.link ? 'onclick="window.open(\''+p.link+'\', \'_blank\')"' : ''}>
+                        ${(i===0 && p.link) ? `
+                        <div class="project-visual">
+                            <i class="fas fa-plug project-icon-big"></i>
+                        </div>` : ''}
+                        <div>
+                            <div class="project-header">
+                                <span class="project-type">${i===0 ? '⭐ Featured' : 'Web App'}</span>
+                                ${p.link ? `<div class="project-links"><a href="${p.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>` : ''}
+                            </div>
+                            <div class="project-body">
+                                <h3>${p.title}</h3>
+                                <p>${p.description}</p>
+                                <div class="project-tech">
+                                    ${p.tags.map(t => `<span class="tech-badge">${t}</span>`).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                document.getElementById('dev-projects-grid').innerHTML = devProjectsHTML;
+
+                // Render Projects (Sec)
+                const secProjectsHTML = data.projects.filter(p => p.category === 'sec').map((p, i) => `
+                    <div class="project-card reveal reveal-delay-${i%3}">
+                        <div class="project-header">
+                            <span class="project-type sec">Project</span>
+                            ${p.link ? `<div class="project-links"><a href="${p.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>` : ''}
+                        </div>
+                        <div class="project-body">
+                            <h3>${p.title}</h3>
+                            <p>${p.description}</p>
+                            <div class="project-tech">
+                                ${p.tags.map(t => `<span class="tech-badge">${t}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                document.getElementById('sec-projects-grid').innerHTML = secProjectsHTML;
+
+                // Render Experience (Dev & Sec)
+                const renderExp = (cat) => data.experience.filter(e => e.category === cat).map((e, i) => `
+                    <div class="timeline-item reveal reveal-delay-${i%3}">
+                        <p class="tl-date">${e.date}</p>
+                        <p class="tl-org">${e.organization}</p>
+                        <h3 class="tl-role">${e.role}</h3>
+                        <ul class="tl-list">
+                            ${e.highlights.map(h => `<li>${h}</li>`).join('')}
+                        </ul>
+                    </div>
+                `).join('');
+                
+                document.getElementById('dev-exp-timeline').innerHTML = renderExp('dev');
+                document.getElementById('sec-exp-timeline').innerHTML = renderExp('sec');
+
+                // Render Certifications
+                const getStatusIcon = (status) => {
+                    if(status.includes('Completed') || status.includes('Academic')) return 'done';
+                    return 'progress';
+                };
+                
+                const certsHTML = data.certifications.map((c, i) => `
+                    <div class="cert-card reveal reveal-delay-${i%3}">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-info">
+                            <h4>${c.title}</h4>
+                            <p>${c.description}</p>
+                            <span class="cert-badge ${getStatusIcon(c.status)}">${c.status.includes('✓') || c.status.includes('⏳') ? c.status : (getStatusIcon(c.status) === 'done' ? '✓ ' : '⏳ ') + c.status}</span>
+                        </div>
+                    </div>
+                `).join('');
+                document.getElementById('cert-grid-container').innerHTML = certsHTML;
+
+                // Re-initialize Scroll Reveals for dynamic content!
+                setTimeout(() => {
+                    const reveals = document.querySelectorAll('.reveal');
+                    const obs = new IntersectionObserver(entries => {
+                        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+                    }, { threshold: 0.1 });
+                    reveals.forEach(el => obs.observe(el));
+                }, 100);
+
+            } catch (err) {
+                console.error('Failed to load CMS data:', err);
+            }
+        });
+    </script>
 </body>
 
 </html>

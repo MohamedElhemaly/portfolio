@@ -1,0 +1,185 @@
+{
+  "general": {
+    "first_name": "Mohamed",
+    "last_name": "Elhemaly",
+    "dev_tag": "Backend Developer — Damanhour, Egypt",
+    "sec_tag": "Cybersecurity Analyst — Incident Response",
+    "dev_desc": "I build robust, scalable backend systems using <strong>PHP Laravel</strong> and <strong>MySQL</strong>. Passionate about clean architecture, real-time communication, and bridging software with network infrastructure.",
+    "sec_desc": "Aspiring <strong>SOC Tier-1 Analyst</strong> & <strong>Incident Response Engineer</strong>. Training through DEPI, TryHackMe SOC Path, and LetsDefend with hands-on labs in threat detection and SIEM tools.",
+    "about_dev": "I am a computer science student with a strong passion for backend systems, network infrastructure, and building scalable applications. My journey started with C++ and problem-solving, which quickly evolved into building complex real-time applications using PHP and Laravel. I love deep diving into how things work under the hood — from setting up local environments to managing enterprise network configurations.",
+    "about_sec": "Currently training on <strong>TryHackMe SOC Level 1</strong> and <strong>LetsDefend</strong>, with hands-on experience in SIEM tools, network traffic analysis with Wireshark, and structured incident handling workflows.",
+    "linkedin_url": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a",
+    "github_url": "https://github.com/MohamedElhemaly",
+    "instagram_url": "https://www.instagram.com/mohamed_el7emaly",
+    "email_address": "mohamed.elhemaly88@gmail.com"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Real-Time WebSocket Server (PHP)",
+      "description": "Full bi-directional real-time communication system built in pure PHP using the Ratchet WebSocket library.",
+      "category": "dev",
+      "link": "https://github.com/MohamedElhemaly/Web-Socket",
+      "tags": [
+        "PHP",
+        "Ratchet",
+        "WebSocket",
+        "Composer",
+        "Event Loop"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Admin Control Panel",
+      "description": "Full-featured admin dashboard built with PHP and MySQL. Includes user management, data visualization, system controls, and role-based access.",
+      "category": "dev",
+      "link": "https://github.com/MohamedElhemaly/admin-control-panel",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "HTML/CSS",
+        "CRUD",
+        "Auth"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Personal Portfolio Website",
+      "description": "Dual-mode interactive portfolio showcasing both backend development and cybersecurity skills.",
+      "category": "dev",
+      "link": "https://mohamedelhemaly.github.io/portfolio/",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GitHub Pages",
+        "CI/CD"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "SOC Investigation Lab",
+      "description": "Detected and analyzed suspicious activity from simulated SIEM logs. Documented findings with a full incident timeline.",
+      "category": "sec",
+      "link": "",
+      "tags": [
+        "SIEM",
+        "Log Analysis",
+        "NIST IR",
+        "Alert Triage"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Web Vulnerability Assessment",
+      "description": "Performed comprehensive vulnerability scans using Nmap and Nessus on a controlled lab environment.",
+      "category": "sec",
+      "link": "",
+      "tags": [
+        "Nmap",
+        "Nessus",
+        "CVSS",
+        "Reporting"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Incident Response Report (DEPI Lab)",
+      "description": "Created a detailed IR report based on a DEPI lab scenario. Covered detection methodology, containment and eradication steps.",
+      "category": "sec",
+      "link": "",
+      "tags": [
+        "Incident Response",
+        "Forensics",
+        "DEPI",
+        "Documentation"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "organization": "Electricity Company — Beheira Governorate",
+      "role": "Network Infrastructure Intern",
+      "date": "July 2024 — August 2024",
+      "category": "dev",
+      "highlights": [
+        "Assisted in setup, configuration, and maintenance of the company's LAN network infrastructure",
+        "Diagnosed and resolved network connectivity issues across multiple departments",
+        "Prepared technical reports and network topology documentation"
+      ]
+    },
+    {
+      "id": 2,
+      "organization": "Self-Directed Learning",
+      "role": "Backend Developer",
+      "date": "2023 — Present",
+      "category": "dev",
+      "highlights": [
+        "Building real-world projects using PHP Laravel and MySQL to solidify backend skills",
+        "Implemented a WebSocket-based real-time communication system from scratch",
+        "Developed a full admin control panel with authentication and CRUD operations"
+      ]
+    },
+    {
+      "id": 3,
+      "organization": "Digital Egypt Pioneers Initiative (DEPI) — AMIT",
+      "role": "Incident Response Track — Participant",
+      "date": "July 2025 — December 2025",
+      "category": "sec",
+      "highlights": [
+        "Specialized training in SOC operations, digital forensics, and structured incident handling",
+        "Hands-on labs using SIEM tools for threat detection and log correlation"
+      ]
+    },
+    {
+      "id": 4,
+      "organization": "TryHackMe & LetsDefend",
+      "role": "Cybersecurity Trainee — SOC Path",
+      "date": "January 2024 — Present",
+      "category": "sec",
+      "highlights": [
+        "Actively progressing through the TryHackMe SOC Level 1 learning path",
+        "Completed labs on network traffic analysis, SIEM fundamentals, and phishing investigation"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Cisco — Introduction to Cybersecurity",
+      "description": "Fundamentals of cybersecurity concepts, threats, and best practices",
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "title": "Fortinet NSE 1 – 3",
+      "description": "Network Security Associate program covering threat landscape and FortiGate fundamentals",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "title": "Sprints × Microsoft — Cybersecurity Fundamentals",
+      "description": "Comprehensive cybersecurity fundamentals program in partnership with Microsoft",
+      "status": "In Progress"
+    },
+    {
+      "id": 4,
+      "title": "TryHackMe — SOC Level 1",
+      "description": "Hands-on SOC operations training covering SIEM, threat hunting, and incident response",
+      "status": "In Progress"
+    },
+    {
+      "id": 5,
+      "title": "CCNA — Networking Concepts",
+      "description": "Routing, switching, subnetting, and network infrastructure from university curriculum",
+      "status": "Academic"
+    },
+    {
+      "id": 6,
+      "title": "DEPI — Incident Response Track",
+      "description": "Digital Egypt Pioneers Initiative — SOC operations and IR procedures (AMIT)",
+      "status": "In Progress"
+    }
+  ]
+}
