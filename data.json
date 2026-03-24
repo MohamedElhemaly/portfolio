@@ -161,7 +161,7 @@
       "id": 3,
       "title": "Sprints × Microsoft — Cybersecurity Fundamentals",
       "description": "Comprehensive cybersecurity fundamentals program in partnership with Microsoft",
-      "status": "In Progress"
+      "status": "Completed"
     },
     {
       "id": 4,
@@ -179,7 +179,7 @@
       "id": 6,
       "title": "DEPI — Incident Response Track",
       "description": "Digital Egypt Pioneers Initiative — SOC operations and IR procedures (AMIT)",
-      "status": "In Progress"
+      "status": "Completed"
     }
   ]
 }
