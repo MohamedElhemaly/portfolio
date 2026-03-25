@@ -1492,10 +1492,10 @@
 
                     <div class="hero-ctas">
                         <a href="#projects" class="btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
-                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url" target="_blank"
-                            class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank" class="btn-outline"><i
-                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url"
+                            target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank"
+                            class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
 
@@ -1507,7 +1507,7 @@
                     </div>
                     <div class="hero-stats">
                         <div class="stat-pill"><span class="num">2+</span><span class="lbl">Projects</span></div>
-                        <div class="stat-pill"><span class="num">3rd</span><span class="lbl">Year CS</span></div>
+                        <div class="stat-pill"><span class="num">4th</span><span class="lbl">Year CS</span></div>
                         <div class="stat-pill dev-only"><span class="num">PHP</span><span class="lbl">Laravel</span>
                         </div>
                         <div class="stat-pill sec-only"><span class="num">SOC</span><span class="lbl">Blue Team</span>
@@ -1781,16 +1781,18 @@
                         graduate — I'd love to connect. Feel free to reach out through any channel below.</p>
 
                     <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url" target="_blank"
-                            class="contact-link-item">
+                        <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url"
+                            target="_blank" class="contact-link-item">
                             <i class="fab fa-linkedin"></i>
                             <span>linkedin.com/in/mohamed-elhemaly</span>
                         </a>
-                        <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank" class="contact-link-item">
+                        <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank"
+                            class="contact-link-item">
                             <i class="fab fa-github"></i>
                             <span>github.com/MohamedElhemaly</span>
                         </a>
-                        <a href="https://www.instagram.com/mohamed_el7emaly" data-cms-href="instagram_url" target="_blank" class="contact-link-item">
+                        <a href="https://www.instagram.com/mohamed_el7emaly" data-cms-href="instagram_url"
+                            target="_blank" class="contact-link-item">
                             <i class="fab fa-instagram"></i>
                             <span>instagram.com/mohamed_el7emaly</span>
                         </a>
@@ -1813,7 +1815,8 @@
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea name="message" placeholder="Tell me about the opportunity or project..." required></textarea>
+                        <textarea name="message" placeholder="Tell me about the opportunity or project..."
+                            required></textarea>
                     </div>
                     <input type="hidden" name="_subject" value="New message from Portfolio!">
                     <input type="hidden" name="_captcha" value="false">
@@ -1829,11 +1832,12 @@
             <div class="footer-inner">
                 <p class="footer-copy">&copy; 2026 <span>Mohamed Elhemaly</span>. Designed & built with ❤️ in Egypt.</p>
                 <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/mohamed_el7emaly" data-cms-href="instagram_url" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" data-cms-href="linkedin_url"
+                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MohamedElhemaly" data-cms-href="github_url" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/mohamed_el7emaly" data-cms-href="instagram_url"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -1909,39 +1913,39 @@
             const form = e.target;
             const btn = form.querySelector('.btn-send');
             const originalText = btn.innerHTML;
-            
+
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             btn.disabled = true;
 
             const formData = new FormData(form);
-            
+
             // 🔴 IMPORTANT: Replace with your actual email address
             fetch("https://formsubmit.co/ajax/" + (window.adminEmail || "mohamed.elhemaly88@gmail.com"), {
                 method: "POST",
                 body: formData
             })
-            .then(response => response.json())
-            .then(data => {
-                if(data.success) {
-                    btn.innerHTML = '✓ Sent Successfully!';
-                    btn.style.background = '#10b981'; // Green
-                    form.reset();
-                } else {
-                    btn.innerHTML = '❌ Failed to send';
-                    btn.style.background = '#ef4444'; // Red
-                }
-            })
-            .catch(error => {
-                btn.innerHTML = '❌ Error occurred';
-                btn.style.background = '#ef4444'; 
-            })
-            .finally(() => {
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                }, 4000);
-            });
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        btn.innerHTML = '✓ Sent Successfully!';
+                        btn.style.background = '#10b981'; // Green
+                        form.reset();
+                    } else {
+                        btn.innerHTML = '❌ Failed to send';
+                        btn.style.background = '#ef4444'; // Red
+                    }
+                })
+                .catch(error => {
+                    btn.innerHTML = '❌ Error occurred';
+                    btn.style.background = '#ef4444';
+                })
+                .finally(() => {
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.background = '';
+                        btn.disabled = false;
+                    }, 4000);
+                });
         }
     </script>
 
@@ -1951,12 +1955,12 @@
         document.addEventListener('DOMContentLoaded', async () => {
             try {
                 const res = await fetch('data.json');
-                if(!res.ok) throw new Error('Data not found');
+                if (!res.ok) throw new Error('Data not found');
                 const data = await res.json();
-                
-                
+
+
                 // --- Apply General Settings ---
-                if(data.general) {
+                if (data.general) {
                     // Update Text Nodes
                     document.querySelectorAll('[data-cms]').forEach(el => {
                         const key = el.getAttribute('data-cms');
@@ -1972,7 +1976,7 @@
                             el.href = data.general[key];
                             // Also update text if it contains the URL string
                             const span = el.querySelector('span');
-                            if(span && span.innerText.includes('.com')) {
+                            if (span && span.innerText.includes('.com')) {
                                 span.innerText = data.general[key].replace('https://', '').replace('www.', '');
                             }
                         }
@@ -1984,14 +1988,14 @@
 
                 // Render Projects (Dev)
                 const devProjectsHTML = data.projects.filter(p => p.category === 'dev').map((p, i) => `
-                    <div class="project-card ${i===0 ? 'featured' : ''} reveal" ${p.link ? 'onclick="window.open(\''+p.link+'\', \'_blank\')"' : ''}>
-                        ${(i===0 && p.link) ? `
+                    <div class="project-card ${i === 0 ? 'featured' : ''} reveal" ${p.link ? 'onclick="window.open(\'' + p.link + '\', \'_blank\')"' : ''}>
+                        ${(i === 0 && p.link) ? `
                         <div class="project-visual">
                             <i class="fas fa-plug project-icon-big"></i>
                         </div>` : ''}
                         <div>
                             <div class="project-header">
-                                <span class="project-type">${i===0 ? '⭐ Featured' : 'Web App'}</span>
+                                <span class="project-type">${i === 0 ? '⭐ Featured' : 'Web App'}</span>
                                 ${p.link ? `<div class="project-links"><a href="${p.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>` : ''}
                             </div>
                             <div class="project-body">
@@ -2008,7 +2012,7 @@
 
                 // Render Projects (Sec)
                 const secProjectsHTML = data.projects.filter(p => p.category === 'sec').map((p, i) => `
-                    <div class="project-card reveal reveal-delay-${i%3}">
+                    <div class="project-card reveal reveal-delay-${i % 3}">
                         <div class="project-header">
                             <span class="project-type sec">Project</span>
                             ${p.link ? `<div class="project-links"><a href="${p.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>` : ''}
@@ -2026,7 +2030,7 @@
 
                 // Render Experience (Dev & Sec)
                 const renderExp = (cat) => data.experience.filter(e => e.category === cat).map((e, i) => `
-                    <div class="timeline-item reveal reveal-delay-${i%3}">
+                    <div class="timeline-item reveal reveal-delay-${i % 3}">
                         <p class="tl-date">${e.date}</p>
                         <p class="tl-org">${e.organization}</p>
                         <h3 class="tl-role">${e.role}</h3>
@@ -2035,18 +2039,18 @@
                         </ul>
                     </div>
                 `).join('');
-                
+
                 document.getElementById('dev-exp-timeline').innerHTML = renderExp('dev');
                 document.getElementById('sec-exp-timeline').innerHTML = renderExp('sec');
 
                 // Render Certifications
                 const getStatusIcon = (status) => {
-                    if(status.includes('Completed') || status.includes('Academic')) return 'done';
+                    if (status.includes('Completed') || status.includes('Academic')) return 'done';
                     return 'progress';
                 };
-                
+
                 const certsHTML = data.certifications.map((c, i) => `
-                    <div class="cert-card reveal reveal-delay-${i%3}">
+                    <div class="cert-card reveal reveal-delay-${i % 3}">
                         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                         <div class="cert-info">
                             <h4>${c.title}</h4>
