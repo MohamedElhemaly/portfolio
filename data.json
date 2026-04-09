@@ -2,184 +2,355 @@
   "general": {
     "first_name": "Mohamed",
     "last_name": "Elhemaly",
-    "dev_tag": "Backend Developer — Damanhour, Egypt",
-    "sec_tag": "Cybersecurity Analyst — Incident Response",
-    "dev_desc": "I build robust, scalable backend systems using <strong>PHP Laravel</strong> and <strong>MySQL</strong>. Passionate about clean architecture, real-time communication, and bridging software with network infrastructure.",
-    "sec_desc": "Aspiring <strong>SOC Tier-1 Analyst</strong> & <strong>Incident Response Engineer</strong>. Training through DEPI, TryHackMe SOC Path, and LetsDefend with hands-on labs in threat detection and SIEM tools.",
-    "about_dev": "I am a computer science student with a strong passion for backend systems, network infrastructure, and building scalable applications. My journey started with C++ and problem-solving, which quickly evolved into building complex real-time applications using PHP and Laravel. I love deep diving into how things work under the hood — from setting up local environments to managing enterprise network configurations.",
-    "about_sec": "Currently training on <strong>TryHackMe SOC Level 1</strong> and\n                        <strong>LetsDefend</strong>, with hands-on experience in SIEM tools, network traffic analysis\n                        with Wireshark, and structured incident handling workflows",
+    "page_title": "Mohamed Elhemaly | Cybersecurity Portfolio",
+    "hero_badge": "SOC-Focused Cybersecurity Analyst | Blue Team Trainee",
+    "hero_headline": "I help security teams detect faster, investigate smarter, and communicate clearly under pressure.",
+    "hero_summary": "Computer Science student and cybersecurity trainee focused on SOC operations, incident response, log analysis, and network investigation. I bring hands-on lab practice plus an engineering mindset that helps me understand how systems behave, where they fail, and how to defend them better.",
+    "hero_points": [
+      "Hands-on training in SIEM workflows, alert triage, phishing analysis, and incident response reporting.",
+      "Strong infrastructure and development background that translates into better troubleshooting and more security-aware thinking.",
+      "Ready for junior SOC, security monitoring, and blue-team entry roles with high ownership and fast learning speed."
+    ],
+    "trust_strip": [
+      "TryHackMe SOC Level 1",
+      "LetsDefend Labs",
+      "DEPI Incident Response",
+      "Fortinet NSE 1-3",
+      "Cisco Cybersecurity"
+    ],
+    "location": "Damanhour, Egypt",
+    "availability": "Open to SOC, IR, and Blue Team Roles",
+    "priority_domains": [
+      {
+        "name": "Alert Triage",
+        "level": "Active Focus"
+      },
+      {
+        "name": "Network Analysis",
+        "level": "Hands-On"
+      },
+      {
+        "name": "Incident Response",
+        "level": "Operational Training"
+      },
+      {
+        "name": "Secure Engineering",
+        "level": "Transferable Strength"
+      }
+    ],
+    "stats": [
+      {
+        "value": "5+",
+        "label": "Security Programs & Tracks"
+      },
+      {
+        "value": "3",
+        "label": "Core Focus Areas"
+      },
+      {
+        "value": "24/7",
+        "label": "Blue-Team Mindset"
+      }
+    ],
+    "about_intro": "This portfolio is intentionally positioned for cybersecurity hiring teams, not generic tech roles. It highlights the evidence that matters most for entry-level security work: investigation ability, technical context, structured thinking, and fast operational growth.",
+    "about_main": "My strongest edge is that I do not approach security as isolated theory. I understand applications, authentication flows, network behavior, access control, and the operational side of troubleshooting. That gives me a more grounded way to analyze suspicious activity, reason about root causes, and write reports that engineers and analysts can actually use.",
+    "about_support": "I am actively building toward SOC and incident response roles through DEPI, TryHackMe, LetsDefend, and continuous lab work. I care about being dependable during pressure, clear in communication, and disciplined in documentation, because those traits matter just as much as tool familiarity inside real security teams.",
+    "goal_title": "Current Target",
+    "goal_text": "Join a security team where I can contribute in Tier 1 SOC operations, incident triage, monitoring, and investigative reporting, then grow deeper into incident response and threat hunting.",
+    "contact_summary": "If you are hiring for a junior SOC, security analyst, or incident response track role, I would love to connect. I am especially valuable in teams that want someone coachable, technically grounded, and serious about operational quality.",
+    "footer_copy": "Mohamed Elhemaly - Cybersecurity portfolio focused on SOC operations, incident response, and blue-team growth.",
     "linkedin_url": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a",
     "github_url": "https://github.com/MohamedElhemaly",
     "instagram_url": "https://www.instagram.com/mohamed_el7emaly",
-    "email_address": "mohamed.elhemaly88@gmail.com"
+    "resume_url": "/uploads/mohamed-elhemaly-cv-1775743116168.pdf",
+    "email_address": "mohamed.elhemaly88@gmail.com",
+    "snapshot_items": [
+      {
+        "icon": "fas fa-shield-halved",
+        "title": "Security-First Positioning",
+        "text": "Everything here is tailored to show readiness for cybersecurity roles instead of splitting attention across unrelated tracks."
+      },
+      {
+        "icon": "fas fa-diagram-project",
+        "title": "Engineering Context",
+        "text": "Development and infrastructure experience are reframed as security advantages: better visibility into auth, logs, access, and systems behavior."
+      },
+      {
+        "icon": "fas fa-file-waveform",
+        "title": "Operational Communication",
+        "text": "I focus on structured findings, clean documentation, and incident summaries that help teams move from signal to action faster."
+      }
+    ],
+    "contact_methods": [
+      {
+        "icon": "fab fa-linkedin-in",
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/mohamed-elhemaly-b8993530a",
+        "href": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
+      },
+      {
+        "icon": "fab fa-github",
+        "label": "GitHub",
+        "value": "github.com/MohamedElhemaly",
+        "href": "https://github.com/MohamedElhemaly"
+      },
+      {
+        "icon": "fas fa-envelope",
+        "label": "Email",
+        "value": "mohamed.elhemaly88@gmail.com",
+        "href": "mailto:mohamed.elhemaly88@gmail.com"
+      },
+      {
+        "icon": "fas fa-globe",
+        "label": "Portfolio",
+        "value": "mohamedelhemaly.github.io/portfolio",
+        "href": "https://mohamedelhemaly.github.io/portfolio/"
+      }
+    ],
+    "footer_socials": [
+      {
+        "icon": "fab fa-linkedin-in",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
+      },
+      {
+        "icon": "fab fa-github",
+        "label": "GitHub",
+        "href": "https://github.com/MohamedElhemaly"
+      },
+      {
+        "icon": "fab fa-instagram",
+        "label": "Instagram",
+        "href": "https://www.instagram.com/mohamed_el7emaly"
+      }
+    ]
   },
-  "projects": [
+  "strengths": [
     {
-      "id": 1,
-      "title": "Real-Time WebSocket Server (PHP)",
-      "description": "Full bi-directional real-time communication system built in pure PHP using the Ratchet WebSocket library.",
-      "category": "dev",
-      "link": "https://github.com/MohamedElhemaly/Web-Socket",
+      "icon": "fas fa-tower-broadcast",
+      "title": "SOC Monitoring & Triage",
+      "description": "Comfortable following the early incident lifecycle: reviewing alerts, checking context, spotting suspicious patterns, and escalating with structured notes and timelines.",
       "tags": [
-        "PHP",
-        "Ratchet",
-        "WebSocket",
-        "Composer",
-        "Event Loop"
+        "SIEM Fundamentals",
+        "Alert Validation",
+        "Case Notes",
+        "Escalation Thinking"
       ]
     },
     {
-      "id": 2,
-      "title": "Admin Control Panel",
-      "description": "Full-featured admin dashboard built with PHP and MySQL. Includes user management, data visualization, system controls, and role-based access.",
-      "category": "dev",
-      "link": "https://github.com/MohamedElhemaly/admin-control-panel",
+      "icon": "fas fa-network-wired",
+      "title": "Network Visibility",
+      "description": "Able to reason about packet flow, connectivity issues, and suspicious traffic patterns using networking knowledge and hands-on analysis labs.",
       "tags": [
-        "PHP",
-        "MySQL",
-        "HTML/CSS",
-        "CRUD",
-        "Auth"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Personal Portfolio Website",
-      "description": "Dual-mode interactive portfolio showcasing both backend development and cybersecurity skills.",
-      "category": "dev",
-      "link": "https://mohamedelhemaly.github.io/portfolio/",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "GitHub Pages",
-        "CI/CD"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "SOC Investigation Lab",
-      "description": "Detected and analyzed suspicious activity from simulated SIEM logs. Documented findings with a full incident timeline.",
-      "category": "sec",
-      "link": "",
-      "tags": [
-        "SIEM",
-        "Log Analysis",
-        "NIST IR",
-        "Alert Triage"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Web Vulnerability Assessment",
-      "description": "Performed comprehensive vulnerability scans using Nmap and Nessus on a controlled lab environment.",
-      "category": "sec",
-      "link": "",
-      "tags": [
+        "Wireshark",
+        "TCP/IP",
         "Nmap",
-        "Nessus",
-        "CVSS",
+        "CCNA Foundations"
+      ]
+    },
+    {
+      "icon": "fas fa-magnifying-glass-chart",
+      "title": "Investigation Discipline",
+      "description": "I focus on evidence, timelines, documentation, and repeatable investigation steps instead of guessing. That makes my security work cleaner and easier to trust.",
+      "tags": [
+        "Incident Timelines",
+        "Documentation",
+        "Root Cause Thinking",
         "Reporting"
       ]
     },
     {
-      "id": 6,
-      "title": "Incident Response Report (DEPI Lab)",
-      "description": "Created a detailed IR report based on a DEPI lab scenario. Covered detection methodology, containment and eradication steps.",
-      "category": "sec",
+      "icon": "fas fa-user-lock",
+      "title": "Application Security Awareness",
+      "description": "Building admin panels, auth flows, and real-time systems gave me practical intuition around access control, risky logic, and secure implementation patterns.",
+      "tags": [
+        "Authentication",
+        "RBAC Concepts",
+        "Session Thinking",
+        "Secure Design"
+      ]
+    },
+    {
+      "icon": "fas fa-bug-slash",
+      "title": "Vulnerability Assessment Support",
+      "description": "Hands-on familiarity with scanning, interpreting findings, and translating technical issues into practical remediation language inside controlled lab environments.",
+      "tags": [
+        "Nessus",
+        "OpenVAS",
+        "CVSS",
+        "Remediation Notes"
+      ]
+    },
+    {
+      "icon": "fas fa-brain",
+      "title": "Fast-Learning Teammate",
+      "description": "I learn quickly, communicate calmly, and take ownership. For junior security roles, that often matters as much as the current tool list.",
+      "tags": [
+        "Ownership",
+        "Team Communication",
+        "Coachability",
+        "Execution"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "SOC Investigation Lab",
+      "type": "Security Lab",
+      "description": "Worked through simulated SIEM alerts, correlated evidence, reconstructed an incident timeline, and documented the analyst decision path from detection to reporting.",
+      "outcome": "Demonstrated readiness for Tier 1 workflow habits: triage, evidence review, prioritization, and concise reporting.",
       "link": "",
       "tags": [
-        "Incident Response",
-        "Forensics",
-        "DEPI",
-        "Documentation"
+        "SIEM",
+        "Incident Timeline",
+        "Alert Triage",
+        "Reporting"
+      ]
+    },
+    {
+      "title": "Web Vulnerability Assessment in Controlled Lab",
+      "type": "Assessment Project",
+      "description": "Performed reconnaissance and vulnerability review on a lab target using scanning and validation tools, then organized findings by severity and remediation priority.",
+      "outcome": "Strengthened my ability to convert raw scan output into a practical security story rather than a noisy tool dump.",
+      "link": "",
+      "tags": [
+        "Nmap",
+        "Nessus",
+        "Risk Prioritization",
+        "Remediation"
+      ]
+    },
+    {
+      "title": "Incident Response Reporting Exercise",
+      "type": "IR Practice",
+      "description": "Produced a structured incident response report for a DEPI training scenario covering detection method, scope, containment, eradication, and lessons learned.",
+      "outcome": "Showed that I can organize technical findings into a format useful for both analysts and decision-makers.",
+      "link": "",
+      "tags": [
+        "NIST IR",
+        "Forensics Basics",
+        "Documentation",
+        "Containment"
+      ]
+    },
+    {
+      "title": "Secure Access Mindset from Admin Panel Development",
+      "type": "Transferable Build",
+      "description": "While building an admin control panel, I worked directly with authentication, role-based access ideas, privileged workflows, and operational controls that map naturally to security thinking.",
+      "outcome": "This project strengthens my understanding of how misconfigurations and weak access design can become security issues in real systems.",
+      "link": "https://github.com/MohamedElhemaly/admin-control-panel",
+      "tags": [
+        "Auth Flows",
+        "RBAC",
+        "Privileged Access",
+        "Web Security Awareness"
+      ]
+    },
+    {
+      "title": "Real-Time WebSocket Infrastructure Prototype",
+      "type": "Engineering Depth",
+      "description": "Built a real-time communication service in PHP using WebSockets, which sharpened my understanding of persistent connections, event-driven behavior, and monitoring needs in stateful systems.",
+      "outcome": "Useful security crossover for understanding long-lived sessions, unusual traffic behavior, and operational visibility in modern apps.",
+      "link": "https://github.com/MohamedElhemaly/Web-Socket",
+      "tags": [
+        "WebSockets",
+        "Traffic Behavior",
+        "Protocol Awareness",
+        "System Thinking"
+      ]
+    },
+    {
+      "title": "Security-Focused Personal Portfolio",
+      "type": "Presentation Layer",
+      "description": "Redesigned this portfolio to present a clear, recruiter-friendly cybersecurity narrative with stronger positioning, stronger visual quality, and stronger evidence alignment.",
+      "outcome": "Makes the case for security hiring faster by removing mixed messaging and highlighting blue-team readiness first.",
+      "link": "https://mohamedelhemaly.github.io/portfolio/",
+      "tags": [
+        "Personal Branding",
+        "Security Positioning",
+        "UI Strategy",
+        "Recruiter Experience"
       ]
     }
   ],
   "experience": [
     {
-      "id": 1,
-      "organization": "Electricity Company — Beheira Governorate",
+      "organization": "Digital Egypt Pioneers Initiative (DEPI) - AMIT",
+      "role": "Incident Response Track Participant",
+      "date": "Jul 2025 - Dec 2025",
+      "highlights": [
+        "Completed practical training around SOC processes, digital forensics fundamentals, and structured incident handling workflows.",
+        "Worked through analyst-style labs involving detection logic, evidence review, and incident reporting.",
+        "Strengthened understanding of security operations discipline, not just isolated technical tasks."
+      ]
+    },
+    {
+      "organization": "TryHackMe and LetsDefend",
+      "role": "Cybersecurity Trainee - SOC Path",
+      "date": "Jan 2024 - Present",
+      "highlights": [
+        "Actively progressing through hands-on labs for SOC Level 1, phishing analysis, network traffic review, and SIEM fundamentals.",
+        "Practiced identifying suspicious behavior, validating findings, and documenting analyst decisions clearly.",
+        "Built comfort with repeated investigative workflows instead of one-off challenge solving."
+      ]
+    },
+    {
+      "organization": "Electricity Company - Beheira Governorate",
       "role": "Network Infrastructure Intern",
-      "date": "July 2024 — August 2024",
-      "category": "dev",
+      "date": "Jul 2024 - Aug 2024",
       "highlights": [
-        "Assisted in setup, configuration, and maintenance of the company's LAN network infrastructure",
-        "Diagnosed and resolved network connectivity issues across multiple departments",
-        "Prepared technical reports and network topology documentation"
+        "Supported LAN infrastructure setup and troubleshooting across multiple departments.",
+        "Improved my ability to analyze connectivity issues, network behavior, and operational dependencies.",
+        "Created technical notes and topology understanding that now strengthen my network-security perspective."
       ]
     },
     {
-      "id": 2,
-      "organization": "Self-Directed Learning",
-      "role": "Backend Developer",
-      "date": "2023 — Present",
-      "category": "dev",
+      "organization": "Self-Directed Technical Projects",
+      "role": "Security-Minded Builder",
+      "date": "2023 - Present",
       "highlights": [
-        "Building real-world projects using PHP Laravel and MySQL to solidify backend skills",
-        "Implemented a WebSocket-based real-time communication system from scratch",
-        "Developed a full admin control panel with authentication and CRUD operations"
-      ]
-    },
-    {
-      "id": 3,
-      "organization": "Digital Egypt Pioneers Initiative (DEPI) — AMIT",
-      "role": "Incident Response Track — Participant",
-      "date": "July 2025 — December 2025",
-      "category": "sec",
-      "highlights": [
-        "Specialized training in SOC operations, digital forensics, and structured incident handling",
-        "Hands-on labs using SIEM tools for threat detection and log correlation"
-      ]
-    },
-    {
-      "id": 4,
-      "organization": "TryHackMe & LetsDefend",
-      "role": "Cybersecurity Trainee — SOC Path",
-      "date": "January 2024 — Present",
-      "category": "sec",
-      "highlights": [
-        "Actively progressing through the TryHackMe SOC Level 1 learning path",
-        "Completed labs on network traffic analysis, SIEM fundamentals, and phishing investigation"
+        "Built systems involving authentication, data handling, access workflows, and real-time communication patterns.",
+        "Used development work to sharpen secure design awareness and understand what defenders need to monitor in applications.",
+        "Developed a stronger bridge between engineering detail and defensive analysis."
       ]
     }
   ],
   "certifications": [
     {
-      "id": 1,
-      "title": "Cisco — Introduction to Cybersecurity",
-      "description": "Fundamentals of cybersecurity concepts, threats, and best practices",
-      "status": "Completed"
+      "title": "Cisco - Introduction to Cybersecurity",
+      "description": "Foundational cybersecurity concepts, threat landscape, and basic defensive best practices.",
+      "status": "Completed",
+      "status_class": "done"
     },
     {
-      "id": 2,
-      "title": "Fortinet NSE 1 – 3",
-      "description": "Network Security Associate program covering threat landscape and FortiGate fundamentals",
-      "status": "Completed"
+      "title": "Fortinet NSE 1-3",
+      "description": "Network security learning path covering security awareness, threat concepts, and Fortinet platform fundamentals.",
+      "status": "Completed",
+      "status_class": "done"
     },
     {
-      "id": 3,
-      "title": "Sprints × Microsoft — Cybersecurity Fundamentals",
-      "description": "Comprehensive cybersecurity fundamentals program in partnership with Microsoft",
-      "status": "Completed"
+      "title": "Sprints x Microsoft - Cybersecurity Fundamentals",
+      "description": "Structured cybersecurity fundamentals program with emphasis on practical understanding and defensive awareness.",
+      "status": "Completed",
+      "status_class": "done"
     },
     {
-      "id": 4,
-      "title": "TryHackMe — SOC Level 1",
-      "description": "Hands-on SOC operations training covering SIEM, threat hunting, and incident response",
-      "status": "In Progress"
+      "title": "DEPI - Incident Response Track",
+      "description": "Security operations and incident response training delivered through the Digital Egypt Pioneers Initiative.",
+      "status": "Completed",
+      "status_class": "done"
     },
     {
-      "id": 5,
-      "title": "CCNA — Networking Concepts",
-      "description": "Routing, switching, subnetting, and network infrastructure from university curriculum",
-      "status": "Academic"
+      "title": "TryHackMe - SOC Level 1",
+      "description": "Hands-on blue-team path covering SIEM, log analysis, threat detection, and SOC workflows.",
+      "status": "In Progress",
+      "status_class": "progress"
     },
     {
-      "id": 6,
-      "title": "DEPI — Incident Response Track",
-      "description": "Digital Egypt Pioneers Initiative — SOC operations and IR procedures (AMIT)",
-      "status": "Completed"
+      "title": "CCNA Networking Concepts",
+      "description": "Academic networking foundation supporting stronger traffic analysis, troubleshooting, and network defense reasoning.",
+      "status": "Academic Foundation",
+      "status_class": "done"
     }
   ]
 }
