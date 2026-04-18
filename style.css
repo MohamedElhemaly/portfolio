@@ -672,6 +672,8 @@ textarea {
 .contact-card span {
     margin: 0;
     color: var(--muted);
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .strength-grid,
@@ -847,7 +849,9 @@ textarea {
 
 .contact-cards {
     margin-top: 28px;
+    display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 
 .contact-card {
