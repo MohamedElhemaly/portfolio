@@ -8,12 +8,16 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const DATA_FILE = path.join(__dirname, 'data.json');
 const UPLOADS_DIR = path.join(__dirname, 'uploads');
+const ASSETS_DIR = path.join(__dirname, 'assets');
 
 if (!fs.existsSync(UPLOADS_DIR)) {
     fs.mkdirSync(UPLOADS_DIR, { recursive: true });
 }
+if (!fs.existsSync(ASSETS_DIR)) {
+    fs.mkdirSync(ASSETS_DIR, { recursive: true });
+}
 
-const storage = multer.diskStorage({
+const resumeStorage = multer.diskStorage({
     destination: (_req, _file, cb) => cb(null, UPLOADS_DIR),
     filename: (_req, file, cb) => {
         const ext = path.extname(file.originalname || '').toLowerCase() || '.pdf';
@@ -21,20 +25,40 @@ const storage = multer.diskStorage({
     }
 });
 
-const upload = multer({
-    storage,
+const photoStorage = multer.diskStorage({
+    destination: (_req, _file, cb) => cb(null, UPLOADS_DIR),
+    filename: (_req, file, cb) => {
+        const ext = path.extname(file.originalname || '').toLowerCase() || '.jpg';
+        cb(null, `profile-photo-${Date.now()}${ext}`);
+    }
+});
+
+const uploadResume = multer({
+    storage: resumeStorage,
     fileFilter: (_req, file, cb) => {
         const ext = path.extname(file.originalname || '').toLowerCase();
         const isPdf = file.mimetype === 'application/pdf' || ext === '.pdf';
         cb(isPdf ? null : new Error('Only PDF files are allowed'), isPdf);
     },
-    limits: { fileSize: 5 * 1024 * 1024 }
+    limits: { fileSize: 10 * 1024 * 1024 }
+});
+
+const uploadPhoto = multer({
+    storage: photoStorage,
+    fileFilter: (_req, file, cb) => {
+        const ext = path.extname(file.originalname || '').toLowerCase();
+        const allowed = ['.jpg', '.jpeg', '.png', '.webp'];
+        const isImage = file.mimetype.startsWith('image/') || allowed.includes(ext);
+        cb(isImage ? null : new Error('Only image files (JPG, PNG, WebP) are allowed'), isImage);
+    },
+    limits: { fileSize: 10 * 1024 * 1024 }
 });
 
 app.use(cors());
-app.use(express.json({ limit: '2mb' }));
+app.use(express.json({ limit: '5mb' }));
 app.use(express.static(__dirname));
 app.use('/uploads', express.static(UPLOADS_DIR));
+app.use('/assets', express.static(ASSETS_DIR));
 
 function readData() {
     return JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
@@ -63,7 +87,7 @@ app.post('/api/data', (req, res) => {
     }
 });
 
-app.post('/api/upload-resume', upload.single('resume'), (req, res) => {
+app.post('/api/upload-resume', uploadResume.single('resume'), (req, res) => {
     if (!req.file) {
         return res.status(400).json({ error: 'No file uploaded' });
     }
@@ -73,11 +97,12 @@ app.post('/api/upload-resume', upload.single('resume'), (req, res) => {
         const previousResume = data?.general?.resume_url;
 
         if (!data.general) data.general = {};
-        data.general.resume_url = `/uploads/${req.file.filename}`;
+        data.general.resume_url = `./uploads/${req.file.filename}`;
         writeData(data);
 
-        if (previousResume && previousResume.startsWith('/uploads/')) {
-            const oldPath = path.join(__dirname, previousResume.replace('/uploads/', 'uploads\\'));
+        if (previousResume && (previousResume.startsWith('/uploads/') || previousResume.startsWith('./uploads/'))) {
+            const cleanName = previousResume.split('/').pop();
+            const oldPath = path.join(UPLOADS_DIR, cleanName);
             if (oldPath !== req.file.path && fs.existsSync(oldPath)) {
                 fs.unlink(oldPath, () => {});
             }
@@ -91,6 +116,34 @@ app.post('/api/upload-resume', upload.single('resume'), (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Failed to update resume path' });
+    }
+});
+
+app.post('/api/upload-photo', uploadPhoto.single('photo'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).json({ error: 'No photo uploaded' });
+    }
+
+    try {
+        const data = readData();
+        if (!data.general) data.general = {};
+        data.general.profile_image = `./uploads/${req.file.filename}`;
+        writeData(data);
+
+        // Also mirror to assets for bulletproof availability
+        const assetTarget = path.join(ASSETS_DIR, 'profile-photo.jpg');
+        try {
+            fs.copyFileSync(req.file.path, assetTarget);
+        } catch (_) {}
+
+        res.json({
+            success: true,
+            profile_image: data.general.profile_image,
+            filename: req.file.originalname
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Failed to update profile photo' });
     }
 });
 

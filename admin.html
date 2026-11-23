@@ -71,12 +71,18 @@
                         <div class="field"><label for="resume-file">Upload New CV PDF</label><input id="resume-file" type="file" accept="application/pdf,.pdf"></div>
                         <div class="inline-actions"><button class="btn btn-primary" id="upload-resume-btn">Upload CV</button><span class="hint">Upload a PDF only. The site will update automatically after upload.</span></div>
                     </div>
+                    <div class="upload-box" style="margin-top: 1rem;">
+                        <div class="field"><label>Current Profile Image</label><div class="inline-actions"><img id="photo-preview" src="./uploads/profile-photo.jpg" style="width: 44px; height: 44px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15);"><span class="hint" id="photo-label">./uploads/profile-photo.jpg</span></div></div>
+                        <div class="field"><label for="photo-file">Upload New Profile Photo</label><input id="photo-file" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp"></div>
+                        <div class="inline-actions"><button class="btn btn-primary" id="upload-photo-btn">Upload Photo</button><span class="hint">Upload JPG, PNG, or WebP. Saved cleanly to /uploads and tracked in Git.</span></div>
+                    </div>
                     <div class="grid-2">
                         <div class="field"><label>First Name</label><input id="first_name"></div><div class="field"><label>Last Name</label><input id="last_name"></div>
-                        <div class="field"><label>Page Title</label><input id="page_title"></div><div class="field"><label>Hero Badge</label><input id="hero_badge"></div>
-                        <div class="field"><label>Location</label><input id="location"></div><div class="field"><label>Availability</label><input id="availability"></div>
-                        <div class="field"><label>LinkedIn URL</label><input id="linkedin_url"></div><div class="field"><label>GitHub URL</label><input id="github_url"></div>
-                        <div class="field"><label>Instagram URL</label><input id="instagram_url"></div><div class="field"><label>Email</label><input id="email_address"></div>
+                        <div class="field"><label>Profile Image Path</label><input id="profile_image"></div><div class="field"><label>Hero Badge</label><input id="hero_badge"></div>
+                        <div class="field"><label>Page Title</label><input id="page_title"></div><div class="field"><label>Location</label><input id="location"></div>
+                        <div class="field"><label>Availability</label><input id="availability"></div><div class="field"><label>LinkedIn URL</label><input id="linkedin_url"></div>
+                        <div class="field"><label>GitHub URL</label><input id="github_url"></div><div class="field"><label>Instagram URL</label><input id="instagram_url"></div>
+                        <div class="field"><label>Email</label><input id="email_address"></div>
                     </div>
                     <div class="field"><label>Hero Headline</label><textarea id="hero_headline" rows="3"></textarea></div>
                     <div class="field"><label>Hero Summary</label><textarea id="hero_summary" rows="4"></textarea></div>
@@ -118,12 +124,18 @@
         function setActiveTab(tabId) { state.activeTab = tabId; buildSidebar(); document.querySelectorAll('[data-tab-panel]').forEach((panel) => panel.classList.toggle('hidden', panel.dataset.tabPanel !== tabId)); }
         function escapeHtml(value = '') { return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
         function bindGeneralInputs() {
-            ['first_name','last_name','page_title','hero_badge','location','availability','linkedin_url','github_url','instagram_url','email_address','hero_headline','hero_summary','about_intro','about_main','about_support','goal_title','goal_text','contact_summary','footer_copy'].forEach((key) => {
-                const node = el(key); node.value = state.data.general[key] || ''; node.oninput = (event) => state.data.general[key] = event.target.value;
+            ['first_name','last_name','profile_image','page_title','hero_badge','location','availability','linkedin_url','github_url','instagram_url','email_address','hero_headline','hero_summary','about_intro','about_main','about_support','goal_title','goal_text','contact_summary','footer_copy'].forEach((key) => {
+                const node = el(key); if (node) { node.value = state.data.general[key] || ''; node.oninput = (event) => state.data.general[key] = event.target.value; }
             });
             const preview = el('resume-preview'); const label = el('resume-label');
             if (state.data.general.resume_url) { preview.href = state.data.general.resume_url; preview.classList.remove('hidden'); label.textContent = state.data.general.resume_url.split('/').pop(); }
             else { preview.classList.add('hidden'); label.textContent = 'No CV uploaded yet.'; }
+            const photoPreview = el('photo-preview'); const photoLabel = el('photo-label');
+            if (photoPreview && photoLabel) {
+                const photoSrc = state.data.general.profile_image || './uploads/profile-photo.jpg';
+                photoPreview.src = photoSrc;
+                photoLabel.textContent = photoSrc;
+            }
         }
         function renderSimpleArray(containerId, values, title) {
             el(containerId).innerHTML = values.map((value, index) => `
@@ -248,11 +260,24 @@
             } catch (error) { showStatus(error.message, 'error'); }
             finally { button.disabled = false; button.textContent = 'Upload CV'; }
         }
+        async function uploadPhoto() {
+            const input = el('photo-file');
+            if (!input.files.length) { showStatus('Choose an image file first.', 'error'); return; }
+            const formData = new FormData(); formData.append('photo', input.files[0]);
+            const button = el('upload-photo-btn'); button.disabled = true; button.textContent = 'Uploading...';
+            try {
+                const response = await fetch('/api/upload-photo', { method: 'POST', body: formData });
+                const result = await response.json(); if (!response.ok) throw new Error(result.error || 'Upload failed');
+                state.data.general.profile_image = result.profile_image; renderAll(); input.value = ''; showStatus('Profile photo uploaded and linked successfully.');
+            } catch (error) { showStatus(error.message, 'error'); }
+            finally { button.disabled = false; button.textContent = 'Upload Photo'; }
+        }
         buildSidebar();
         setActiveTab('general');
         addListeners();
         el('save-btn').addEventListener('click', saveData);
         el('upload-resume-btn').addEventListener('click', uploadResume);
+        el('upload-photo-btn').addEventListener('click', uploadPhoto);
         fetchData().catch((error) => showStatus(error.message, 'error'));
     </script>
 </body>

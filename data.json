@@ -1,92 +1,103 @@
 {
   "general": {
     "first_name": "Mohamed",
-    "last_name": "Elhemaly",
-    "page_title": "Mohamed Elhemaly | Cybersecurity Portfolio",
-    "hero_badge": "SOC-Focused Cybersecurity Analyst | Blue Team Trainee",
-    "hero_headline": "I help security teams detect faster, investigate smarter, and communicate clearly under pressure.",
-    "hero_summary": "Computer Science student and cybersecurity trainee focused on SOC operations, incident response, log analysis, and network investigation. I bring hands-on lab practice plus an engineering mindset that helps me understand how systems behave, where they fail, and how to defend them better.",
+    "last_name": "Magdi Elhemaly",
+    "profile_image": "./uploads/profile-photo.jpg",
+    "page_title": "Mohamed Magdi Elhemaly | System Administrator & Full-Stack Engineer",
+    "hero_badge": "Available for Opportunities",
+    "hero_headline": "System Administrator | Full-Stack Developer | Cybersecurity & Coding Instructor",
+    "hero_summary": "Computer Science & Mathematics graduate (2026) managing enterprise IT infrastructure and centralized databases for 1,200+ users across regional branches. Proven track record architecting multi-tenant SaaS routing platforms, securing production Linux/Windows environments, and delivering cybersecurity instruction.",
     "hero_points": [
-      "Hands-on training in SIEM workflows, alert triage, phishing analysis, and incident response reporting.",
-      "Strong infrastructure and development background that translates into better troubleshooting and more security-aware thinking.",
-      "Ready for junior SOC, security monitoring, and blue-team entry roles with high ownership and fast learning speed."
+      "Oversees network operations, enterprise databases, and system security for 1,200+ users across multiple regional branches.",
+      "Architected multi-tenant SaaS routing platforms, luxury e-commerce portals, and enterprise sync systems.",
+      "Delivers hands-on cybersecurity and software development instruction for global and national tech programs."
     ],
     "trust_strip": [
-      "TryHackMe SOC Level 1",
-      "LetsDefend Labs",
-      "DEPI Incident Response",
-      "Fortinet NSE 1-3",
-      "Cisco Cybersecurity"
+      "Shalaby Lab Enterprise IT",
+      "1,200+ Users Managed",
+      "34 Clinical Lab Routing Groups",
+      "TryHackMe SOC L1 & LetsDefend",
+      "Cisco Networking Academy",
+      "PortSwigger Web Security"
     ],
-    "location": "Damanhour, Egypt",
-    "availability": "Open to SOC, IR, and Blue Team Roles",
+    "location": "Alexandria / Beheira, Egypt",
+    "availability": "Available for Opportunities",
     "priority_domains": [
       {
-        "name": "Alert Triage",
-        "level": "Active Focus"
+        "name": "System Administration & Infra",
+        "level": "Enterprise Operations"
       },
       {
-        "name": "Network Analysis",
-        "level": "Hands-On"
+        "name": "Full-Stack & SaaS Architecture",
+        "level": "Production Deployed"
       },
       {
-        "name": "Incident Response",
-        "level": "Operational Training"
+        "name": "Cybersecurity & Automation",
+        "level": "Active Defense & Labs"
       },
       {
-        "name": "Secure Engineering",
-        "level": "Transferable Strength"
+        "name": "Technical Instruction & Mentorship",
+        "level": "Live Curricula"
       }
     ],
     "stats": [
       {
-        "value": "5+",
-        "label": "Security Programs & Tracks"
+        "value": "1,200+",
+        "label": "Enterprise Users Managed"
       },
       {
-        "value": "3",
-        "label": "Core Focus Areas"
+        "value": "34",
+        "label": "Clinical Lab Routing Groups"
       },
       {
-        "value": "24/7",
-        "label": "Blue-Team Mindset"
+        "value": "2026",
+        "label": "CS & Math Graduate"
+      },
+      {
+        "value": "100%",
+        "label": "Production Reliability"
       }
     ],
-    "about_intro": "This portfolio is intentionally positioned for cybersecurity hiring teams, not generic tech roles. It highlights the evidence that matters most for entry-level security work: investigation ability, technical context, structured thinking, and fast operational growth.",
-    "about_main": "My strongest edge is that I do not approach security as isolated theory. I understand applications, authentication flows, network behavior, access control, and the operational side of troubleshooting. That gives me a more grounded way to analyze suspicious activity, reason about root causes, and write reports that engineers and analysts can actually use.",
-    "about_support": "I am actively building toward SOC and incident response roles through DEPI, TryHackMe, LetsDefend, and continuous lab work. I care about being dependable during pressure, clear in communication, and disciplined in documentation, because those traits matter just as much as tool familiarity inside real security teams.",
-    "goal_title": "Current Target",
-    "goal_text": "Join a security team where I can contribute in Tier 1 SOC operations, incident triage, monitoring, and investigative reporting, then grow deeper into incident response and threat hunting.",
-    "contact_summary": "If you are hiring for a junior SOC, security analyst, or incident response track role, I would love to connect. I am especially valuable in teams that want someone coachable, technically grounded, and serious about operational quality.",
-    "footer_copy": "Mohamed Elhemaly - Cybersecurity portfolio focused on SOC operations, incident response, and blue-team growth.",
-    "linkedin_url": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a",
+    "about_intro": "I bridge enterprise system administration, production full-stack software engineering, and defensive cybersecurity. Having managed real-world infrastructure for 1,200+ users and designed multi-tenant lab routing architectures, I build resilient systems with security and operational reliability from day one.",
+    "about_main": "In my role as System Administrator at Shalaby Lab, I ensure uninterrupted IT operations and database integrity across multiple regional branches. That hands-on reality-where misconfigurations, network bottlenecks, or security lapses directly affect healthcare operations-shapes everything I code and design. When I architect SaaS platforms or automate server management, I design for granular RBAC, strict tenant isolation, and automated failover.",
+    "about_support": "Alongside systems engineering, I instruct cybersecurity and software development for US and Egyptian national initiatives (DECI & DEMI). Breaking down complex concepts like ethical hacking, network protocols, cryptography, and application security for aspiring engineers continuously reinforces my own technical depth and clear operational communication.",
+    "goal_title": "Current Target & Availability",
+    "goal_text": "Open to enterprise infrastructure, full-stack software engineering, and cybersecurity engineering opportunities where high reliability, secure architecture, and operational excellence are paramount.",
+    "contact_summary": "Whether you are looking for an experienced System Administrator, a Full-Stack Engineer who understands enterprise infrastructure, or an Instructor to lead technical security programs, let's connect.",
+    "footer_copy": "Mohamed Magdi Elhemaly - System Administrator, Full-Stack Developer & Cybersecurity Instructor.",
+    "linkedin_url": "https://www.linkedin.com/in/mohamed-magdi-elhemaly",
     "github_url": "https://github.com/MohamedElhemaly",
     "instagram_url": "https://www.instagram.com/mohamed_el7emaly",
-    "resume_url": "/uploads/mohamed-elhemaly-cv-1775743116168.pdf",
+    "resume_url": "./uploads/mohamed-elhemaly-cv-1775743116168.pdf",
     "email_address": "mohamed.elhemaly88@gmail.com",
     "snapshot_items": [
       {
+        "icon": "fas fa-server",
+        "title": "Enterprise Scale",
+        "text": "Direct operational responsibility for 1,200+ users, centralized databases, and 34 lab routing groups across regional branches."
+      },
+      {
+        "icon": "fas fa-layer-group",
+        "title": "Full-Stack Craftsmanship",
+        "text": "Architect of multi-tenant SaaS platforms, luxury horology e-commerce, and real-time WebSocket infrastructure."
+      },
+      {
         "icon": "fas fa-shield-halved",
-        "title": "Security-First Positioning",
-        "text": "Everything here is tailored to show readiness for cybersecurity roles instead of splitting attention across unrelated tracks."
+        "title": "Defensive Security & Hardening",
+        "text": "Production VPS hardening, automated PowerShell endpoint baselining, CSF firewall rules, and SOC triage workflows."
       },
       {
-        "icon": "fas fa-diagram-project",
-        "title": "Engineering Context",
-        "text": "Development and infrastructure experience are reframed as security advantages: better visibility into auth, logs, access, and systems behavior."
-      },
-      {
-        "icon": "fas fa-file-waveform",
-        "title": "Operational Communication",
-        "text": "I focus on structured findings, clean documentation, and incident summaries that help teams move from signal to action faster."
+        "icon": "fas fa-chalkboard-user",
+        "title": "Global Instruction",
+        "text": "Delivering live technical sessions in ethical hacking, web app security, network protocols, and software engineering."
       }
     ],
     "contact_methods": [
       {
         "icon": "fab fa-linkedin-in",
         "label": "LinkedIn",
-        "value": "linkedin.com/in/mohamed-elhemaly-b8993530a",
-        "href": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
+        "value": "linkedin.com/in/mohamed-magdi-elhemaly",
+        "href": "https://www.linkedin.com/in/mohamed-magdi-elhemaly"
       },
       {
         "icon": "fab fa-github",
@@ -101,17 +112,17 @@
         "href": "mailto:mohamed.elhemaly88@gmail.com"
       },
       {
-        "icon": "fas fa-globe",
-        "label": "Portfolio",
-        "value": "mohamedelhemaly.github.io/portfolio",
-        "href": "https://mohamedelhemaly.github.io/portfolio/"
+        "icon": "fas fa-file-arrow-down",
+        "label": "Curriculum Vitae",
+        "value": "Download PDF Resume",
+        "href": "./uploads/mohamed-elhemaly-cv-1775743116168.pdf"
       }
     ],
     "footer_socials": [
       {
         "icon": "fab fa-linkedin-in",
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
+        "href": "https://www.linkedin.com/in/mohamed-magdi-elhemaly"
       },
       {
         "icon": "fab fa-github",
@@ -125,232 +136,570 @@
       }
     ]
   },
+  "education": {
+    "degree": "B.Sc. in Computer Science & Mathematics",
+    "institution": "Faculty of Science, Damanhour University",
+    "year": "Graduated 2026",
+    "description": "Rigorous foundation spanning distributed computing, network architecture, operating system design, cryptography, and computational mathematics."
+  },
+  "arsenal": {
+    "system_administration": {
+      "title": "System Administration & Infrastructure",
+      "icon": "fas fa-server",
+      "badge": "Enterprise IT",
+      "summary": "Enterprise infrastructure management, multi-branch operations, and production server reliability.",
+      "skills": [
+        "Multi-Branch IT Infrastructure (1,200+ users across regional branches)",
+        "Clinical Lab Routing Systems (34 clinical test groups)",
+        "Linux Server Administration (CentOS / CWP VPS)",
+        "CSF Firewall & SSH Bastion Hardening (Port migration, root disable)",
+        "Kernel & Resource Tuning (/etc/security/limits.conf, nproc, nofile)",
+        "Automated Off-Site Backups & Disaster Recovery Pipelines",
+        "Enterprise LAN/WAN, Routing Protocols & Subnet Segmentation"
+      ]
+    },
+    "cybersecurity_automation": {
+      "title": "Cybersecurity & Automation",
+      "icon": "fas fa-shield-halved",
+      "badge": "Active Defense",
+      "summary": "Endpoint protection baselining, threat investigation, and automated security tooling.",
+      "skills": [
+        "Windows Endpoint Security Automation (PowerShell, Winget, Defender, UAC)",
+        "Threat Triage & SIEM Log Correlation (TryHackMe SOC L1, LetsDefend)",
+        "Web Application Security (Burp Suite, PortSwigger Academy, OWASP Top 10)",
+        "Vulnerability Assessment (Nmap, Nessus, Risk Prioritization & Remediation)",
+        "NIST Incident Response & Evidence Timelines",
+        "Governance, Risk & Compliance (GRC) & Security Roadmapping",
+        "Automated Document & Curriculum Generation (Node.js Docx Engine)"
+      ]
+    },
+    "fullstack_development": {
+      "title": "Full-Stack Development",
+      "icon": "fas fa-code",
+      "badge": "Modern Engineering",
+      "summary": "Scalable web architectures, real-time communication systems, and enterprise data sync tools.",
+      "skills": [
+        "React, Modern JavaScript (ES6+), HTML5 & Tailored CSS Systems",
+        "Node.js & Express.js RESTful APIs",
+        "PostgreSQL, Supabase & MySQL Database Engineering",
+        "Socket.io WebSockets (Real-Time Communication)",
+        "Electron (.exe) Native Desktop Packaging",
+        "ExcelJS Bidirectional Data Sync & Record Deduplication",
+        "Granular Role-Based Access Control (RBAC) & Multi-Tenant Isolation"
+      ]
+    }
+  },
   "strengths": [
     {
-      "icon": "fas fa-tower-broadcast",
-      "title": "SOC Monitoring & Triage",
-      "description": "Comfortable following the early incident lifecycle: reviewing alerts, checking context, spotting suspicious patterns, and escalating with structured notes and timelines.",
+      "icon": "fas fa-server",
+      "title": "System Administration & Infrastructure",
+      "description": "Proven operational capability managing enterprise IT infrastructure for 1,200+ users across regional branches. Expertise in network routing, Linux VPS administration, and disaster recovery.",
       "tags": [
-        "SIEM Fundamentals",
-        "Alert Validation",
-        "Case Notes",
-        "Escalation Thinking"
+        "Multi-Branch IT",
+        "1,200+ Users",
+        "Linux CWP VPS",
+        "CSF Firewall",
+        "SSH Hardening",
+        "Disaster Recovery"
+      ]
+    },
+    {
+      "icon": "fas fa-shield-halved",
+      "title": "Cybersecurity & Automation",
+      "description": "Active practitioner in endpoint hardening, threat triage, and automated security workflows. Experienced with PowerShell automation, SIEM log analysis, and NIST incident response.",
+      "tags": [
+        "PowerShell Automation",
+        "Endpoint Hardening",
+        "SIEM Correlation",
+        "NIST IR",
+        "Burp Suite",
+        "GRC"
+      ]
+    },
+    {
+      "icon": "fas fa-code",
+      "title": "Full-Stack & SaaS Development",
+      "description": "Architect of multi-tenant enterprise software, real-time messaging services, and luxury e-commerce. Focused on clean architecture, granular RBAC, and responsive bento interfaces.",
+      "tags": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Socket.io",
+        "Electron",
+        "RBAC Architecture"
+      ]
+    },
+    {
+      "icon": "fas fa-chalkboard-user",
+      "title": "Technical Instruction & Mentorship",
+      "description": "Experienced global and national tech instructor delivering live cybersecurity and software engineering sessions across Egypt and US-based tech education platforms.",
+      "tags": [
+        "Cybersecurity Curricula",
+        "Ethical Hacking",
+        "Hands-On Labs",
+        "Mentorship",
+        "DECI / DEMI"
       ]
     },
     {
       "icon": "fas fa-network-wired",
-      "title": "Network Visibility",
-      "description": "Able to reason about packet flow, connectivity issues, and suspicious traffic patterns using networking knowledge and hands-on analysis labs.",
+      "title": "Network Architecture & Routing",
+      "description": "Deep understanding of packet flows, subnetting, VLAN segmentation, and enterprise routing protocols derived from hands-on lab and utility company infrastructure experience.",
       "tags": [
+        "CCNA Foundations",
         "Wireshark",
-        "TCP/IP",
-        "Nmap",
-        "CCNA Foundations"
+        "TCP/IP Protocols",
+        "LAN/WAN",
+        "Lab Routing"
       ]
     },
     {
-      "icon": "fas fa-magnifying-glass-chart",
-      "title": "Investigation Discipline",
-      "description": "I focus on evidence, timelines, documentation, and repeatable investigation steps instead of guessing. That makes my security work cleaner and easier to trust.",
+      "icon": "fas fa-database",
+      "title": "Data Pipelines & Schema Deduplication",
+      "description": "Engineered automated data consolidation and bidirectional Excel synchronization systems that streamline high-throughput enterprise records with zero collision.",
       "tags": [
-        "Incident Timelines",
-        "Documentation",
-        "Root Cause Thinking",
-        "Reporting"
-      ]
-    },
-    {
-      "icon": "fas fa-user-lock",
-      "title": "Application Security Awareness",
-      "description": "Building admin panels, auth flows, and real-time systems gave me practical intuition around access control, risky logic, and secure implementation patterns.",
-      "tags": [
-        "Authentication",
-        "RBAC Concepts",
-        "Session Thinking",
-        "Secure Design"
-      ]
-    },
-    {
-      "icon": "fas fa-bug-slash",
-      "title": "Vulnerability Assessment Support",
-      "description": "Hands-on familiarity with scanning, interpreting findings, and translating technical issues into practical remediation language inside controlled lab environments.",
-      "tags": [
-        "Nessus",
-        "OpenVAS",
-        "CVSS",
-        "Remediation Notes"
-      ]
-    },
-    {
-      "icon": "fas fa-brain",
-      "title": "Fast-Learning Teammate",
-      "description": "I learn quickly, communicate calmly, and take ownership. For junior security roles, that often matters as much as the current tool list.",
-      "tags": [
-        "Ownership",
-        "Team Communication",
-        "Coachability",
-        "Execution"
+        "ExcelJS Sync",
+        "Data Deduplication",
+        "Schema Standardization",
+        "Supabase",
+        "PostgreSQL"
       ]
     }
   ],
   "projects": [
     {
+      "id": "systemadmin-tasker",
+      "title": "SystemAdminTasker - Enterprise SaaS & Clinical Lab Routing Platform",
+      "category": "fullstack",
+      "type": "Full-Stack & SaaS",
+      "badge": "Enterprise Internal Deployment",
+      "description": "Multi-tenant task management and clinical specimen routing platform coordinating 34 clinical test groups across regional lab branches. Features 2-tier tenant/department isolation, multi-reviewer approval workflows, granular RBAC permissions matrices, gamified employee point leaderboards, and visual branch-to-branch routing maps.",
+      "outcome": "Coordinated clinical specimen transfers for 1,200+ users across 4 regional branches with 100% audit compliance and zero specimen collisions.",
+      "link": "https://github.com/MohamedElhemaly",
+      "tags": [
+        "React",
+        "Node.js",
+        "Socket.io",
+        "PostgreSQL",
+        "Electron (.exe)",
+        "ExcelJS",
+        "RBAC"
+      ]
+    },
+    {
+      "id": "sodfa-watch-store",
+      "title": "Sodfa Watch Store - Luxury E-Commerce & Admin Portal",
+      "category": "fullstack",
+      "type": "Full-Stack & SaaS",
+      "badge": "Live E-Commerce",
+      "description": "Editorial horology e-commerce platform featuring a standalone Super Admin / Admin portal, dynamic discount controls, customizable news ticker management, real-time customer order status tracking, and direct WhatsApp checkout integration.",
+      "outcome": "Engineered a high-performance storefront with automated WhatsApp order intake, granular pricing controls, and sub-100ms response times.",
+      "link": "https://github.com/MohamedElhemaly",
+      "tags": [
+        "JavaScript",
+        "HTML5/CSS3",
+        "RBAC",
+        "WhatsApp API",
+        "Order Tracking",
+        "Admin Portal"
+      ]
+    },
+    {
+      "id": "doctor-branch-directory",
+      "title": "Doctor & Branch Directory System",
+      "category": "fullstack",
+      "type": "Full-Stack & SaaS",
+      "badge": "Enterprise Web App",
+      "description": "Re-engineered a legacy directory tool into a modern full-stack web application featuring bidirectional Excel synchronization, smart record merging, branch transfers, persistent edit highlighting, and paginated print layouts.",
+      "outcome": "Cut directory synchronization time from hours to seconds while preventing data loss and duplicate records across distributed medical staff.",
+      "link": "https://github.com/MohamedElhemaly",
+      "tags": [
+        "React",
+        "Supabase",
+        "Excel Sync",
+        "Data Pipelines",
+        "PostgreSQL",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "linux-vps-hardening",
+      "title": "Production Linux VPS Hardening & Backup Architecture",
+      "category": "cybersecurity",
+      "type": "Cybersecurity & Infra",
+      "badge": "Enterprise Hardened",
+      "description": "Hardened a production CentOS Web Panel (CWP) VPS by disabling root SSH access, migrating SSH ports, enforcing sudo privilege separation, tuning kernel/resource limits (nproc/nofile), configuring CSF firewall rules, and designing automated off-site backup workflows.",
+      "outcome": "Mitigated brute-force login vectors, stabilized VPS under high concurrent load, and established guaranteed offsite disaster recovery.",
+      "link": "",
+      "tags": [
+        "Linux (CentOS)",
+        "CWP",
+        "CSF Firewall",
+        "SSH Hardening",
+        "Kernel Tuning",
+        "Bash Automation"
+      ]
+    },
+    {
+      "id": "up-arrow-endpoint-security",
+      "title": "Up Arrow - Windows Endpoint Security Automation",
+      "category": "cybersecurity",
+      "type": "Cybersecurity & Infra",
+      "badge": "Security Automation",
+      "description": "Automated Windows workstation security baseline script enforcing Windows Firewall profiles, strict UAC prompts, automated screen locks, Microsoft Defender protections, and silent package provisioning via Winget.",
+      "outcome": "Accelerated workstation provisioning across regional branch offices from 45 minutes to under 3 minutes per machine.",
+      "link": "https://github.com/MohamedElhemaly",
+      "tags": [
+        "PowerShell",
+        "Windows Security",
+        "Microsoft Defender",
+        "Winget",
+        "Endpoint Hardening"
+      ]
+    },
+    {
+      "id": "cybersecurity-study-plan-generator",
+      "title": "Cybersecurity Study Plan Generator",
+      "category": "cybersecurity",
+      "type": "Cybersecurity & Infra",
+      "badge": "Education Engine",
+      "description": "Built a Node.js automation engine that programmatically generates structured cybersecurity learning roadmaps and formatted .docx study plans based on student skill assessment and target certification tracks.",
+      "outcome": "Adopted across instructional sessions to deliver customized, professional study blueprints for aspiring cybersecurity students.",
+      "link": "https://github.com/MohamedElhemaly",
+      "tags": [
+        "Node.js",
+        "JavaScript",
+        "Document Automation",
+        "Docx Engine",
+        "Curriculum Design"
+      ]
+    },
+    {
+      "id": "soc-investigation-lab",
       "title": "SOC Investigation Lab",
-      "type": "Security Lab",
+      "category": "cybersecurity",
+      "type": "Cybersecurity & Infra",
+      "badge": "SOC Blue Team",
       "description": "Worked through simulated SIEM alerts, correlated evidence, reconstructed an incident timeline, and documented the analyst decision path from detection to reporting.",
-      "outcome": "Demonstrated readiness for Tier 1 workflow habits: triage, evidence review, prioritization, and concise reporting.",
+      "outcome": "Demonstrated readiness for Tier 1 workflow habits: alert triage, evidence correlation, prioritization, and concise investigative reporting.",
       "link": "",
       "tags": [
         "SIEM",
         "Incident Timeline",
         "Alert Triage",
-        "Reporting"
+        "Log Analysis",
+        "NIST Framework"
       ]
     },
     {
+      "id": "web-vulnerability-assessment",
       "title": "Web Vulnerability Assessment in Controlled Lab",
-      "type": "Assessment Project",
+      "category": "cybersecurity",
+      "type": "Cybersecurity & Infra",
+      "badge": "Vulnerability Assessment",
       "description": "Performed reconnaissance and vulnerability review on a lab target using scanning and validation tools, then organized findings by severity and remediation priority.",
-      "outcome": "Strengthened my ability to convert raw scan output into a practical security story rather than a noisy tool dump.",
+      "outcome": "Strengthened practical capability to convert raw scanner output into prioritized, actionable remediation roadmaps.",
       "link": "",
       "tags": [
         "Nmap",
         "Nessus",
         "Risk Prioritization",
-        "Remediation"
+        "Remediation",
+        "CVSS Scoring"
       ]
     },
     {
+      "id": "incident-response-reporting",
       "title": "Incident Response Reporting Exercise",
-      "type": "IR Practice",
+      "category": "cybersecurity",
+      "type": "Cybersecurity & Infra",
+      "badge": "IR Case Study",
       "description": "Produced a structured incident response report for a DEPI training scenario covering detection method, scope, containment, eradication, and lessons learned.",
-      "outcome": "Showed that I can organize technical findings into a format useful for both analysts and decision-makers.",
+      "outcome": "Showed high proficiency structuring technical security findings into actionable executive and engineering briefs.",
       "link": "",
       "tags": [
         "NIST IR",
         "Forensics Basics",
         "Documentation",
-        "Containment"
+        "Containment",
+        "DEPI"
       ]
     },
     {
+      "id": "secure-access-admin-panel",
       "title": "Secure Access Mindset from Admin Panel Development",
-      "type": "Transferable Build",
-      "description": "While building an admin control panel, I worked directly with authentication, role-based access ideas, privileged workflows, and operational controls that map naturally to security thinking.",
-      "outcome": "This project strengthens my understanding of how misconfigurations and weak access design can become security issues in real systems.",
+      "category": "archive",
+      "type": "Archive / Earlier Work",
+      "badge": "Legacy Architecture",
+      "description": "While building an admin control panel, worked directly with authentication, role-based access ideas, privileged workflows, and operational controls that map naturally to security thinking.",
+      "outcome": "Built strong foundational intuition for privilege escalation vectors, session hijacking prevention, and defensive system design.",
       "link": "https://github.com/MohamedElhemaly/admin-control-panel",
       "tags": [
+        "PHP",
+        "MySQL",
         "Auth Flows",
         "RBAC",
         "Privileged Access",
-        "Web Security Awareness"
+        "CRUD"
       ]
     },
     {
+      "id": "real-time-websocket-prototype",
       "title": "Real-Time WebSocket Infrastructure Prototype",
-      "type": "Engineering Depth",
-      "description": "Built a real-time communication service in PHP using WebSockets, which sharpened my understanding of persistent connections, event-driven behavior, and monitoring needs in stateful systems.",
-      "outcome": "Useful security crossover for understanding long-lived sessions, unusual traffic behavior, and operational visibility in modern apps.",
+      "category": "archive",
+      "type": "Archive / Earlier Work",
+      "badge": "Network Protocols",
+      "description": "Built a real-time communication service in PHP using WebSockets, which sharpened understanding of persistent connections, event-driven behavior, and monitoring needs in stateful systems.",
+      "outcome": "Direct architectural insight into stateful connection handling, heartbeat monitoring, and traffic inspection.",
       "link": "https://github.com/MohamedElhemaly/Web-Socket",
       "tags": [
         "WebSockets",
         "Traffic Behavior",
         "Protocol Awareness",
-        "System Thinking"
+        "System Thinking",
+        "PHP"
       ]
     },
     {
+      "id": "security-focused-portfolio",
       "title": "Security-Focused Personal Portfolio",
-      "type": "Presentation Layer",
-      "description": "Redesigned this portfolio to present a clear, recruiter-friendly cybersecurity narrative with stronger positioning, stronger visual quality, and stronger evidence alignment.",
-      "outcome": "Makes the case for security hiring faster by removing mixed messaging and highlighting blue-team readiness first.",
+      "category": "archive",
+      "type": "Archive / Earlier Work",
+      "badge": "Portfolio Architecture",
+      "description": "Engineered an ultra-fast, zero-dependency interactive portfolio highlighting dual expertise in backend infrastructure and cybersecurity operations.",
+      "outcome": "High recruiter engagement through transparent proof-of-work, clean typography, and sub-50ms asset delivery.",
       "link": "https://mohamedelhemaly.github.io/portfolio/",
       "tags": [
-        "Personal Branding",
-        "Security Positioning",
-        "UI Strategy",
-        "Recruiter Experience"
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "GitHub Pages",
+        "Vercel",
+        "Bento Grid"
       ]
     }
   ],
   "experience": [
     {
+      "organization": "Shalaby Lab (???? ????)",
+      "role": "System Administrator",
+      "date": "2026 - Present",
+      "category": "infra",
+      "badge": "Current Enterprise Role",
+      "highlights": [
+        "Manage IT infrastructure, network operations, and centralized user/branch databases for 1,200+ employees and system users across multiple regional branches (Etay, Kafr El-Dawar, Branch 45, Tosson).",
+        "Engineered automated data consolidation, deduplication, and schema standardization pipelines for multi-branch enterprise records.",
+        "Implemented high-availability branch-to-branch routing protocols, ensuring continuous connectivity for critical laboratory information systems.",
+        "Enforced strict backup regimens, endpoint security policies, and rapid disaster recovery procedures across all operational nodes."
+      ]
+    },
+    {
+      "organization": "US-Based Tech Education Company",
+      "role": "Cybersecurity & Coding Instructor",
+      "date": "2026 - Present",
+      "category": "teaching",
+      "badge": "Global Instruction",
+      "highlights": [
+        "Deliver live English-language technical sessions, hands-on security labs, and instructional curricula in cybersecurity and software development.",
+        "Mentor international students in ethical hacking methodologies, web application security (OWASP Top 10), and secure software engineering patterns.",
+        "Facilitate hands-on defense labs covering traffic analysis, alert triage, and cryptographic foundations."
+      ]
+    },
+    {
+      "organization": "iSchool (DECI & DEMI Initiatives)",
+      "role": "Programming & Cybersecurity Instructor",
+      "date": "2025 - 2026",
+      "category": "teaching",
+      "badge": "National Initiative",
+      "highlights": [
+        "Taught programming and cybersecurity tracks (Ethical Hacking, Web Application Security, Network Security Basics, Incident Response, Cryptography, and GRC) for Grade 4-10 students under Egypt's Ministry of Communications initiatives.",
+        "Guided hundreds of young talents through interactive labs, security puzzle-solving, and safe computing habits.",
+        "Received top instructor commendation for engaging curriculum delivery and high student retention rates."
+      ]
+    },
+    {
+      "organization": "Information Technology Institute (ITI)",
+      "role": "Python Programming & UI/UX Design Intern",
+      "date": "2025",
+      "category": "internship",
+      "badge": "Gov Tech Training",
+      "highlights": [
+        "Completed rigorous hands-on training in Python software architecture, data modeling, automation scripting, and human-centered UI/UX design.",
+        "Developed end-to-end applications adhering to clean code guidelines, component design systems, and responsive interfaces."
+      ]
+    },
+    {
+      "organization": "Beheira Company for Electricity Distribution",
+      "role": "IT & Network Infrastructure Intern",
+      "date": "July 2024 - August 2024",
+      "category": "infra",
+      "badge": "Enterprise Utilities",
+      "highlights": [
+        "Supported enterprise LAN infrastructure setup, hardware diagnostics, and network troubleshooting across multiple corporate departments.",
+        "Diagnosed and resolved switch-level connectivity issues, analyzed packet flows, and drafted comprehensive network topology diagrams.",
+        "Assisted in deploying standardized workstation system images and maintaining departmental IT asset inventories."
+      ]
+    },
+    {
       "organization": "Digital Egypt Pioneers Initiative (DEPI) - AMIT",
       "role": "Incident Response Track Participant",
-      "date": "Jul 2025 - Dec 2025",
+      "date": "July 2025 - December 2025",
+      "category": "sec",
+      "badge": "Ministry Initiative",
       "highlights": [
-        "Completed practical training around SOC processes, digital forensics fundamentals, and structured incident handling workflows.",
-        "Worked through analyst-style labs involving detection logic, evidence review, and incident reporting.",
-        "Strengthened understanding of security operations discipline, not just isolated technical tasks."
+        "Completed intensive specialized training around SOC processes, digital forensics fundamentals, and structured incident handling workflows.",
+        "Worked through analyst-style labs involving detection logic, SIEM log correlation, evidence review, and formal incident reporting.",
+        "Mastered the NIST incident response lifecycle from preparation and detection through containment and post-incident analysis."
       ]
     },
     {
-      "organization": "TryHackMe and LetsDefend",
+      "organization": "TryHackMe & LetsDefend",
       "role": "Cybersecurity Trainee - SOC Path",
-      "date": "Jan 2024 - Present",
+      "date": "January 2024 - Present",
+      "category": "sec",
+      "badge": "Continuous Practice",
       "highlights": [
         "Actively progressing through hands-on labs for SOC Level 1, phishing analysis, network traffic review, and SIEM fundamentals.",
-        "Practiced identifying suspicious behavior, validating findings, and documenting analyst decisions clearly.",
-        "Built comfort with repeated investigative workflows instead of one-off challenge solving."
-      ]
-    },
-    {
-      "organization": "Electricity Company - Beheira Governorate",
-      "role": "Network Infrastructure Intern",
-      "date": "Jul 2024 - Aug 2024",
-      "highlights": [
-        "Supported LAN infrastructure setup and troubleshooting across multiple departments.",
-        "Improved my ability to analyze connectivity issues, network behavior, and operational dependencies.",
-        "Created technical notes and topology understanding that now strengthen my network-security perspective."
+        "Practiced identifying suspicious network behaviors, validating triage findings, and documenting analyst decisions clearly.",
+        "Regularly engage in blue-team threat scenarios covering brute force, malware execution, and lateral movement artifacts."
       ]
     },
     {
       "organization": "Self-Directed Technical Projects",
-      "role": "Security-Minded Builder",
+      "role": "Full-Stack Builder & Security Researcher",
       "date": "2023 - Present",
+      "category": "dev",
+      "badge": "Independent Builds",
       "highlights": [
-        "Built systems involving authentication, data handling, access workflows, and real-time communication patterns.",
-        "Used development work to sharpen secure design awareness and understand what defenders need to monitor in applications.",
-        "Developed a stronger bridge between engineering detail and defensive analysis."
+        "Built and maintained full-stack production systems involving complex authentication, privileged access workflows, and real-time communication.",
+        "Consistently merged engineering discipline with security principles to build hardened, performant software applications."
       ]
+    }
+  ],
+  "hackathons": [
+    {
+      "title": "Startup Launchpad - Creativa Damanhour",
+      "year": "2026",
+      "role": "Founder / Technical Lead",
+      "description": "Accelerated tech startup validation, lean business modeling, product-market fit validation, and investor presentation."
+    },
+    {
+      "title": "AI Hackathon - Damanhour",
+      "year": "2025",
+      "role": "Full-Stack & AI Builder",
+      "description": "Designed and prototyped AI-driven software solutions addressing operational automation in healthcare and administrative environments."
+    },
+    {
+      "title": "C-Youth Challenge",
+      "year": "2026",
+      "role": "Climate Tech Innovator",
+      "description": "Youth-led climate technology challenge engineering sustainable software and data solutions for environmental impact."
     }
   ],
   "certifications": [
     {
+      "id": 1,
+      "title": "Startup Launchpad - Creativa Damanhour",
+      "description": "Tech startup acceleration, product development, and venture engineering",
+      "status": "Completed (2026)",
+      "status_class": "done",
+      "badge": "Innovation"
+    },
+    {
+      "id": 2,
+      "title": "AI Hackathon - Damanhour",
+      "description": "Engineered AI-driven prototype solutions for real-world automation",
+      "status": "Completed (2025)",
+      "status_class": "done",
+      "badge": "AI Prototype"
+    },
+    {
+      "id": 3,
+      "title": "C-Youth Challenge",
+      "description": "Youth-led climate technology solutions and sustainable engineering",
+      "status": "Completed (2026)",
+      "status_class": "done",
+      "badge": "Climate Tech"
+    },
+    {
+      "id": 4,
+      "title": "Green Digital Certificate - INCO Academy",
+      "description": "Sustainable digital technologies, green IT best practices, and carbon reduction",
+      "status": "Certified",
+      "status_class": "done",
+      "badge": "Green IT"
+    },
+    {
+      "id": 5,
+      "title": "PortSwigger Web Security Academy",
+      "description": "In-depth web application security, Burp Suite exploitation, and vulnerability remediation",
+      "status": "Active Practitioner",
+      "status_class": "done",
+      "badge": "AppSec"
+    },
+    {
+      "id": 6,
+      "title": "Cyvitrix Learning - Governance, Risk & Compliance (GRC)",
+      "description": "Security governance frameworks, compliance auditing, risk assessment, and policies",
+      "status": "Completed",
+      "status_class": "done",
+      "badge": "GRC"
+    },
+    {
+      "id": 7,
+      "title": "Cisco Networking Academy - CCNA Enterprise Networking",
+      "description": "Enterprise routing, switching, subnetting, network security, and infrastructure architecture",
+      "status": "Academic Mastery",
+      "status_class": "done",
+      "badge": "Networking"
+    },
+    {
+      "id": 8,
       "title": "Cisco - Introduction to Cybersecurity",
-      "description": "Foundational cybersecurity concepts, threat landscape, and basic defensive best practices.",
+      "description": "Foundational cybersecurity principles, threat intelligence, and defensive strategies",
       "status": "Completed",
-      "status_class": "done"
+      "status_class": "done",
+      "badge": "Security"
     },
     {
-      "title": "Fortinet NSE 1-3",
-      "description": "Network security learning path covering security awareness, threat concepts, and Fortinet platform fundamentals.",
-      "status": "Completed",
-      "status_class": "done"
+      "id": 9,
+      "title": "Fortinet NSE 1 - 3",
+      "description": "Network Security Associate program covering modern threat landscapes and FortiGate architectures",
+      "status": "Certified",
+      "status_class": "done",
+      "badge": "Network Security"
     },
     {
-      "title": "Sprints x Microsoft - Cybersecurity Fundamentals",
-      "description": "Structured cybersecurity fundamentals program with emphasis on practical understanding and defensive awareness.",
+      "id": 10,
+      "title": "Sprints � Microsoft - Cybersecurity Fundamentals",
+      "description": "Comprehensive cybersecurity program covering security operations, cloud defense, and identity management",
       "status": "Completed",
-      "status_class": "done"
+      "status_class": "done",
+      "badge": "Microsoft Partner"
     },
     {
-      "title": "DEPI - Incident Response Track",
-      "description": "Security operations and incident response training delivered through the Digital Egypt Pioneers Initiative.",
-      "status": "Completed",
-      "status_class": "done"
+      "id": 11,
+      "title": "DEPI - Incident Response Track (AMIT)",
+      "description": "Digital Egypt Pioneers Initiative - SOC operations, forensics, and structured NIST IR",
+      "status": "Graduated",
+      "status_class": "done",
+      "badge": "DEPI Ministry"
     },
     {
+      "id": 12,
       "title": "TryHackMe - SOC Level 1",
-      "description": "Hands-on blue-team path covering SIEM, log analysis, threat detection, and SOC workflows.",
+      "description": "Hands-on blue team training: SIEM log correlation, alert triage, and threat hunting",
       "status": "In Progress",
-      "status_class": "progress"
+      "status_class": "progress",
+      "badge": "SOC Analyst"
     },
     {
-      "title": "CCNA Networking Concepts",
-      "description": "Academic networking foundation supporting stronger traffic analysis, troubleshooting, and network defense reasoning.",
-      "status": "Academic Foundation",
-      "status_class": "done"
+      "id": 13,
+      "title": "Coursera - Computer Science & Cybersecurity",
+      "description": "Advanced technical specializations in computing systems, network security, and algorithms",
+      "status": "Continuous Learning",
+      "status_class": "done",
+      "badge": "Specialization"
     }
   ]
 }

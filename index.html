@@ -3,747 +3,956 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohamed Elhemaly - Cybersecurity Analyst portfolio focused on SOC operations, incident response, security monitoring, and security-minded engineering.">
-    <meta name="keywords" content="Mohamed Elhemaly, Cybersecurity Analyst, SOC Analyst, Incident Response, Security Operations, Threat Detection, SIEM, Egypt">
-    <meta name="author" content="Mohamed Elhemaly">
-    <title>Mohamed Elhemaly | Cybersecurity Portfolio</title>
+    <meta name="description" content="Mohamed Magdi Elhemaly — System Administrator, Full-Stack Developer, and Cybersecurity Instructor. Managing enterprise IT infrastructure for 1,200+ users, architecting multi-tenant SaaS platforms, and delivering hands-on security training.">
+    <meta name="keywords" content="Mohamed Magdi Elhemaly, System Administrator, Full-Stack Developer, Cybersecurity, Incident Response, SOC, React, Node.js, Linux VPS, Shalaby Lab, Egypt">
+    <meta name="author" content="Mohamed Magdi Elhemaly">
+    <title id="page-title">Mohamed Magdi Elhemaly | System Administrator & Full-Stack Engineer</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="site-shell">
-        <div class="ambient ambient-a"></div>
-        <div class="ambient ambient-b"></div>
-        <div class="grid-overlay"></div>
-
-        <header class="site-header" id="header">
-            <div class="container nav-row">
-                <a href="#hero" class="brand">
-                    <span class="brand-mark">M</span>
-                    <span class="brand-copy">
-                        <strong>Mohamed Elhemaly</strong>
-                        <small>Cybersecurity Analyst</small>
-                    </span>
-                </a>
-
-                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <nav class="site-nav" id="site-nav">
-                    <a href="#about">About</a>
-                    <a href="#strengths">Strengths</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#certifications">Certifications</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </header>
-
-        <main>
-            <section class="hero" id="hero">
-                <div class="container hero-layout">
-                    <div class="hero-copy reveal">
-                        <div class="eyebrow" id="hero-badge">Security Operations Candidate</div>
-                        <h1 id="hero-headline">I turn alerts, logs, and infrastructure clues into confident security action.</h1>
-                        <p class="hero-lead" id="hero-summary">
-                            SOC-focused cybersecurity trainee with hands-on experience in incident triage, log analysis, network investigation, and secure system thinking.
-                        </p>
-
-                        <div class="hero-points" id="hero-points"></div>
-
-                        <div class="cta-row">
-                            <a class="btn btn-primary" id="linkedin-link" href="https://www.linkedin.com/in/mohamed-elhemaly-b8993530a" target="_blank" rel="noreferrer">
-                                View LinkedIn
-                                <i class="fas fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a class="btn btn-secondary" id="resume-link" href="#" target="_blank" rel="noreferrer" hidden>
-                                Download CV
-                                <i class="fas fa-file-arrow-down"></i>
-                            </a>
-                            <a class="btn btn-secondary" href="#projects">
-                                Explore Case Studies
-                                <i class="fas fa-shield-halved"></i>
-                            </a>
-                        </div>
-
-                        <div class="trust-strip" id="trust-strip"></div>
-                    </div>
-
-                    <div class="hero-visual reveal reveal-delay-1">
-                        <div class="profile-card">
-                            <div class="profile-top">
-                                <div>
-                                    <p class="terminal-label">Live Analyst Snapshot</p>
-                                    <h2 id="profile-name">Mohamed Elhemaly</h2>
-                                    <p id="hero-location">Damanhour, Egypt</p>
-                                </div>
-                                <div class="signal-pill" id="hero-availability">Open to SOC & IR Roles</div>
-                            </div>
-
-                            <div class="profile-grid">
-                                <div class="profile-photo-wrap">
-                                    <div class="photo-frame">
-                                        <img src="https://i.ibb.co/gLWjVYqt/DSC-0524.jpg" alt="Mohamed Elhemaly">
-                                    </div>
-                                    <div class="scan-ring"></div>
-                                </div>
-
-                                <div class="threat-panel">
-                                    <div class="panel-head">
-                                        <span>Priority Domains</span>
-                                        <span class="status-dot">Monitored</span>
-                                    </div>
-                                    <div class="domain-list" id="domain-list"></div>
-                                </div>
-                            </div>
-
-                            <div class="stat-grid" id="stat-grid"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section about" id="about">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <span class="section-kicker">Positioning</span>
-                        <h2>Built for <span>security hiring teams</span></h2>
-                        <p id="about-intro">I combine blue-team training with engineering discipline, which helps me investigate clearly, document cleanly, and think about systems the way defenders need to.</p>
-                    </div>
-
-                    <div class="about-layout">
-                        <article class="about-card narrative reveal">
-                            <div class="card-chip">Why me</div>
-                            <p id="about-main"></p>
-                            <p id="about-support"></p>
-                        </article>
-
-                        <aside class="about-card recruiter reveal reveal-delay-1">
-                            <div class="card-chip">Recruiter Snapshot</div>
-                            <div class="snapshot-list" id="snapshot-list"></div>
-                        </aside>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section strengths" id="strengths">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <span class="section-kicker">Strength Map</span>
-                        <h2>What I can <span>contribute fast</span></h2>
-                    </div>
-                    <div class="strength-grid" id="strength-grid"></div>
-                </div>
-            </section>
-
-            <section class="section projects" id="projects">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <span class="section-kicker">Selected Work</span>
-                        <h2>Security labs and <span>transferable builds</span></h2>
-                        <p>Each item highlights investigation thinking, technical depth, and the kind of operational discipline that matters in security teams.</p>
-                    </div>
-                    <div class="project-grid" id="project-grid"></div>
-                </div>
-            </section>
-
-            <section class="section experience" id="experience">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <span class="section-kicker">Timeline</span>
-                        <h2>Training, delivery, and <span>hands-on growth</span></h2>
-                    </div>
-                    <div class="timeline" id="timeline"></div>
-                </div>
-            </section>
-
-            <section class="section certifications" id="certifications">
-                <div class="container">
-                    <div class="section-heading reveal">
-                        <span class="section-kicker">Readiness</span>
-                        <h2>Credentials that reinforce <span>real practice</span></h2>
-                    </div>
-                    <div class="cert-grid" id="cert-grid"></div>
-                    <div class="goal-banner reveal" id="goal-banner"></div>
-                </div>
-            </section>
-
-            <section class="section contact" id="contact">
-                <div class="container contact-layout">
-                    <div class="contact-copy reveal">
-                        <span class="section-kicker">Contact</span>
-                        <h2>Available for <span>security opportunities</span></h2>
-                        <p id="contact-summary">If you need someone who can grow quickly in a SOC, communicate clearly under pressure, and bring both security curiosity and technical execution, let's talk.</p>
-
-                        <div class="contact-cards" id="contact-cards"></div>
-                    </div>
-
-                    <form class="contact-form reveal reveal-delay-1" onsubmit="handleSubmit(event)">
-                        <div class="form-row">
-                            <label for="name">Name</label>
-                            <input id="name" type="text" name="name" placeholder="Hiring manager or team name" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" name="email" placeholder="name@company.com" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell me about the role, team, or challenge you're hiring for..." required></textarea>
-                        </div>
-                        <input type="hidden" name="_subject" value="New portfolio message from Mohamed Elhemaly">
-                        <input type="hidden" name="_captcha" value="false">
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            Send Message
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="container footer-row">
-                <p id="footer-copy">Mohamed Elhemaly - Cybersecurity portfolio built for SOC, incident response, and security operations roles.</p>
-                <div class="footer-links" id="footer-links"></div>
-            </div>
-        </footer>
+    <!-- Ambient Canvas Backgrounds -->
+    <div class="ambient-canvas">
+        <div class="ambient-blob ambient-blob-1"></div>
+        <div class="ambient-blob ambient-blob-2"></div>
+        <div class="ambient-blob ambient-blob-3"></div>
+        <div class="grid-lines"></div>
     </div>
 
+    <!-- Frosted Glass Sticky Top Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="#about" class="brand-link" aria-label="Mohamed Magdi Elhemaly Home">
+                <span class="brand-badge">ME</span>
+                <span class="brand-name" id="nav-brand-name">Mohamed Magdi Elhemaly</span>
+                <span class="brand-title-pill">Admin &amp; Dev</span>
+            </a>
+
+            <nav class="site-nav">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#arsenal" class="nav-link">Arsenal</a></li>
+                    <li><a href="#credentials" class="nav-link">Credentials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://www.linkedin.com/in/mohamed-magdi-elhemaly" target="_blank" rel="noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" id="nav-linkedin-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/MohamedElhemaly" target="_blank" rel="noreferrer" class="social-icon-btn" aria-label="GitHub Profile" id="nav-github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="./uploads/mohamed-elhemaly-cv-1775743116168.pdf" target="_blank" rel="noreferrer" class="btn-header-cta" id="nav-resume-link">
+                    <i class="fas fa-file-arrow-down"></i>
+                    <span>Resume</span>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================================================================
+             1. HERO BENTO GRID
+             ================================================================ -->
+        <section class="hero-section" id="about">
+            <div class="container">
+                <div class="hero-bento-grid">
+                    <!-- Main Identity Bento Card (8 Cols) -->
+                    <div class="bento-card hero-card-main reveal">
+                        <div class="hero-main-top">
+                            <div class="status-pill">
+                                <span class="status-beacon"></span>
+                                <span id="hero-availability">Available for Opportunities</span>
+                            </div>
+
+                            <h1 class="hero-name">
+                                <span class="hero-name-gradient" id="hero-name">Mohamed Magdi Elhemaly</span>
+                            </h1>
+
+                            <div class="hero-headline" id="hero-headline">
+                                System Administrator | Full-Stack Developer | Cybersecurity &amp; Coding Instructor
+                            </div>
+
+                            <p class="hero-summary" id="hero-summary">
+                                Computer Science &amp; Mathematics graduate (2026) managing enterprise IT infrastructure and centralized databases for 1,200+ users across regional branches. Proven track record architecting multi-tenant SaaS routing platforms, securing production Linux/Windows environments, and delivering cybersecurity instruction.
+                            </p>
+
+                            <div class="hero-keypoints" id="hero-points">
+                                <div class="hero-point-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Oversees network operations, enterprise databases, and system security for 1,200+ users across multiple regional branches.</span>
+                                </div>
+                                <div class="hero-point-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Architected multi-tenant SaaS routing platforms, luxury e-commerce portals, and enterprise sync systems.</span>
+                                </div>
+                                <div class="hero-point-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Delivers hands-on cybersecurity and software development instruction for global and national tech programs.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-accent">
+                                <span>Explore Flagship Work</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                            <a href="./uploads/mohamed-elhemaly-cv-1775743116168.pdf" target="_blank" rel="noreferrer" class="btn btn-secondary" id="hero-resume-cta">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Download CV</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohamed-magdi-elhemaly" target="_blank" rel="noreferrer" class="btn btn-secondary" id="hero-linkedin-cta">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/MohamedElhemaly" target="_blank" rel="noreferrer" class="btn btn-secondary" id="hero-github-cta">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Photo Bento Card (4 Cols) -->
+                    <div class="bento-card hero-card-photo reveal reveal-delay-1">
+                        <div class="photo-frame-container">
+                            <!-- Bulletproof image loading: uses tracked local path with fallback to assets and error handling -->
+                            <img id="hero-profile-img" 
+                                 src="./uploads/profile-photo.jpg" 
+                                 alt="Mohamed Magdi Elhemaly"
+                                 loading="eager"
+                                 onerror="if (!this.dataset.tried) { this.dataset.tried = '1'; this.src = './assets/profile-photo.jpg'; } else { this.src = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'; }">
+                            
+                            <div class="photo-overlay-tag">
+                                <div>
+                                    <div class="photo-overlay-name" id="photo-overlay-name">Mohamed Magdi</div>
+                                    <div class="photo-overlay-loc" id="photo-overlay-loc">Alexandria / Beheira, Egypt</div>
+                                </div>
+                                <div class="photo-status-badge">
+                                    <i class="fas fa-shield-check"></i>
+                                    <span>Verified Ops</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="photo-card-footer">
+                            <span class="tech-pill"><i class="fas fa-server"></i> SysAdmin</span>
+                            <span class="tech-pill"><i class="fas fa-code"></i> Full-Stack</span>
+                            <span class="tech-pill"><i class="fas fa-user-shield"></i> Security</span>
+                        </div>
+                    </div>
+
+                    <!-- 4 Live Highlight Metric Bento Tiles (Each 3 Cols) -->
+                    <div class="bento-card hero-metric-tile reveal reveal-delay-1">
+                        <div class="metric-number cyan" id="stat-val-0">1,200+</div>
+                        <div>
+                            <div class="metric-title" id="stat-label-0">Enterprise Users Managed</div>
+                            <div class="metric-subtext">Multi-branch hospital &amp; clinical network operations</div>
+                        </div>
+                    </div>
+
+                    <div class="bento-card hero-metric-tile reveal reveal-delay-2">
+                        <div class="metric-number emerald" id="stat-val-1">34</div>
+                        <div>
+                            <div class="metric-title" id="stat-label-1">Clinical Lab Routing Groups</div>
+                            <div class="metric-subtext">Coordinated across 4 regional branches with zero collision</div>
+                        </div>
+                    </div>
+
+                    <div class="bento-card hero-metric-tile reveal reveal-delay-3">
+                        <div class="metric-number cyan" id="stat-val-2">2026</div>
+                        <div>
+                            <div class="metric-title" id="stat-label-2">CS &amp; Math Graduate</div>
+                            <div class="metric-subtext">Faculty of Science, Damanhour University</div>
+                        </div>
+                    </div>
+
+                    <div class="bento-card hero-metric-tile reveal reveal-delay-4">
+                        <div class="metric-number emerald" id="stat-val-3">100%</div>
+                        <div>
+                            <div class="metric-title" id="stat-label-3">Production Reliability</div>
+                            <div class="metric-subtext">Automated offsite backup redundancy &amp; failover</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Strip / Enterprise Marquee -->
+                <div class="trust-marquee-wrapper reveal">
+                    <div class="trust-marquee-track" id="trust-strip">
+                        <span class="trust-item"><i class="fas fa-hospital"></i> Shalaby Lab Enterprise IT</span>
+                        <span class="trust-item"><i class="fas fa-users-gear"></i> 1,200+ Users Managed</span>
+                        <span class="trust-item"><i class="fas fa-network-wired"></i> 34 Clinical Lab Routing Groups</span>
+                        <span class="trust-item"><i class="fas fa-shield-halved"></i> TryHackMe SOC L1 &amp; LetsDefend</span>
+                        <span class="trust-item"><i class="fas fa-certificate"></i> Cisco Networking Academy (CCNA)</span>
+                        <span class="trust-item"><i class="fas fa-bug"></i> PortSwigger Web Security Academy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             2. EXPERIENCE & OPERATIONAL IMPACT BENTO SECTION
+             ================================================================ -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-kicker">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Operational Impact &amp; Trajectory</span>
+                    </div>
+                    <h2 class="section-title">Enterprise Infrastructure &amp; <span>Engineering Leadership</span></h2>
+                    <p class="section-subtitle">
+                        Direct operational responsibility for multi-branch healthcare infrastructure, international cybersecurity instruction, and enterprise-grade software engineering.
+                    </p>
+                </div>
+
+                <div class="experience-bento-grid" id="experience-grid">
+                    <!-- Dynamic Experience Cards rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             3. PROJECTS BENTO SHOWCASE (WITH CATEGORY FILTER TABS)
+             ================================================================ -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-kicker">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Systems &amp; Engineering Portfolio</span>
+                    </div>
+                    <h2 class="section-title">Production SaaS, <span>Infrastructure &amp; Security Tools</span></h2>
+                    <p class="section-subtitle">
+                        Architected for enterprise resilience, multi-tenant department isolation, automated synchronization, and defensive endpoint security.
+                    </p>
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="projects-filter-bar reveal" id="project-filters">
+                    <button class="filter-tab-btn active" data-filter="all">
+                        <span>All Systems</span>
+                        <span class="filter-count" id="count-all">(12)</span>
+                    </button>
+                    <button class="filter-tab-btn" data-filter="fullstack">
+                        <span>Full-Stack &amp; SaaS</span>
+                        <span class="filter-count" id="count-fullstack">(3)</span>
+                    </button>
+                    <button class="filter-tab-btn" data-filter="cybersecurity">
+                        <span>Cybersecurity &amp; Infra</span>
+                        <span class="filter-count" id="count-cybersecurity">(6)</span>
+                    </button>
+                    <button class="filter-tab-btn" data-filter="archive">
+                        <span>Archive / Earlier Work</span>
+                        <span class="filter-count" id="count-archive">(3)</span>
+                    </button>
+                </div>
+
+                <!-- Projects Bento Grid -->
+                <div class="projects-bento-grid" id="projects-grid">
+                    <!-- Dynamic Project Cards rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             4. TECHNICAL ARSENAL BENTO GRID (3 DISTINCT CARDS)
+             ================================================================ -->
+        <section class="arsenal-section" id="arsenal">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-kicker">
+                        <i class="fas fa-microchip"></i>
+                        <span>Technical Arsenal</span>
+                    </div>
+                    <h2 class="section-title">Core Disciplines &amp; <span>Specialized Toolchains</span></h2>
+                    <p class="section-subtitle">
+                        Three specialized pillars spanning enterprise infrastructure, active cyber defense, and production full-stack software development.
+                    </p>
+                </div>
+
+                <div class="arsenal-bento-grid">
+                    <!-- Card 1: System Administration & Infrastructure -->
+                    <div class="bento-card arsenal-card reveal">
+                        <div>
+                            <div class="arsenal-card-head">
+                                <div class="arsenal-icon-wrap cyan">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <span class="category-badge cyan">Enterprise IT</span>
+                            </div>
+                            <h3 class="arsenal-title">System Administration &amp; Infrastructure</h3>
+                            <p class="arsenal-summary">
+                                Enterprise IT infrastructure reliability, multi-branch operations, centralized database maintenance, and production Linux VPS hardening.
+                            </p>
+                            <ul class="arsenal-skill-list">
+                                <li class="arsenal-skill-item cyan"><i class="fas fa-check"></i><span>Multi-Branch IT Infrastructure (1,200+ users across regional branches)</span></li>
+                                <li class="arsenal-skill-item cyan"><i class="fas fa-check"></i><span>Clinical Lab Routing Systems (34 clinical test groups)</span></li>
+                                <li class="arsenal-skill-item cyan"><i class="fas fa-check"></i><span>Linux Server Administration (CentOS / CWP VPS)</span></li>
+                                <li class="arsenal-skill-item cyan"><i class="fas fa-check"></i><span>CSF Firewall &amp; SSH Bastion Hardening (Port migration, root disable)</span></li>
+                                <li class="arsenal-skill-item cyan"><i class="fas fa-check"></i><span>Kernel &amp; Resource Tuning (/etc/security/limits.conf, nproc, nofile)</span></li>
+                                <li class="arsenal-skill-item cyan"><i class="fas fa-check"></i><span>Automated Off-Site Backups &amp; Disaster Recovery Pipelines</span></li>
+                                <li class="arsenal-skill-item cyan"><i class="fas fa-check"></i><span>Enterprise LAN/WAN, Routing Protocols &amp; Subnet Segmentation</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Cybersecurity & Automation -->
+                    <div class="bento-card arsenal-card reveal reveal-delay-1">
+                        <div>
+                            <div class="arsenal-card-head">
+                                <div class="arsenal-icon-wrap emerald">
+                                    <i class="fas fa-shield-halved"></i>
+                                </div>
+                                <span class="category-badge emerald">Active Defense</span>
+                            </div>
+                            <h3 class="arsenal-title">Cybersecurity &amp; Automation</h3>
+                            <p class="arsenal-summary">
+                                Endpoint security baselining, threat triage, SIEM log correlation, and automated administrative security scripting.
+                            </p>
+                            <ul class="arsenal-skill-list">
+                                <li class="arsenal-skill-item emerald"><i class="fas fa-check"></i><span>Windows Endpoint Security Automation (PowerShell, Winget, Defender, UAC)</span></li>
+                                <li class="arsenal-skill-item emerald"><i class="fas fa-check"></i><span>Threat Triage &amp; SIEM Log Correlation (TryHackMe SOC L1, LetsDefend)</span></li>
+                                <li class="arsenal-skill-item emerald"><i class="fas fa-check"></i><span>Web Application Security (Burp Suite, PortSwigger Academy, OWASP Top 10)</span></li>
+                                <li class="arsenal-skill-item emerald"><i class="fas fa-check"></i><span>Vulnerability Assessment (Nmap, Nessus, Risk Prioritization &amp; Remediation)</span></li>
+                                <li class="arsenal-skill-item emerald"><i class="fas fa-check"></i><span>NIST Incident Response &amp; Evidence Timelines</span></li>
+                                <li class="arsenal-skill-item emerald"><i class="fas fa-check"></i><span>Governance, Risk &amp; Compliance (GRC) &amp; Security Roadmapping</span></li>
+                                <li class="arsenal-skill-item emerald"><i class="fas fa-check"></i><span>Automated Document &amp; Curriculum Generation (Node.js Docx Engine)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Full-Stack Development -->
+                    <div class="bento-card arsenal-card reveal reveal-delay-2">
+                        <div>
+                            <div class="arsenal-card-head">
+                                <div class="arsenal-icon-wrap purple">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span class="category-badge purple">Modern Web</span>
+                            </div>
+                            <h3 class="arsenal-title">Full-Stack Development</h3>
+                            <p class="arsenal-summary">
+                                Scalable web applications, real-time event services, and enterprise bidirectional data synchronization tools.
+                            </p>
+                            <ul class="arsenal-skill-list">
+                                <li class="arsenal-skill-item purple"><i class="fas fa-check"></i><span>React, Modern JavaScript (ES6+), HTML5 &amp; Tailored CSS Systems</span></li>
+                                <li class="arsenal-skill-item purple"><i class="fas fa-check"></i><span>Node.js &amp; Express.js RESTful APIs</span></li>
+                                <li class="arsenal-skill-item purple"><i class="fas fa-check"></i><span>PostgreSQL, Supabase &amp; MySQL Database Engineering</span></li>
+                                <li class="arsenal-skill-item purple"><i class="fas fa-check"></i><span>Socket.io WebSockets (Real-Time Communication)</span></li>
+                                <li class="arsenal-skill-item purple"><i class="fas fa-check"></i><span>Electron (.exe) Native Desktop Packaging</span></li>
+                                <li class="arsenal-skill-item purple"><i class="fas fa-check"></i><span>ExcelJS Bidirectional Data Sync &amp; Record Deduplication</span></li>
+                                <li class="arsenal-skill-item purple"><i class="fas fa-check"></i><span>Granular Role-Based Access Control (RBAC) &amp; Multi-Tenant Isolation</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             5. EDUCATION, HACKATHONS & CERTIFICATIONS BENTO GRID
+             ================================================================ -->
+        <section class="credentials-section" id="credentials">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-kicker">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Academic &amp; Professional Milestones</span>
+                    </div>
+                    <h2 class="section-title">Education, Hackathons &amp; <span>Certifications</span></h2>
+                    <p class="section-subtitle">
+                        Rigorous theoretical foundation in Computer Science &amp; Mathematics complemented by verified credentials and competitive innovation challenges.
+                    </p>
+                </div>
+
+                <div class="credentials-bento-grid">
+                    <!-- Left Column: Education & Hackathons (5 Cols) -->
+                    <div class="credentials-col-left">
+                        <!-- Education Card -->
+                        <div class="bento-card edu-card reveal">
+                            <div class="edu-head">
+                                <div class="edu-icon-badge">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div>
+                                    <h3 class="edu-degree">B.Sc. in Computer Science &amp; Mathematics</h3>
+                                    <div class="edu-institution">Faculty of Science, Damanhour University</div>
+                                    <div class="edu-year">Graduated 2026</div>
+                                </div>
+                            </div>
+                            <p class="edu-desc">
+                                Rigorous academic foundation spanning distributed algorithms, network architectures, operating systems principles, cryptographic foundations, and computational mathematics.
+                            </p>
+                        </div>
+
+                        <!-- Hackathons Milestone Card -->
+                        <div class="bento-card hackathon-card reveal reveal-delay-1">
+                            <div class="section-kicker" style="margin-bottom: 8px;">
+                                <i class="fas fa-trophy"></i>
+                                <span>Hackathons &amp; Programs</span>
+                            </div>
+                            <h3 style="font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Competitive Innovation</h3>
+                            <ul class="hackathon-list">
+                                <li class="hackathon-item">
+                                    <div class="hackathon-title-row">
+                                        <span class="hackathon-name">Startup Launchpad</span>
+                                        <span class="hackathon-year">Creativa 2026</span>
+                                    </div>
+                                    <p class="hackathon-desc">Accelerated tech startup validation, lean business modeling, and venture engineering.</p>
+                                </li>
+                                <li class="hackathon-item">
+                                    <div class="hackathon-title-row">
+                                        <span class="hackathon-name">AI Hackathon — Damanhour</span>
+                                        <span class="hackathon-year">2025</span>
+                                    </div>
+                                    <p class="hackathon-desc">Engineered AI-driven software prototypes addressing real-world operational challenges.</p>
+                                </li>
+                                <li class="hackathon-item">
+                                    <div class="hackathon-title-row">
+                                        <span class="hackathon-name">C-Youth Challenge</span>
+                                        <span class="hackathon-year">2026</span>
+                                    </div>
+                                    <p class="hackathon-desc">Youth-led climate technology challenge engineering sustainable software solutions.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Certifications Bento Grid (7 Cols) -->
+                    <div class="credentials-col-right reveal reveal-delay-2">
+                        <div class="certs-grid" id="certs-grid">
+                            <!-- Dynamic Certifications Cards rendered by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             6. CONTACT & EXECUTIVE OUTREACH BENTO SECTION
+             ================================================================ -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-kicker">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Executive Inquiries</span>
+                    </div>
+                    <h2 class="section-title">Let's Discuss <span>Infrastructure &amp; Engineering</span></h2>
+                    <p class="section-subtitle" id="contact-summary">
+                        Whether you are looking for an experienced System Administrator, a Full-Stack Engineer who understands enterprise infrastructure, or an Instructor to lead technical security programs, let's connect.
+                    </p>
+                </div>
+
+                <div class="contact-bento-grid">
+                    <!-- Left: Contact Details Bento Card (5 Cols) -->
+                    <div class="bento-card contact-card-info reveal">
+                        <div>
+                            <span class="category-badge cyan" style="margin-bottom: 16px;">Direct Channels</span>
+                            <h3 style="font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Available for Opportunities</h3>
+                            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
+                                Based in Alexandria / Beheira, Egypt, available for high-impact on-site, hybrid, and remote roles globally.
+                            </p>
+
+                            <div class="contact-ways-list">
+                                <a href="https://www.linkedin.com/in/mohamed-magdi-elhemaly" target="_blank" rel="noreferrer" class="contact-way-item" id="contact-linkedin-link">
+                                    <div class="contact-way-icon"><i class="fab fa-linkedin-in"></i></div>
+                                    <div class="contact-way-meta">
+                                        <div class="contact-way-label">LinkedIn</div>
+                                        <div class="contact-way-val">mohamed-magdi-elhemaly</div>
+                                    </div>
+                                    <i class="fas fa-arrow-up-right-from-square" style="color: var(--text-muted); font-size: 12px;"></i>
+                                </a>
+
+                                <a href="https://github.com/MohamedElhemaly" target="_blank" rel="noreferrer" class="contact-way-item" id="contact-github-link">
+                                    <div class="contact-way-icon"><i class="fab fa-github"></i></div>
+                                    <div class="contact-way-meta">
+                                        <div class="contact-way-label">GitHub</div>
+                                        <div class="contact-way-val">MohamedElhemaly</div>
+                                    </div>
+                                    <i class="fas fa-arrow-up-right-from-square" style="color: var(--text-muted); font-size: 12px;"></i>
+                                </a>
+
+                                <a href="mailto:mohamed.elhemaly88@gmail.com" class="contact-way-item" id="contact-email-link">
+                                    <div class="contact-way-icon"><i class="fas fa-envelope"></i></div>
+                                    <div class="contact-way-meta">
+                                        <div class="contact-way-label">Direct Email</div>
+                                        <div class="contact-way-val" id="contact-email-val">mohamed.elhemaly88@gmail.com</div>
+                                    </div>
+                                    <i class="fas fa-arrow-up-right-from-square" style="color: var(--text-muted); font-size: 12px;"></i>
+                                </a>
+
+                                <a href="./uploads/mohamed-elhemaly-cv-1775743116168.pdf" target="_blank" rel="noreferrer" class="contact-way-item" id="contact-resume-link">
+                                    <div class="contact-way-icon"><i class="fas fa-file-pdf"></i></div>
+                                    <div class="contact-way-meta">
+                                        <div class="contact-way-label">Curriculum Vitae</div>
+                                        <div class="contact-way-val">Download PDF Resume</div>
+                                    </div>
+                                    <i class="fas fa-download" style="color: var(--text-muted); font-size: 12px;"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="status-pill" style="align-self: flex-start;">
+                            <span class="status-beacon"></span>
+                            <span>Quick Response Promised</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Message Form Bento Card (7 Cols) -->
+                    <div class="bento-card contact-card-form reveal reveal-delay-1">
+                        <span class="category-badge emerald" style="margin-bottom: 16px;">Direct Dispatch</span>
+                        <h3 style="font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Send a Direct Message</h3>
+                        <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+                            Delivered directly to my inbox with instant notification.
+                        </p>
+
+                        <form class="contact-form" id="contact-form" onsubmit="handleContactSubmit(event)">
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="form-name">Your Full Name</label>
+                                    <input type="text" id="form-name" name="name" required class="form-control" placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Work Email</label>
+                                    <input type="email" id="form-email" name="email" required class="form-control" placeholder="e.g. john@company.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject / Inquiry Type</label>
+                                <input type="text" id="form-subject" name="_subject" required class="form-control" placeholder="e.g. Infrastructure Role / Full-Stack Project Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Detailed Message</label>
+                                <textarea id="form-message" name="message" required class="form-control" rows="4" placeholder="Briefly describe the project, role, or collaboration scope..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent" id="form-submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Transmit Message</span>
+                            </button>
+                            <div id="form-status" style="font-size: 13px; font-family: var(--font-mono); margin-top: 8px; display: none;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-copy">
+                <span id="footer-copy-text">&copy; 2026 <strong>Mohamed Magdi Elhemaly</strong>. All rights reserved.</span>
+                <span style="margin: 0 8px; opacity: 0.3;">|</span>
+                <span style="font-family: var(--font-mono); font-size: 11.5px; color: var(--accent-emerald-light);">Production Vercel Verified</span>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/mohamed-magdi-elhemaly" target="_blank" rel="noreferrer" class="social-icon-btn" aria-label="LinkedIn" id="footer-linkedin-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/MohamedElhemaly" target="_blank" rel="noreferrer" class="social-icon-btn" aria-label="GitHub" id="footer-github-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/mohamed_el7emaly" target="_blank" rel="noreferrer" class="social-icon-btn" aria-label="Instagram" id="footer-instagram-link"><i class="fab fa-instagram"></i></a>
+                <a href="#about" class="social-icon-btn" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================================================
+         CLIENT INTERACTIVITY & DYNAMIC DATA ENGINE
+         ================================================================ -->
     <script>
-        const fallbackData = {
-            "general": {
-                "first_name": "Mohamed",
-                "last_name": "Elhemaly",
-                "page_title": "Mohamed Elhemaly | Cybersecurity Portfolio",
-                "hero_badge": "SOC-Focused Cybersecurity Analyst | Blue Team Trainee",
-                "hero_headline": "I help security teams detect faster, investigate smarter, and communicate clearly under pressure.",
-                "hero_summary": "Computer Science student and cybersecurity trainee focused on SOC operations, incident response, log analysis, and network investigation. I bring hands-on lab practice plus an engineering mindset that helps me understand how systems behave, where they fail, and how to defend them better.",
-                "hero_points": [
-                    "Hands-on training in SIEM workflows, alert triage, phishing analysis, and incident response reporting.",
-                    "Strong infrastructure and development background that translates into better troubleshooting and more security-aware thinking.",
-                    "Ready for junior SOC, security monitoring, and blue-team entry roles with high ownership and fast learning speed."
-                ],
-                "trust_strip": [
-                    "TryHackMe SOC Level 1",
-                    "LetsDefend Labs",
-                    "DEPI Incident Response",
-                    "Fortinet NSE 1-3",
-                    "Cisco Cybersecurity"
-                ],
-                "location": "Damanhour, Egypt",
-                "availability": "Open to SOC, IR, and Blue Team Roles",
-                "priority_domains": [
-                    { "name": "Alert Triage", "level": "Active Focus" },
-                    { "name": "Network Analysis", "level": "Hands-On" },
-                    { "name": "Incident Response", "level": "Operational Training" },
-                    { "name": "Secure Engineering", "level": "Transferable Strength" }
-                ],
-                "stats": [
-                    { "value": "5+", "label": "Security Programs & Tracks" },
-                    { "value": "3", "label": "Core Focus Areas" },
-                    { "value": "24/7", "label": "Blue-Team Mindset" }
-                ],
-                "about_intro": "This portfolio is intentionally positioned for cybersecurity hiring teams, not generic tech roles. It highlights the evidence that matters most for entry-level security work: investigation ability, technical context, structured thinking, and fast operational growth.",
-                "about_main": "My strongest edge is that I do not approach security as isolated theory. I understand applications, authentication flows, network behavior, access control, and the operational side of troubleshooting. That gives me a more grounded way to analyze suspicious activity, reason about root causes, and write reports that engineers and analysts can actually use.",
-                "about_support": "I am actively building toward SOC and incident response roles through DEPI, TryHackMe, LetsDefend, and continuous lab work. I care about being dependable during pressure, clear in communication, and disciplined in documentation, because those traits matter just as much as tool familiarity inside real security teams.",
-                "goal_title": "Current Target",
-                "goal_text": "Join a security team where I can contribute in Tier 1 SOC operations, incident triage, monitoring, and investigative reporting, then grow deeper into incident response and threat hunting.",
-                "contact_summary": "If you are hiring for a junior SOC, security analyst, or incident response track role, I would love to connect. I am especially valuable in teams that want someone coachable, technically grounded, and serious about operational quality.",
-                "footer_copy": "Mohamed Elhemaly - Cybersecurity portfolio focused on SOC operations, incident response, and blue-team growth.",
-                "linkedin_url": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a",
-                "github_url": "https://github.com/MohamedElhemaly",
-                "instagram_url": "https://www.instagram.com/mohamed_el7emaly",
-                "email_address": "mohamed.elhemaly88@gmail.com",
-                "snapshot_items": [
-                    {
-                        "icon": "fas fa-shield-halved",
-                        "title": "Security-First Positioning",
-                        "text": "Everything here is tailored to show readiness for cybersecurity roles instead of splitting attention across unrelated tracks."
-                    },
-                    {
-                        "icon": "fas fa-diagram-project",
-                        "title": "Engineering Context",
-                        "text": "Development and infrastructure experience are reframed as security advantages: better visibility into auth, logs, access, and systems behavior."
-                    },
-                    {
-                        "icon": "fas fa-file-waveform",
-                        "title": "Operational Communication",
-                        "text": "I focus on structured findings, clean documentation, and incident summaries that help teams move from signal to action faster."
-                    }
-                ],
-                "contact_methods": [
-                    {
-                        "icon": "fab fa-linkedin-in",
-                        "label": "LinkedIn",
-                        "value": "linkedin.com/in/mohamed-elhemaly-b8993530a",
-                        "href": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
-                    },
-                    {
-                        "icon": "fab fa-github",
-                        "label": "GitHub",
-                        "value": "github.com/MohamedElhemaly",
-                        "href": "https://github.com/MohamedElhemaly"
-                    },
-                    {
-                        "icon": "fas fa-envelope",
-                        "label": "Email",
-                        "value": "mohamed.elhemaly88@gmail.com",
-                        "href": "mailto:mohamed.elhemaly88@gmail.com"
-                    },
-                    {
-                        "icon": "fas fa-globe",
-                        "label": "Portfolio",
-                        "value": "mohamedelhemaly.github.io/portfolio",
-                        "href": "https://mohamedelhemaly.github.io/portfolio/"
-                    }
-                ],
-                "footer_socials": [
-                    {
-                        "icon": "fab fa-linkedin-in",
-                        "label": "LinkedIn",
-                        "href": "https://www.linkedin.com/in/mohamed-elhemaly-b8993530a"
-                    },
-                    {
-                        "icon": "fab fa-github",
-                        "label": "GitHub",
-                        "href": "https://github.com/MohamedElhemaly"
-                    },
-                    {
-                        "icon": "fab fa-instagram",
-                        "label": "Instagram",
-                        "href": "https://www.instagram.com/mohamed_el7emaly"
-                    }
-                ]
-            },
-            "strengths": [
-                {
-                    "icon": "fas fa-tower-broadcast",
-                    "title": "SOC Monitoring & Triage",
-                    "description": "Comfortable following the early incident lifecycle: reviewing alerts, checking context, spotting suspicious patterns, and escalating with structured notes and timelines.",
-                    "tags": ["SIEM Fundamentals", "Alert Validation", "Case Notes", "Escalation Thinking"]
-                },
-                {
-                    "icon": "fas fa-network-wired",
-                    "title": "Network Visibility",
-                    "description": "Able to reason about packet flow, connectivity issues, and suspicious traffic patterns using networking knowledge and hands-on analysis labs.",
-                    "tags": ["Wireshark", "TCP/IP", "Nmap", "CCNA Foundations"]
-                },
-                {
-                    "icon": "fas fa-magnifying-glass-chart",
-                    "title": "Investigation Discipline",
-                    "description": "I focus on evidence, timelines, documentation, and repeatable investigation steps instead of guessing. That makes my security work cleaner and easier to trust.",
-                    "tags": ["Incident Timelines", "Documentation", "Root Cause Thinking", "Reporting"]
-                },
-                {
-                    "icon": "fas fa-user-lock",
-                    "title": "Application Security Awareness",
-                    "description": "Building admin panels, auth flows, and real-time systems gave me practical intuition around access control, risky logic, and secure implementation patterns.",
-                    "tags": ["Authentication", "RBAC Concepts", "Session Thinking", "Secure Design"]
-                },
-                {
-                    "icon": "fas fa-bug-slash",
-                    "title": "Vulnerability Assessment Support",
-                    "description": "Hands-on familiarity with scanning, interpreting findings, and translating technical issues into practical remediation language inside controlled lab environments.",
-                    "tags": ["Nessus", "OpenVAS", "CVSS", "Remediation Notes"]
-                },
-                {
-                    "icon": "fas fa-brain",
-                    "title": "Fast-Learning Teammate",
-                    "description": "I learn quickly, communicate calmly, and take ownership. For junior security roles, that often matters as much as the current tool list.",
-                    "tags": ["Ownership", "Team Communication", "Coachability", "Execution"]
-                }
-            ],
-            "projects": [
-                {
-                    "title": "SOC Investigation Lab",
-                    "type": "Security Lab",
-                    "description": "Worked through simulated SIEM alerts, correlated evidence, reconstructed an incident timeline, and documented the analyst decision path from detection to reporting.",
-                    "outcome": "Demonstrated readiness for Tier 1 workflow habits: triage, evidence review, prioritization, and concise reporting.",
-                    "link": "",
-                    "tags": ["SIEM", "Incident Timeline", "Alert Triage", "Reporting"]
-                },
-                {
-                    "title": "Web Vulnerability Assessment in Controlled Lab",
-                    "type": "Assessment Project",
-                    "description": "Performed reconnaissance and vulnerability review on a lab target using scanning and validation tools, then organized findings by severity and remediation priority.",
-                    "outcome": "Strengthened my ability to convert raw scan output into a practical security story rather than a noisy tool dump.",
-                    "link": "",
-                    "tags": ["Nmap", "Nessus", "Risk Prioritization", "Remediation"]
-                },
-                {
-                    "title": "Incident Response Reporting Exercise",
-                    "type": "IR Practice",
-                    "description": "Produced a structured incident response report for a DEPI training scenario covering detection method, scope, containment, eradication, and lessons learned.",
-                    "outcome": "Showed that I can organize technical findings into a format useful for both analysts and decision-makers.",
-                    "link": "",
-                    "tags": ["NIST IR", "Forensics Basics", "Documentation", "Containment"]
-                },
-                {
-                    "title": "Secure Access Mindset from Admin Panel Development",
-                    "type": "Transferable Build",
-                    "description": "While building an admin control panel, I worked directly with authentication, role-based access ideas, privileged workflows, and operational controls that map naturally to security thinking.",
-                    "outcome": "This project strengthens my understanding of how misconfigurations and weak access design can become security issues in real systems.",
-                    "link": "https://github.com/MohamedElhemaly/admin-control-panel",
-                    "tags": ["Auth Flows", "RBAC", "Privileged Access", "Web Security Awareness"]
-                },
-                {
-                    "title": "Real-Time WebSocket Infrastructure Prototype",
-                    "type": "Engineering Depth",
-                    "description": "Built a real-time communication service in PHP using WebSockets, which sharpened my understanding of persistent connections, event-driven behavior, and monitoring needs in stateful systems.",
-                    "outcome": "Useful security crossover for understanding long-lived sessions, unusual traffic behavior, and operational visibility in modern apps.",
-                    "link": "https://github.com/MohamedElhemaly/Web-Socket",
-                    "tags": ["WebSockets", "Traffic Behavior", "Protocol Awareness", "System Thinking"]
-                },
-                {
-                    "title": "Security-Focused Personal Portfolio",
-                    "type": "Presentation Layer",
-                    "description": "Redesigned this portfolio to present a clear, recruiter-friendly cybersecurity narrative with stronger positioning, stronger visual quality, and stronger evidence alignment.",
-                    "outcome": "Makes the case for security hiring faster by removing mixed messaging and highlighting blue-team readiness first.",
-                    "link": "https://mohamedelhemaly.github.io/portfolio/",
-                    "tags": ["Personal Branding", "Security Positioning", "UI Strategy", "Recruiter Experience"]
-                }
-            ],
-            "experience": [
-                {
-                    "organization": "Digital Egypt Pioneers Initiative (DEPI) - AMIT",
-                    "role": "Incident Response Track Participant",
-                    "date": "Jul 2025 - Dec 2025",
-                    "highlights": [
-                        "Completed practical training around SOC processes, digital forensics fundamentals, and structured incident handling workflows.",
-                        "Worked through analyst-style labs involving detection logic, evidence review, and incident reporting.",
-                        "Strengthened understanding of security operations discipline, not just isolated technical tasks."
-                    ]
-                },
-                {
-                    "organization": "TryHackMe and LetsDefend",
-                    "role": "Cybersecurity Trainee - SOC Path",
-                    "date": "Jan 2024 - Present",
-                    "highlights": [
-                        "Actively progressing through hands-on labs for SOC Level 1, phishing analysis, network traffic review, and SIEM fundamentals.",
-                        "Practiced identifying suspicious behavior, validating findings, and documenting analyst decisions clearly.",
-                        "Built comfort with repeated investigative workflows instead of one-off challenge solving."
-                    ]
-                },
-                {
-                    "organization": "Electricity Company - Beheira Governorate",
-                    "role": "Network Infrastructure Intern",
-                    "date": "Jul 2024 - Aug 2024",
-                    "highlights": [
-                        "Supported LAN infrastructure setup and troubleshooting across multiple departments.",
-                        "Improved my ability to analyze connectivity issues, network behavior, and operational dependencies.",
-                        "Created technical notes and topology understanding that now strengthen my network-security perspective."
-                    ]
-                },
-                {
-                    "organization": "Self-Directed Technical Projects",
-                    "role": "Security-Minded Builder",
-                    "date": "2023 - Present",
-                    "highlights": [
-                        "Built systems involving authentication, data handling, access workflows, and real-time communication patterns.",
-                        "Used development work to sharpen secure design awareness and understand what defenders need to monitor in applications.",
-                        "Developed a stronger bridge between engineering detail and defensive analysis."
-                    ]
-                }
-            ],
-            "certifications": [
-                {
-                    "title": "Cisco - Introduction to Cybersecurity",
-                    "description": "Foundational cybersecurity concepts, threat landscape, and basic defensive best practices.",
-                    "status": "Completed",
-                    "status_class": "done"
-                },
-                {
-                    "title": "Fortinet NSE 1-3",
-                    "description": "Network security learning path covering security awareness, threat concepts, and Fortinet platform fundamentals.",
-                    "status": "Completed",
-                    "status_class": "done"
-                },
-                {
-                    "title": "Sprints x Microsoft - Cybersecurity Fundamentals",
-                    "description": "Structured cybersecurity fundamentals program with emphasis on practical understanding and defensive awareness.",
-                    "status": "Completed",
-                    "status_class": "done"
-                },
-                {
-                    "title": "DEPI - Incident Response Track",
-                    "description": "Security operations and incident response training delivered through the Digital Egypt Pioneers Initiative.",
-                    "status": "Completed",
-                    "status_class": "done"
-                },
-                {
-                    "title": "TryHackMe - SOC Level 1",
-                    "description": "Hands-on blue-team path covering SIEM, log analysis, threat detection, and SOC workflows.",
-                    "status": "In Progress",
-                    "status_class": "progress"
-                },
-                {
-                    "title": "CCNA Networking Concepts",
-                    "description": "Academic networking foundation supporting stronger traffic analysis, troubleshooting, and network defense reasoning.",
-                    "status": "Academic Foundation",
-                    "status_class": "done"
-                }
-            ]
-        };
-
         const state = {
-            general: {},
-            projects: [],
-            experience: [],
-            certifications: []
+            data: null,
+            activeFilter: 'all'
         };
 
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.14 });
+        // Fallback data if data.json is blocked by local filesystem security
+        const fallbackData = {
+            general: {
+                first_name: "Mohamed",
+                last_name: "Magdi Elhemaly",
+                profile_image: "./uploads/profile-photo.jpg",
+                page_title: "Mohamed Magdi Elhemaly | System Administrator & Full-Stack Engineer",
+                hero_badge: "Available for Opportunities",
+                hero_headline: "System Administrator | Full-Stack Developer | Cybersecurity & Coding Instructor",
+                hero_summary: "Computer Science & Mathematics graduate (2026) managing enterprise IT infrastructure and centralized databases for 1,200+ users across regional branches. Proven track record architecting multi-tenant SaaS routing platforms, securing production Linux/Windows environments, and delivering cybersecurity instruction.",
+                linkedin_url: "https://www.linkedin.com/in/mohamed-magdi-elhemaly",
+                github_url: "https://github.com/MohamedElhemaly",
+                resume_url: "./uploads/mohamed-elhemaly-cv-1775743116168.pdf",
+                email_address: "mohamed.elhemaly88@gmail.com"
+            }
+        };
 
-        function revealAll() {
-            document.querySelectorAll('.reveal').forEach((item) => revealObserver.observe(item));
-        }
-
-        function createTagList(items, className = 'tag') {
-            return (items || []).map((item) => `<span class="${className}">${item}</span>`).join('');
-        }
-
-        function setText(id, value) {
+        function setText(id, text) {
             const el = document.getElementById(id);
-            if (el && value) el.innerHTML = value;
+            if (el && text !== undefined && text !== null) el.textContent = text;
         }
 
-        function renderGeneral(general) {
-            document.title = general.page_title || document.title;
-            setText('hero-badge', general.hero_badge);
+        function setAttr(id, attr, value) {
+            const el = document.getElementById(id);
+            if (el && value) el.setAttribute(attr, value);
+        }
+
+        // Spotlight mouse tracker on all bento cards
+        function initSpotlight() {
+            document.querySelectorAll('.bento-card').forEach((card) => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    card.style.setProperty('--mouse-x', `${x}px`);
+                    card.style.setProperty('--mouse-y', `${y}px`);
+                });
+            });
+        }
+
+        // Render Experience Bento Section
+        function renderExperience(items) {
+            const container = document.getElementById('experience-grid');
+            if (!container || !items) return;
+
+            container.innerHTML = items.map((exp, index) => {
+                // Layout classes based on role significance
+                const isFlagship = index === 0;
+                const isHalf = index === 1 || index === 2;
+                const cardClass = isFlagship ? 'exp-card-flagship' : (isHalf ? 'exp-card-half' : 'exp-card-third');
+
+                const highlightList = (exp.highlights || []).map((point) => `
+                    <li class="exp-highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>${point}</span>
+                    </li>
+                `).join('');
+
+                return `
+                    <article class="bento-card ${cardClass} reveal reveal-delay-${index % 3}">
+                        <div>
+                            <div class="exp-card-header">
+                                <div>
+                                    <div class="exp-org-badge">
+                                        <i class="fas fa-building"></i>
+                                        <span>${exp.organization}</span>
+                                    </div>
+                                    <h3 class="exp-role-title">${exp.role}</h3>
+                                </div>
+                                <div class="exp-date-pill">${exp.date}</div>
+                            </div>
+                            <ul class="exp-highlights-list">
+                                ${highlightList}
+                            </ul>
+                        </div>
+                        ${exp.badge ? `<div><span class="category-badge ${isFlagship ? 'cyan' : 'emerald'}">${exp.badge}</span></div>` : ''}
+                    </article>
+                `;
+            }).join('');
+        }
+
+        // Render Projects Bento Showcase with category filtering
+        function renderProjects(projects, filter = 'all') {
+            const container = document.getElementById('projects-grid');
+            if (!container || !projects) return;
+
+            const filtered = filter === 'all' 
+                ? projects 
+                : projects.filter(p => p.category === filter);
+
+            container.innerHTML = filtered.map((project, index) => {
+                const isFeatured = index === 0 && filter === 'all';
+                const tagList = (project.tags || []).map(t => `<span class="tech-pill">${t}</span>`).join('');
+                
+                let badgeClass = 'cyan';
+                if (project.category === 'cybersecurity') badgeClass = 'emerald';
+                if (project.category === 'archive') badgeClass = 'purple';
+
+                let actionHtml = '';
+                if (project.link && project.link.startsWith('http')) {
+                    actionHtml = `
+                        <a href="${project.link}" target="_blank" rel="noreferrer" class="project-action-link">
+                            <span>Repository / Demo</span>
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    `;
+                } else {
+                    actionHtml = `
+                        <span class="internal-badge">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>${project.badge || 'Enterprise Internal Deployment'}</span>
+                        </span>
+                    `;
+                }
+
+                return `
+                    <article class="bento-card project-card ${isFeatured ? 'featured' : ''} reveal reveal-delay-${index % 3}" data-category="${project.category}">
+                        <div>
+                            <div class="project-top-meta">
+                                <span class="category-badge ${badgeClass}">${project.type || project.category}</span>
+                                ${project.badge && !isFeatured ? `<span class="tech-pill">${project.badge}</span>` : ''}
+                            </div>
+                            <h3 class="project-title">${project.title}</h3>
+                            <p class="project-desc">${project.description}</p>
+                            ${project.outcome ? `
+                                <div class="project-impact-box">
+                                    <strong>Impact:</strong> ${project.outcome}
+                                </div>
+                            ` : ''}
+                            <div class="project-tags-row">${tagList}</div>
+                        </div>
+                        <div class="project-card-footer">
+                            ${actionHtml}
+                        </div>
+                    </article>
+                `;
+            }).join('');
+
+            initSpotlight();
+        }
+
+        // Render Certifications Bento Grid
+        function renderCertifications(certs) {
+            const container = document.getElementById('certs-grid');
+            if (!container || !certs) return;
+
+            container.innerHTML = certs.map((cert) => `
+                <div class="cert-card">
+                    <div>
+                        <div class="cert-top">
+                            <i class="fas fa-award"></i>
+                            <span class="category-badge cyan" style="font-size: 10px; padding: 2px 7px;">${cert.badge || 'Verified'}</span>
+                        </div>
+                        <h4 class="cert-title">${cert.title}</h4>
+                        <p class="cert-desc">${cert.description}</p>
+                    </div>
+                    <div style="margin-top: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--accent-emerald-light);">
+                        <i class="fas fa-circle-check"></i> ${cert.status || 'Completed'}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Apply General Content
+        function applyGeneral(general) {
+            if (!general) return;
+
+            if (general.page_title) document.title = general.page_title;
+            setText('nav-brand-name', `${general.first_name || 'Mohamed'} ${general.last_name || 'Elhemaly'}`.trim());
+            setText('hero-name', `${general.first_name || 'Mohamed'} ${general.last_name || 'Elhemaly'}`.trim());
+            setText('photo-overlay-name', `${general.first_name || 'Mohamed'} ${general.last_name ? general.last_name.split(' ')[0] : 'Magdi'}`);
             setText('hero-headline', general.hero_headline);
             setText('hero-summary', general.hero_summary);
-            setText('profile-name', `${general.first_name || ''} ${general.last_name || ''}`.trim());
-            setText('hero-location', general.location);
-            setText('hero-availability', general.availability);
-            setText('about-intro', general.about_intro);
-            setText('about-main', general.about_main);
-            setText('about-support', general.about_support);
-            setText('goal-banner', `<h3>${general.goal_title || 'Next Target'}</h3><p>${general.goal_text || ''}</p>`);
+            setText('hero-availability', general.availability || 'Available for Opportunities');
+            setText('photo-overlay-loc', general.location || 'Alexandria / Beheira, Egypt');
             setText('contact-summary', general.contact_summary);
-            setText('footer-copy', general.footer_copy);
+            setText('contact-email-val', general.email_address || 'mohamed.elhemaly88@gmail.com');
+            setText('footer-copy-text', general.footer_copy || `© 2026 ${general.first_name} ${general.last_name}. All rights reserved.`);
 
-            const heroPoints = document.getElementById('hero-points');
-            heroPoints.innerHTML = (general.hero_points || []).map((point) => `
-                <div class="hero-point">
-                    <i class="fas fa-check"></i>
-                    <span>${point}</span>
-                </div>
-            `).join('');
+            // Profile photo path from data.json or fallback
+            if (general.profile_image) {
+                const img = document.getElementById('hero-profile-img');
+                if (img) img.src = general.profile_image;
+            }
 
-            const trustStrip = document.getElementById('trust-strip');
-            trustStrip.innerHTML = (general.trust_strip || []).map((item) => `<span>${item}</span>`).join('');
+            // Stats
+            if (Array.isArray(general.stats)) {
+                general.stats.forEach((st, idx) => {
+                    setText(`stat-val-${idx}`, st.value);
+                    setText(`stat-label-${idx}`, st.label);
+                });
+            }
 
-            const domains = document.getElementById('domain-list');
-            domains.innerHTML = (general.priority_domains || []).map((item) => `
-                <div class="domain-item">
-                    <span>${item.name}</span>
-                    <strong>${item.level}</strong>
-                </div>
-            `).join('');
+            // Resume links
+            if (general.resume_url) {
+                setAttr('nav-resume-link', 'href', general.resume_url);
+                setAttr('hero-resume-cta', 'href', general.resume_url);
+                setAttr('contact-resume-link', 'href', general.resume_url);
+            }
 
-            const stats = document.getElementById('stat-grid');
-            stats.innerHTML = (general.stats || []).map((item) => `
-                <div class="stat-card">
-                    <strong>${item.value}</strong>
-                    <span>${item.label}</span>
-                </div>
-            `).join('');
+            // Social links
+            if (general.linkedin_url) {
+                setAttr('nav-linkedin-link', 'href', general.linkedin_url);
+                setAttr('hero-linkedin-cta', 'href', general.linkedin_url);
+                setAttr('contact-linkedin-link', 'href', general.linkedin_url);
+                setAttr('footer-linkedin-link', 'href', general.linkedin_url);
+            }
+            if (general.github_url) {
+                setAttr('nav-github-link', 'href', general.github_url);
+                setAttr('hero-github-cta', 'href', general.github_url);
+                setAttr('contact-github-link', 'href', general.github_url);
+                setAttr('footer-github-link', 'href', general.github_url);
+            }
+            if (general.email_address) {
+                setAttr('contact-email-link', 'href', `mailto:${general.email_address}`);
+            }
 
-            const snapshots = document.getElementById('snapshot-list');
-            snapshots.innerHTML = (general.snapshot_items || []).map((item) => `
-                <div class="snapshot-item">
-                    <i class="${item.icon}"></i>
-                    <div>
-                        <strong>${item.title}</strong>
-                        <p>${item.text}</p>
-                    </div>
-                </div>
-            `).join('');
-
-            const contacts = document.getElementById('contact-cards');
-            contacts.innerHTML = (general.contact_methods || []).map((item) => `
-                <a class="contact-card" href="${item.href}" ${item.href.startsWith('http') ? 'target="_blank" rel="noreferrer"' : ''}>
-                    <i class="${item.icon}"></i>
-                    <div>
-                        <strong>${item.label}</strong>
-                        <span>${item.value}</span>
-                    </div>
-                </a>
-            `).join('');
-
-            const footerLinks = document.getElementById('footer-links');
-            footerLinks.innerHTML = (general.footer_socials || []).map((item) => `
-                <a href="${item.href}" target="_blank" rel="noreferrer" aria-label="${item.label}"><i class="${item.icon}"></i></a>
-            `).join('');
-
-            const linkedin = document.getElementById('linkedin-link');
-            if (linkedin && general.linkedin_url) linkedin.href = general.linkedin_url;
-            const resumeLink = document.getElementById('resume-link');
-            if (resumeLink) {
-                if (general.resume_url) {
-                    resumeLink.href = general.resume_url;
-                    resumeLink.hidden = false;
-                } else {
-                    resumeLink.hidden = true;
+            // Trust strip
+            if (Array.isArray(general.trust_strip) && general.trust_strip.length) {
+                const trustStrip = document.getElementById('trust-strip');
+                if (trustStrip) {
+                    trustStrip.innerHTML = general.trust_strip.map(item => `
+                        <span class="trust-item"><i class="fas fa-check-shield"></i> ${item}</span>
+                    `).join('');
                 }
             }
-            window.adminEmail = general.email_address || 'mohamed.elhemaly88@gmail.com';
         }
 
-        function renderStrengths(items) {
-            document.getElementById('strength-grid').innerHTML = items.map((item, index) => `
-                <article class="strength-card reveal reveal-delay-${index % 3}">
-                    <div class="strength-head">
-                        <i class="${item.icon}"></i>
-                        <h3>${item.title}</h3>
-                    </div>
-                    <p>${item.description}</p>
-                    <div class="tag-row">${createTagList(item.tags)}</div>
-                </article>
-            `).join('');
+        // Initialize Filter Tabs
+        function initFilters(projects) {
+            const filterButtons = document.querySelectorAll('.filter-tab-btn');
+            filterButtons.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.dataset.filter;
+                    state.activeFilter = filter;
+                    renderProjects(projects, filter);
+                    triggerReveals();
+                });
+            });
+
+            // Update Counts
+            const total = projects.length;
+            const fullstack = projects.filter(p => p.category === 'fullstack').length;
+            const cyber = projects.filter(p => p.category === 'cybersecurity').length;
+            const archive = projects.filter(p => p.category === 'archive').length;
+
+            setText('count-all', `(${total})`);
+            setText('count-fullstack', `(${fullstack})`);
+            setText('count-cybersecurity', `(${cyber})`);
+            setText('count-archive', `(${archive})`);
         }
 
-        function renderProjects(items) {
-            document.getElementById('project-grid').innerHTML = items.map((item, index) => `
-                <article class="project-card reveal reveal-delay-${index % 3}">
-                    <div class="project-top">
-                        <span class="project-label">${item.type || 'Security Case'}</span>
-                        ${item.link ? `<a href="${item.link}" target="_blank" rel="noreferrer"><i class="fas fa-arrow-up-right-from-square"></i></a>` : ''}
-                    </div>
-                    <h3>${item.title}</h3>
-                    <p>${item.description}</p>
-                    ${item.outcome ? `<div class="project-outcome"><strong>Impact:</strong> ${item.outcome}</div>` : ''}
-                    <div class="tag-row">${createTagList(item.tags)}</div>
-                </article>
-            `).join('');
+        // IntersectionObserver Scroll Reveals
+        function triggerReveals() {
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+            reveals.forEach(el => observer.observe(el));
         }
 
-        function renderExperience(items) {
-            document.getElementById('timeline').innerHTML = items.map((item, index) => `
-                <article class="timeline-item reveal reveal-delay-${index % 3}">
-                    <span class="timeline-date">${item.date}</span>
-                    <div class="timeline-card">
-                        <p class="timeline-org">${item.organization}</p>
-                        <h3>${item.role}</h3>
-                        <ul>
-                            ${(item.highlights || []).map((point) => `<li>${point}</li>`).join('')}
-                        </ul>
-                    </div>
-                </article>
-            `).join('');
-        }
+        // Contact Form Submission
+        async function handleContactSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = document.getElementById('form-submit-btn');
+            const status = document.getElementById('form-status');
+            const originalHTML = btn.innerHTML;
 
-        function renderCertifications(items) {
-            document.getElementById('cert-grid').innerHTML = items.map((item, index) => `
-                <article class="cert-card reveal reveal-delay-${index % 3}">
-                    <div class="cert-head">
-                        <i class="fas fa-award"></i>
-                        <span class="cert-status ${item.status_class || 'done'}">${item.status}</span>
-                    </div>
-                    <h3>${item.title}</h3>
-                    <p>${item.description}</p>
-                </article>
-            `).join('');
-        }
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Transmitting...</span>';
+            status.style.display = 'none';
 
-        function renderPortfolio(data) {
-            Object.assign(state, data);
-            renderGeneral(data.general || {});
-            renderStrengths(data.strengths || []);
-            renderProjects(data.projects || []);
-            renderExperience(data.experience || []);
-            renderCertifications(data.certifications || []);
-        }
+            const recipient = state.data?.general?.email_address || 'mohamed.elhemaly88@gmail.com';
 
-        async function loadData() {
             try {
-                const response = await fetch('data.json');
-                if (!response.ok) throw new Error('Unable to load data.json');
-                const data = await response.json();
-                renderPortfolio(data);
-            } catch (error) {
-                console.warn('Falling back to embedded portfolio data:', error);
-                renderPortfolio(fallbackData);
+                const response = await fetch(`https://formsubmit.co/ajax/${recipient}`, {
+                    method: 'POST',
+                    body: new FormData(form)
+                });
+                const result = await response.json();
+                if (result.success) {
+                    status.textContent = 'Message transmitted successfully. I will be in touch shortly.';
+                    status.style.color = 'var(--accent-emerald-light)';
+                    status.style.display = 'block';
+                    form.reset();
+                } else {
+                    throw new Error('Transmission failed');
+                }
+            } catch (err) {
+                status.textContent = 'Direct transmission encountered a network block. Please email directly at mohamed.elhemaly88@gmail.com.';
+                status.style.color = '#f87171';
+                status.style.display = 'block';
             } finally {
-                revealAll();
+                btn.disabled = false;
+                btn.innerHTML = originalHTML;
             }
         }
 
-        function handleSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const button = form.querySelector('.btn-submit');
-            const originalHTML = button.innerHTML;
-            button.disabled = true;
-            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        // Navigation scroll spy & mobile toggle
+        function initNavigation() {
+            const header = document.getElementById('site-header');
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
 
-            fetch(`https://formsubmit.co/ajax/${window.adminEmail || 'mohamed.elhemaly88@gmail.com'}`, {
-                method: 'POST',
-                body: new FormData(form)
-            })
-                .then((res) => res.json())
-                .then((data) => {
-                    if (data.success) {
-                        button.innerHTML = '<i class="fas fa-check"></i> Message sent';
-                        form.reset();
-                    } else {
-                        throw new Error('Send failed');
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                menuToggle.querySelector('i').classList.toggle('fa-bars');
+                menuToggle.querySelector('i').classList.toggle('fa-xmark');
+            });
+
+            document.querySelectorAll('.nav-link').forEach((link) => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
                     }
-                })
-                .catch(() => {
-                    button.innerHTML = '<i class="fas fa-triangle-exclamation"></i> Failed to send';
-                })
-                .finally(() => {
-                    setTimeout(() => {
-                        button.disabled = false;
-                        button.innerHTML = originalHTML;
-                    }, 3200);
                 });
+            });
+
+            window.addEventListener('scroll', () => {
+                header.classList.toggle('scrolled', window.scrollY > 20);
+
+                const sections = document.querySelectorAll('main section[id]');
+                let current = 'about';
+                sections.forEach((sec) => {
+                    const top = sec.offsetTop - 120;
+                    if (window.scrollY >= top) current = sec.getAttribute('id');
+                });
+
+                document.querySelectorAll('.nav-link').forEach((link) => {
+                    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+                });
+            });
         }
 
-        const header = document.getElementById('header');
-        const menuToggle = document.getElementById('menu-toggle');
-        const siteNav = document.getElementById('site-nav');
+        // Master Data Loader
+        async function loadPortfolioData() {
+            try {
+                const res = await fetch('data.json');
+                if (!res.ok) throw new Error('data.json response not ok');
+                const data = await res.json();
+                state.data = data;
+            } catch (err) {
+                console.warn('Falling back to embedded portfolio data:', err);
+                state.data = fallbackData;
+            }
 
-        menuToggle.addEventListener('click', () => {
-            siteNav.classList.toggle('open');
-            menuToggle.classList.toggle('active');
+            applyGeneral(state.data.general || {});
+            renderExperience(state.data.experience || []);
+            renderProjects(state.data.projects || [], 'all');
+            renderCertifications(state.data.certifications || []);
+            initFilters(state.data.projects || []);
+            initSpotlight();
+            triggerReveals();
+        }
+
+        // Initialize on DOM ready
+        document.addEventListener('DOMContentLoaded', () => {
+            initNavigation();
+            loadPortfolioData();
         });
-
-        document.querySelectorAll('.site-nav a').forEach((link) => {
-            link.addEventListener('click', () => {
-                siteNav.classList.remove('open');
-                menuToggle.classList.remove('active');
-            });
-        });
-
-        window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 20);
-            const sections = document.querySelectorAll('main section[id]');
-            let current = 'hero';
-            sections.forEach((section) => {
-                if (window.scrollY >= section.offsetTop - 140) current = section.id;
-            });
-            document.querySelectorAll('.site-nav a').forEach((link) => {
-                link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
-            });
-        });
-
-        loadData();
     </script>
 </body>
 </html>
